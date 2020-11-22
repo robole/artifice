@@ -1,0 +1,156 @@
+/* Click to restart animation. Source code: https://github.com/robole/artifice */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap");
+
+:root {
+  --acronymn-font-size: 14rem;
+  --small-text-padding: 2rem;
+  --animation-time: 4s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  perspective: 500px;
+  perspective-origin: center 20%;
+}
+
+.poster {
+  position: relative;
+  font-family: "Archivo", serif;
+  width: 300px;
+  height: 400px;
+  padding-top: 35px;
+  margin: 30px auto;
+  background: rgb(38, 106, 255);
+  background: radial-gradient(
+    circle,
+    rgba(38, 106, 255, 1) 15%,
+    rgba(168, 168, 247, 1) 21%,
+    rgba(38, 106, 255, 1) 24%,
+    rgba(0, 0, 138, 1) 50%
+  );
+  color: rgb(255, 255, 255);
+  row-gap: 0;
+  font-size: 0.5rem;
+  transform: translateZ(-2000px);
+  border: rgb(18, 47, 109) 1px solid;
+  border-radius: 33% 33% 2% 2%;
+  box-shadow: rgba(65, 65, 255, 0.5) 0 0 20px 5px;
+}
+
+.shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  border-radius: inherit;
+  box-shadow: rgba(65, 65, 255, 0.5) 0 0 20px 30px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.content {
+  display: grid;
+  overflow: hidden;
+}
+
+p:not(.title) {
+  padding-left: var(--small-text-padding);
+}
+
+.title {
+  position: relative;
+  height: calc(var(--acronymn-font-size));
+  font-size: var(--acronymn-font-size);
+  margin: 0;
+  transform-origin: center center;
+  transform: translateX(10%) scaleX(1.2);
+  isolation: isolate;
+}
+
+.acronynm {
+  position: absolute;
+  color: red;
+  opacity: 0.6;
+  margin: 0;
+  top: -20%;
+  mix-blend-mode: luminosity;
+}
+
+.acronynm:nth-child(1) {
+  z-index: 3;
+  left: -6%;
+}
+
+.acronynm:nth-child(2) {
+  color: white;
+  left: 12%;
+  top: -4%;
+}
+
+.acronynm:nth-child(3) {
+  left: 53%;
+  top: 6%;
+}
+
+label {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+}
+
+label > svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+label path {
+  fill: white;
+}
+
+label svg:nth-of-type(1) {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+:checked ~ label svg:nth-of-type(1) {
+  display: block;
+}
+
+:checked ~ label svg:nth-of-type(2) {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --acronymn-font-size: 20rem;
+    --small-text-padding: 2.5rem;
+  }
+
+  .title {
+    transform: translateX(15%) scaleX(1.35);
+  }
+
+  .poster {
+    width: 500px;
+    height: 750px;
+    font-size: 1.1rem;
+    padding-top: 80px;
+  }
+
+  .acronynm:nth-child(3) {
+    left: 47%;
+  }
+}

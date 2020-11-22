@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap");
+
+:root {
+  --acronymn-font-size: 16rem;
+  --small-text-padding: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tagline {
+  color: white;
+  font-size: 5rem;
+}
+
+.poster {
+  font-family: Archivo, serif;
+  width: 300px;
+  height: 450px;
+  margin: 20px auto;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-size: 0.65rem;
+}
+
+.content {
+  display: grid;
+  padding-top: var(--small-text-padding);
+  overflow: hidden;
+}
+
+p:not(.title) {
+  padding-left: var(--small-text-padding);
+}
+
+.title {
+  position: relative;
+  height: var(--acronymn-font-size);
+  font-size: var(--acronymn-font-size);
+  isolation: isolate;
+  margin: 0;
+  transform: translateX(10%) scaleX(1.15);
+  isolation: isolate;
+}
+
+.acronynm {
+  position: absolute;
+  color: red;
+  margin: 0;
+  top: -20%;
+  mix-blend-mode: luminosity;
+}
+
+.acronynm:nth-child(1) {
+  z-index: 3;
+  left: -9%;
+}
+
+.acronynm:nth-child(2) {
+  color: white;
+  left: 13%;
+  top: -1%;
+}
+
+.acronynm:nth-child(3) {
+  left: 52%;
+  top: 15%;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --acronymn-font-size: 24rem;
+    --small-text-padding: 3rem;
+  }
+
+  .title {
+    transform: translate(12%, 2%) scaleX(1.25);
+  }
+
+  .poster {
+    width: 500px;
+    height: 750px;
+    font-size: 1.1rem;
+  }
+}
