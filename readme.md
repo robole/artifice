@@ -16,7 +16,7 @@ Each experiment is organised into a folder. If the folder has:
 - A subfolder with the title "remix" -  this is where I go off and create my own thing.
 - If there is neither of these subfolders, it's likely to be my own creation.
 
-## 1) Straight Outta Some Swiss Canton
+## Straight Outta Some Swiss Canton
 
 A poster for a NWA concert.
 
@@ -24,14 +24,26 @@ Inspired by [this Swissted poster](https://www.swissted.com/products/n-w-a-at-sk
 
 See ["nwa" folder](/nwa) for full info.
 
-## Original
+### Original
 
 ![original screenshot](nwa/img/screenshot-original.png)
 
-## Remix
+### Remix
 
 Animated variant.
 
 ![screenshot](nwa/img/screenshot.gif)
 
 Check out the [live demo](https://codepen.io/robjoeol/full/YzWoMGE).
+
+## Join the Alliance (Star Wars)
+
+Star Wars recruitment poster, sort of.
+
+![screenshot](join-the-alliance/img/screenshot.gif)
+
+This experiment was prompted by wanting to combine an animation with a mask for effect. You can see this with the light saber extending in the background of the text.
+
+Check out the [live demo](https://codepen.io/robjoeol/pen/KKgKzXp).
+
+See ["join the alliance" folder](/join-the-alliance) for full info.

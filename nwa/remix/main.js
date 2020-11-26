@@ -4,6 +4,7 @@ const volume = document.querySelector("input");
 volume.addEventListener("click", toggleMute);
 
 const poster = document.getElementsByClassName("poster")[0];
+poster.style.willChange = "transform, opacity"; // improves perf
 poster.addEventListener("click", replay);
 
 let siren = new Audio(
@@ -14,7 +15,7 @@ siren.muted = true;
 
 let tween1 = gsap.to(".poster", { z: 0, duration: animationDuration });
 let tween2 = gsap.to(".content", {
-  rotationY: "2520",
+  rotationY: "1800",
   duration: animationDuration,
   onStart: playSiren,
   onComplete: stopSiren,
