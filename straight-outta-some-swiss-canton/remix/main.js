@@ -8,7 +8,7 @@ poster.style.willChange = "transform, opacity"; // improves perf
 poster.addEventListener("click", replay);
 
 let siren = new Audio(
-  "https://github.com/robole/artifice/raw/master/nwa/remix/siren.mp3"
+  "https://github.com/robole/artifice/raw/master/straight-outta-some-swiss-canton/remix/siren.mp3"
 );
 // let siren = new Audio("siren.mp3");
 siren.muted = true;

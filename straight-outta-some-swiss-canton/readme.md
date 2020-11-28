@@ -20,7 +20,22 @@ Check out the [live demo](https://codepen.io/robjoeol/full/YzWoMGE).
 
 The code is available in the "remix" folder.
 
-## Credits
+
+
+#### Lesson Learned
+
+- The performance was a bit sluggish on mobile. To optimise it, I did the following:
+
+  - Reduced the value of `perspective`.
+  -  Set the `will-change` property for the 3D transformations.  This lead to a decrease in the painting time by  85%.
+
+    ![without will-change](img/performance-will-change-before.png)
+    **before**
+
+    ![without will-change](img/performance-will-change-after.png)
+    **after**
+
+  ## Credits
 
 1. Inspired by [this Swissted poster](https://www.swissted.com/products/n-w-a-at-skateland-u-s-a-1988) by Mike Joyce.
 1. Siren sound from [Freesound](https://freesound.org/people/MultiMax2121/sounds/156869/) by MultiMax2121.

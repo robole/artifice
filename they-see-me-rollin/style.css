@@ -1,0 +1,68 @@
+/* Source code: https://github.com/robole/artifice */
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+
+main {
+  margin: 0 auto;
+  max-width: 375px;
+  perspective: 1000px;
+  display: grid;
+}
+
+img {
+  display: block;
+  width: 100%;
+  filter: saturate(150%);
+  clip-path: polygon(56.13% 86.01%, 72.14% -0.6%, 33.73% 12.88%);
+}
+
+/* for some reason justify-content:center on the main
+element does not work, but justify-self:center here does! */
+.roller {
+  width: 280px;
+  height: 40px;
+  position: relative;
+  font-size: 1.5rem;
+  transform-style: preserve-3d;
+  color: gold;
+  text-shadow: rgba(255, 240, 104, 0.8) 0 0 2px;
+  font-family: "Comfortaa", cursive;
+  justify-self: center;
+  align-self: end;
+}
+
+.hatin {
+  width: 200px;
+  margin-top: 30px;
+}
+
+.roller div {
+  position: absolute;
+  background-color: rgb(5, 5, 5);
+  backface-visibility: hidden;
+  padding: 10px 0;
+}
+
+.roller div:nth-child(1) {
+  transform: rotateX(60deg) translateZ(40px);
+}
+
+.roller div:nth-child(2) {
+  transform: rotateX(120deg) translateZ(40px);
+}
+
+.roller div:nth-child(3) {
+  transform: rotateX(180deg) translateZ(40px);
+}
+
+.roller div:nth-child(4) {
+  transform: rotateX(240deg) translateZ(40px);
+}
+
+.roller div:nth-child(5) {
+  transform: rotateX(300deg) translateZ(40px);
+}
+
+.roller div:nth-child(6) {
+  transform: rotateX(360deg) translateZ(40px);
+}

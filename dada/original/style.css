@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar&family=Gentium+Basic&family=Six+Caps&display=swap");
+
+:root {
+  --unit: 1;
+  --canvas-width: calc(200px * var(--unit));
+  --font-size: calc(8rem * var(--unit));
+  --vertical-text-margin: calc(0.75rem * var(--unit));
+  --horizontal-text-gap: calc(0.5rem * var(--unit));
+  --horizontal-text-margin: calc(2rem * var(--unit));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.canvas {
+  position: relative;
+  background-color: #6e9aa4;
+  width: var(--canvas-width);
+  height: calc(var(--canvas-width) * 1.33);
+  margin: 20px auto;
+  font-family: "Six Caps", sans-serif;
+  font-size: var(--font-size);
+}
+
+.vertical {
+  position: absolute;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr) 10%;
+  width: inherit;
+  height: inherit;
+  color: white;
+  margin-top: var(--vertical-text-margin);
+}
+
+.vertical span {
+  writing-mode: vertical-lr;
+}
+
+.vertical span:nth-of-type(1),
+.vertical span:nth-of-type(3) {
+  justify-self: end;
+  line-height: 2em;
+}
+
+.vertical span:nth-of-type(2),
+.vertical span:nth-of-type(4) {
+  justify-self: start;
+  line-height: 1.2em;
+}
+
+.horizontal {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  display: flex;
+  gap: var(--horizontal-text-gap);
+  margin: 0 var(--horizontal-text-margin);
+}
+
+.horizontal span:nth-of-type(1) {
+  margin-top: calc(1.1rem * var(--unit));
+}
+
+.horizontal span:nth-of-type(2) {
+  margin-top: calc(3rem * var(--unit));
+}
+
+.horizontal span:nth-of-type(3) {
+  margin-top: calc(-0.5rem * var(--unit));
+}
+
+.horizontal span:nth-of-type(4) {
+  margin-top: calc(5.8rem * var(--unit));
+}
+
+.label {
+  display: grid;
+  justify-items: center;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Eczar", serif;
+  font-size: 1rem;
+  padding: 0 10px;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-family: "Gentium Basic", serif;
+  font-size: 0.8rem;
+  line-height: 1.55em;
+}
+
+@media (min-width: 650px) {
+  :root {
+    --unit: 3;
+  }
+}
