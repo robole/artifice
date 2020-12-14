@@ -7,7 +7,7 @@
     n.
     Something contrived or made up to achieve an end, especially by deceiving; a stratagem or ruse: synonym: wile.
 
-This is home to some art experiments to improve my web dev trickery.
+This is home to (art) experiments to improve my web dev trickery.
 
 The starting point is likely to be an artwork or graphic design.
 
