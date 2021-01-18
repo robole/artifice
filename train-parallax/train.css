@@ -1,0 +1,51 @@
+/* Press "Play Animation" to replay */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(197, 217, 255);
+  overflow-x: auto;
+}
+
+.content {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 60px auto;
+}
+
+#scene {
+  position: absolute;
+  height: inherit;
+}
+
+#background {
+  animation: background-shift 8s linear infinite forwards;
+}
+
+#train {
+  animation: train-shift 4s linear infinite forwards;
+}
+
+#foreground {
+  animation: foreground-shift 2s linear infinite forwards;
+}
+
+@keyframes background-shift {
+  to {
+    transform: translateX(-800px);
+  }
+}
+
+@keyframes train-shift {
+  to {
+    transform: translateX(820px);
+  }
+}
+
+@keyframes foreground-shift {
+  to {
+    transform: translateX(-800px);
+  }
+}

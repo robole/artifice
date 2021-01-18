@@ -22,6 +22,7 @@ Each experiment is organised into a folder. If the folder has:
 1. [Join the Alliance (Star Wars)](#join-the-alliance-star-wars)
 1. [They See Me Rollin](#they-see-me-rollin)
 1. [Dada](#dada)
+1. [Train Parallax](#train-parallax)
 <!-- /TOC -->
 
 ## Straight Outta Some Swiss Canton
@@ -79,3 +80,13 @@ See ["dada" folder](/dada) for full info.
 ![screenshot](dada/img/screenshot.gif)
 
 Check out the [live demo](https://codepen.io/robjoeol/full/XWKGEoR).
+
+## Train Parallax
+
+Created for an article - [How to make an awesome horizontal parallax animation](https://roboleary.net/css/2020/11/17/parallax-animation.html).
+
+![screenshot](train-parallax/img/screenshot.gif)
+
+Check out the [live demo](https://codepen.io/robjoeol/pen/KKMYdQP).
+
+See ["train parallax" folder](/train-parallax) for full info.
