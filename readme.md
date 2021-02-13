@@ -23,6 +23,7 @@ Each experiment is organised into a folder. If the folder has:
 1. [They See Me Rollin](#they-see-me-rollin)
 1. [Dada](#dada)
 1. [Train Parallax](#train-parallax)
+1. [Black to White Disks](#black-to-white-disks)
 <!-- /TOC -->
 
 ## Straight Outta Some Swiss Canton
@@ -90,3 +91,19 @@ Created for an article - [How to make an awesome horizontal parallax animation](
 Check out the [live demo](https://codepen.io/robjoeol/pen/KKMYdQP).
 
 See ["train parallax" folder](/train-parallax) for full info.
+
+## Black to White Disks
+
+This is a web rendition of the painting [Black to White Disks](https://www.wikiart.org/en/bridget-riley/black-to-white-disks-1952) by Bridget Riley.
+
+### Original
+
+The original is recreated faithfully in the 'original' folder.
+
+![screenshot](black-to-white-disks/img/screenshot.png)
+
+### Remix
+
+![animation](black-to-white-disks/img/screenshot.gif)
+
+Check out the [live demo](https://codepen.io/robjoeol/pen/rNLqZPV).

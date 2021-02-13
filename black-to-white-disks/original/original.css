@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar&family=Gentium+Basic&display=swap");
+
+:root {
+  --canvas-width: 240px;
+  --rows: 9;
+  --unit: calc(var(--canvas-width) / (var(--rows) * 2));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.canvas {
+  display: grid;
+  grid-template-columns: repeat(var(--rows), var(--unit));
+  width: var(--canvas-width);
+  gap: var(--unit);
+  margin: calc(var(--canvas-width) * 0.3) auto;
+  transform: rotate(-45deg);
+}
+
+.disk {
+  background-color: black;
+  width: var(--unit);
+  height: var(--unit);
+  border-radius: 50%;
+}
+
+.disk:nth-of-type(1) {
+  opacity: 0.05;
+}
+
+.disk:nth-of-type(2),
+.disk:nth-of-type(10) {
+  opacity: 0.1;
+}
+
+.disk:nth-of-type(3),
+.disk:nth-of-type(11),
+.disk:nth-of-type(19) {
+  opacity: 0.15;
+}
+
+.disk:nth-of-type(4),
+.disk:nth-of-type(12),
+.disk:nth-of-type(20),
+.disk:nth-of-type(28) {
+  opacity: 0.25;
+}
+
+.disk:nth-of-type(5),
+.disk:nth-of-type(13),
+.disk:nth-of-type(21),
+.disk:nth-of-type(29),
+.disk:nth-of-type(37) {
+  opacity: 0.5;
+}
+
+.disk:nth-of-type(6),
+.disk:nth-of-type(14),
+.disk:nth-of-type(22),
+.disk:nth-of-type(30),
+.disk:nth-of-type(38),
+.disk:nth-of-type(46) {
+  opacity: 0.7;
+}
+
+.disk:nth-of-type(7),
+.disk:nth-of-type(15),
+.disk:nth-of-type(23),
+.disk:nth-of-type(31),
+.disk:nth-of-type(39),
+.disk:nth-of-type(47),
+.disk:nth-of-type(55) {
+  opacity: 0.85;
+}
+
+.disk:nth-of-type(8),
+.disk:nth-of-type(16),
+.disk:nth-of-type(24),
+.disk:nth-of-type(32),
+.disk:nth-of-type(40),
+.disk:nth-of-type(48),
+.disk:nth-of-type(56) {
+  opacity: 0.95;
+}
+
+.disk:nth-of-type(72),
+.disk:nth-of-type(80) {
+  opacity: 0.6;
+}
+
+.disk:nth-of-type(81) {
+  opacity: 0.5;
+}
+
+.label {
+  display: grid;
+  justify-items: center;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Eczar", serif;
+  font-size: 1em;
+  padding: 0 10px;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-family: "Gentium Basic", serif;
+  font-size: 0.9em;
+  line-height: 1.55em;
+}
+
+@media (min-width: 500px) {
+  :root {
+    --canvas-width: 380px;
+  }
+
+  .label {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    --canvas-width: 580px;
+  }
+
+  .label {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar&family=Gentium+Basic&display=swap");
+
+:root {
+  --canvas-width: 280px;
+  --rows: 9;
+  --unit: calc(var(--canvas-width) / (var(--rows) * 2));
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.canvas {
+  display: grid;
+  grid-template-columns: repeat(var(--rows), var(--unit));
+  width: var(--canvas-width);
+  gap: var(--unit);
+  margin: calc(var(--canvas-width) * 0.3) auto;
+  transform: rotate(-45deg);
+}
+
+.disk {
+  background-color: black;
+  width: var(--unit);
+  height: var(--unit);
+  border-radius: 50%;
+}
+
+.label {
+  display: grid;
+  justify-items: center;
+  font-size: 1.1rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Eczar", serif;
+  font-size: 1em;
+  padding: 0 10px;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-family: "Gentium Basic", serif;
+  font-size: 0.9em;
+  line-height: 1.55em;
+}
+
+@media (min-width: 500px) {
+  :root {
+    --canvas-width: 380px;
+  }
+
+  .label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 800px) {
+  :root {
+    --canvas-width: 580px;
+  }
+
+  .label {
+    font-size: 1.3rem;
+  }
+}
