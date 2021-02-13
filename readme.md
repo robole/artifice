@@ -24,6 +24,7 @@ Each experiment is organised into a folder. If the folder has:
 1. [Dada](#dada)
 1. [Train Parallax](#train-parallax)
 1. [Black to White Disks](#black-to-white-disks)
+1. [LSD](#lsd)
 <!-- /TOC -->
 
 ## Straight Outta Some Swiss Canton
@@ -107,3 +108,20 @@ The original is recreated faithfully in the 'original' folder.
 ![animation](black-to-white-disks/img/screenshot.gif)
 
 Check out the [live demo](https://codepen.io/robjoeol/pen/rNLqZPV).
+
+## LSD
+
+Web rendition of the spot painting [LSD](https://www.wikiart.org/en/damien-hirst/lsd) by Damian Hirst.
+
+See ["lsd" folder](/lsd) for full info.
+
+### Original
+
+![lsd by damian hirst painting](lsd/img/original.png)
+
+### Remix
+
+![screenshot of animated version](lsd/img/screenshot.gif)
+
+Check out the [live demo](https://codepen.io/robjoeol/full/dyXqYrp).
+

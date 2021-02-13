@@ -1,0 +1,669 @@
+:root {
+  --width: 300px;
+  --unit: calc(var(--width) / 30);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.canvas {
+  display: grid;
+  width: var(--width);
+  grid-template-columns: repeat(13, 1fr);
+  padding: var(--unit);
+  gap: var(--unit);
+  margin: 20px auto;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
+}
+
+.circle {
+  width: var(--unit);
+  height: var(--unit);
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.circle:nth-child(1),
+.circle:nth-child(127) {
+  background-color: hsl(162, 56%, 44%);
+}
+
+.circle:nth-child(2) {
+  background-color: hsl(197, 91%, 62%);
+}
+
+.circle:nth-child(3) {
+  background-color: hsl(194, 93%, 39%);
+}
+
+.circle:nth-child(4) {
+  background-color: hsl(25, 100%, 80%);
+}
+
+.circle:nth-child(5) {
+  background-color: hsl(186, 20%, 63%);
+}
+
+.circle:nth-child(6) {
+  background-color: hsl(9, 94%, 56%);
+}
+
+.circle:nth-child(7),
+.circle:nth-child(36) {
+  background-color: hsl(336, 100%, 71%);
+}
+
+.circle:nth-child(8) {
+  background-color: hsl(339, 10%, 74%);
+}
+
+.circle:nth-child(9) {
+  background-color: hsl(331, 96%, 48%);
+}
+
+.circle:nth-child(10) {
+  background-color: hsl(59, 83%, 75%);
+}
+
+.circle:nth-child(11) {
+  background-color: hsl(318, 46%, 74%);
+}
+
+.circle:nth-child(12) {
+  background-color: hsl(198, 100%, 60%);
+}
+
+.circle:nth-child(13),
+.circle:nth-child(18),
+.circle:nth-child(86),
+.circle:nth-child(126) {
+  background-color: hsl(60, 100%, 80%);
+}
+
+.circle:nth-child(14) {
+  background-color: hsl(360, 77%, 32%);
+}
+
+.circle:nth-child(15),
+.circle:nth-child(25),
+.circle:nth-child(30) {
+  background-color: hsl(52, 100%, 51%);
+}
+
+.circle:nth-child(16) {
+  background-color: hsl(332, 91%, 92%);
+}
+
+.circle:nth-child(17) {
+  background-color: hsl(18, 69%, 29%);
+}
+
+.circle:nth-child(19) {
+  background-color: hsl(157, 46%, 62%);
+}
+
+.circle:nth-child(20) {
+  background-color: hsl(57, 98%, 51%);
+}
+
+.circle:nth-child(21) {
+  background-color: hsl(319, 84%, 33%);
+}
+
+.circle:nth-child(22) {
+  background-color: hsl(204, 69%, 18%);
+}
+
+.circle:nth-child(23) {
+  background-color: hsl(39, 98%, 49%);
+}
+
+.circle:nth-child(24) {
+  background-color: hsl(231, 86%, 26%);
+}
+
+.circle:nth-child(26) {
+  background-color: hsl(355, 76%, 51%);
+}
+
+.circle:nth-child(27) {
+  background-color: hsl(172, 14%, 69%);
+}
+
+.circle:nth-child(28) {
+  background-color: hsl(331, 98%, 47%);
+}
+
+.circle:nth-child(29) {
+  background-color: hsl(195, 70%, 79%);
+}
+
+.circle:nth-child(31) {
+  background-color: hsl(222, 99%, 27%);
+}
+
+.circle:nth-child(32) {
+  background-color: hsl(344, 88%, 87%);
+}
+
+.circle:nth-child(33) {
+  background-color: hsl(150, 100%, 22%);
+}
+
+.circle:nth-child(34) {
+  background-color: hsl(56, 53%, 48%);
+}
+
+.circle:nth-child(35) {
+  background-color: hsl(201, 95%, 45%);
+}
+
+.circle:nth-child(36) {
+  background-color: hsl(337, 95%, 77%);
+}
+
+.circle:nth-child(37) {
+  background-color: hsl(5, 90%, 51%);
+}
+
+.circle:nth-child(38) {
+  background-color: hsl(290, 61%, 26%);
+}
+
+.circle:nth-child(39) {
+  background-color: hsl(320, 100%, 95%);
+}
+
+.circle:nth-child(40) {
+  background-color: hsl(45, 92%, 45%);
+}
+
+.circle:nth-child(53) {
+  background-color: hsl(327, 50%, 58%);
+}
+
+.circle:nth-child(42) {
+  background-color: hsl(351, 97%, 46%);
+}
+
+.circle:nth-child(43) {
+  background-color: hsl(136, 59%, 16%);
+}
+
+.circle:nth-child(44) {
+  background-color: hsl(83, 68%, 45%);
+}
+
+.circle:nth-child(45) {
+  background-color: hsl(337, 82%, 66%);
+}
+
+.circle:nth-child(46) {
+  background-color: hsl(16, 32%, 47%);
+}
+
+.circle:nth-child(47) {
+  background-color: hsl(187, 82%, 89%);
+}
+
+.circle:nth-child(48) {
+  background-color: hsl(340, 99%, 48%);
+}
+
+.circle:nth-child(49) {
+  background-color: hsl(138, 91%, 31%);
+}
+
+.circle:nth-child(50) {
+  background-color: hsl(20, 79%, 31%);
+}
+
+.circle:nth-child(51) {
+  background-color: hsl(168, 100%, 27%);
+}
+
+.circle:nth-child(52) {
+  background-color: hsl(198, 94%, 49%);
+}
+
+.circle:nth-child(53) {
+  background-color: hsl(57, 100%, 65%);
+}
+
+.circle:nth-child(54) {
+  background-color: hsl(36, 18%, 65%);
+}
+
+.circle:nth-child(55) {
+  background-color: hsl(205, 95%, 35%);
+}
+
+.circle:nth-child(56) {
+  background-color: hsl(205, 97%, 45%);
+}
+
+.circle:nth-child(57) {
+  background-color: hsl(20, 100%, 91%);
+}
+
+.circle:nth-child(58) {
+  background-color: hsl(144, 100%, 16%);
+}
+
+.circle:nth-child(59) {
+  background-color: hsl(5, 94%, 60%);
+}
+
+.circle:nth-child(60) {
+  background-color: hsl(15, 100%, 87%);
+}
+
+.circle:nth-child(61) {
+  background-color: hsl(60, 100%, 72%);
+}
+
+.circle:nth-child(62) {
+  background-color: hsl(88, 69%, 41%);
+}
+
+.circle:nth-child(63) {
+  background-color: hsl(26, 4%, 63%);
+}
+
+.circle:nth-child(64) {
+  background-color: hsl(60, 100%, 72%);
+}
+
+.circle:nth-child(65) {
+  background-color: hsl(196, 72%, 35%);
+}
+
+.circle:nth-child(66) {
+  background-color: hsl(23, 99%, 51%);
+}
+
+.circle:nth-child(67) {
+  background-color: hsl(187, 52%, 69%);
+}
+
+.circle:nth-child(68) {
+  background-color: hsl(35, 99%, 63%);
+}
+
+.circle:nth-child(69) {
+  background-color: hsl(192, 95%, 84%);
+}
+
+.circle:nth-child(70) {
+  background-color: hsl(59, 100%, 84%);
+}
+
+.circle:nth-child(71) {
+  background-color: hsl(352, 92%, 52%);
+}
+
+.circle:nth-child(72) {
+  background-color: hsl(179, 91%, 30%);
+  justify-self: right;
+}
+
+.circle:nth-child(73) {
+  background-color: hsl(205, 97%, 14%);
+}
+
+.circle:nth-child(74) {
+  background-color: hsl(334, 98%, 47%);
+}
+
+.circle:nth-child(75) {
+  background-color: hsl(359, 58%, 25%);
+}
+
+.circle:nth-child(76) {
+  background-color: hsl(10, 99%, 55%);
+}
+
+.circle:nth-child(77) {
+  background-color: hsl(28, 100%, 96%);
+}
+
+.circle:nth-child(78) {
+  background-color: hsl(35, 100%, 56%);
+}
+
+.circle:nth-child(79) {
+  background-color: hsl(33, 81%, 32%);
+}
+
+.circle:nth-child(80) {
+  background-color: hsl(114, 55%, 41%);
+}
+
+.circle:nth-child(81) {
+  background-color: hsl(31, 45%, 70%);
+}
+
+.circle:nth-child(82) {
+  background-color: hsl(47, 60%, 47%);
+}
+
+.circle:nth-child(83) {
+  background-color: hsl(60, 97%, 51%);
+}
+
+.circle:nth-child(84) {
+  background-color: hsl(139, 38%, 60%);
+}
+
+.circle:nth-child(85) {
+  background-color: hsl(50, 63%, 66%);
+}
+
+.circle:nth-child(86) {
+  background-color: hsl(62, 100%, 92%);
+}
+
+.circle:nth-child(87) {
+  background-color: hsl(188, 53%, 54%);
+}
+
+.circle:nth-child(88) {
+  background-color: hsl(99, 39%, 57%);
+}
+
+.circle:nth-child(89) {
+  background-color: hsl(202, 63%, 69%);
+}
+
+.circle:nth-child(90) {
+  background-color: hsl(48, 82%, 30%);
+}
+
+.circle:nth-child(91) {
+  background-color: hsl(56, 98%, 66%);
+}
+
+.circle:nth-child(92) {
+  background-color: hsl(42, 100%, 81%);
+}
+
+.circle:nth-child(93) {
+  background-color: hsl(88, 82%, 49%);
+}
+
+.circle:nth-child(94) {
+  background-color: hsl(22, 98%, 54%);
+}
+
+.circle:nth-child(95) {
+  background-color: hsl(199, 29%, 49%);
+}
+
+.circle:nth-child(96) {
+  background-color: hsl(304, 69%, 27%);
+}
+
+.circle:nth-child(97) {
+  background-color: hsl(334, 93%, 47%);
+}
+
+.circle:nth-child(98) {
+  background-color: hsl(193, 100%, 85%);
+}
+
+.circle:nth-child(99) {
+  background-color: hsl(229, 98%, 20%);
+}
+
+.circle:nth-child(100) {
+  background-color: hsl(0, 0%, 82%);
+}
+
+.circle:nth-child(101) {
+  background-color: hsl(19, 96%, 57%);
+}
+
+.circle:nth-child(102) {
+  background-color: hsl(333, 100%, 82%);
+}
+
+.circle:nth-child(103) {
+  background-color: hsl(172, 100%, 9%);
+}
+
+.circle:nth-child(104) {
+  background-color: hsl(342, 94%, 46%);
+}
+
+.circle:nth-child(105) {
+  background-color: hsl(208, 95%, 39%);
+}
+
+.circle:nth-child(106) {
+  background-color: hsl(21, 63%, 36%);
+}
+
+.circle:nth-child(107) {
+  background-color: hsl(60, 100%, 89%);
+}
+
+.circle:nth-child(108) {
+  background-color: hsl(191, 68%, 68%);
+}
+
+.circle:nth-child(109) {
+  background-color: hsl(233, 33%, 67%);
+}
+
+.circle:nth-child(110) {
+  background-color: hsl(66, 78%, 46%);
+}
+
+.circle:nth-child(111) {
+  background-color: hsl(66, 78%, 46%);
+}
+
+.circle:nth-child(112) {
+  background-color: hsl(3, 82%, 51%);
+}
+
+.circle:nth-child(113) {
+  background-color: hsl(48, 96%, 73%);
+}
+
+.circle:nth-child(114) {
+  background-color: hsl(35, 97%, 46%);
+}
+
+.circle:nth-child(115) {
+  background-color: hsl(192, 96%, 91%);
+}
+
+.circle:nth-child(116) {
+  background-color: hsl(68, 70%, 48%);
+}
+
+.circle:nth-child(117) {
+  background-color: hsl(51, 100%, 90%);
+}
+
+.circle:nth-child(118) {
+  background-color: hsl(348, 84%, 45%);
+}
+
+.circle:nth-child(119) {
+  background-color: hsl(198, 83%, 68%);
+}
+
+.circle:nth-child(120) {
+  background-color: hsl(59, 100%, 63%);
+}
+
+.circle:nth-child(121) {
+  background-color: hsl(272, 71%, 24%);
+}
+
+.circle:nth-child(122) {
+  background-color: hsl(64, 86%, 78%);
+}
+
+.circle:nth-child(123) {
+  background-color: hsl(191, 91%, 23%);
+}
+
+.circle:nth-child(124) {
+  background-color: hsl(359, 80%, 35%);
+}
+
+.circle:nth-child(124) {
+  background-color: hsl(203, 87%, 36%);
+}
+
+.circle:nth-child(125) {
+  background-color: hsl(46, 100%, 93%);
+}
+
+.circle:nth-child(126) {
+  background-color: hsl(115, 58%, 40%);
+}
+
+.circle:nth-child(127) {
+  background-color: hsl(55, 99%, 51%);
+}
+
+.circle:nth-child(128) {
+  background-color: hsl(41, 95%, 83%);
+}
+
+.circle:nth-child(129) {
+  background-color: hsl(29, 32%, 58%);
+}
+
+.circle:nth-child(130) {
+  background-color: hsl(29, 37%, 63%);
+}
+
+.circle:nth-child(131) {
+  background-color: hsl(318, 47%, 40%);
+}
+
+.circle:nth-child(132) {
+  background-color: hsl(334, 100%, 73%);
+}
+
+.circle:nth-child(133) {
+  background-color: hsl(31, 98%, 53%);
+}
+
+.circle:nth-child(134) {
+  background-color: hsl(190, 100%, 92%);
+}
+
+.circle:nth-child(135) {
+  background-color: hsl(343, 83%, 43%);
+}
+
+.circle:nth-child(136) {
+  background-color: hsl(355, 99%, 52%);
+}
+
+.circle:nth-child(137) {
+  background-color: hsl(54, 94%, 51%);
+}
+
+.circle:nth-child(138) {
+  background-color: hsl(59, 97%, 54%);
+}
+
+.circle:nth-child(139) {
+  background-color: hsl(319, 93%, 30%);
+}
+
+.circle:nth-child(140) {
+  background-color: hsl(206, 93%, 43%);
+}
+
+.circle:nth-child(141) {
+  background-color: hsl(177, 100%, 96%);
+}
+
+.circle:nth-child(142) {
+  background-color: hsl(216, 100%, 27%);
+}
+
+.circle:nth-child(143) {
+  background-color: hsl(339, 72%, 71%);
+}
+
+.circle:nth-of-type(odd) {
+  animation: blend 6s 1;
+}
+
+.circle:nth-of-type(even) {
+  animation: blacken 6s 1;
+}
+
+h1 {
+  font-family: "Eczar", serif;
+  font-size: 1.25rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+p {
+  font-family: "Gentium Basic", serif;
+  margin: 0;
+}
+
+.label {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: repeat(2, 2rem);
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@keyframes blend {
+  to {
+    filter: blur(20px);
+    transform: translateX(10%);
+  }
+}
+
+@keyframes blacken {
+  to {
+    background-color: hsl(0, 0%, 0%);
+  }
+}
+
+@keyframes whiten {
+  to {
+    background-color: hsl(0, 0%, 90%);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  :root {
+    --width: 500px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  :root {
+    --width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  :root {
+    --width: 800px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --width: 1000px;
+  }
+}
