@@ -9,10 +9,8 @@
 
 This is home to (art) experiments to improve my web dev trickery.
 
-The starting point is likely to be an artwork or graphic design.
-
 Each experiment is organised into a folder. If the folder has:
-- A subfolder with the title "original" - I created the original artwork in here (with some artistic license).
+- A subfolder with the title "original" - I recreated the original artwork in here (with a smidge of artistic license).
 - A subfolder with the title "remix" -  this is where I go off and create my own thing.
 - If there is neither of these subfolders, it's likely to be my own creation.
 
@@ -25,6 +23,7 @@ Each experiment is organised into a folder. If the folder has:
 1. [Train Parallax](#train-parallax)
 1. [Black to White Disks](#black-to-white-disks)
 1. [LSD](#lsd)
+1. [Foldable Decoration](#foldable-decoration)
 <!-- /TOC -->
 
 ## Straight Outta Some Swiss Canton
@@ -125,3 +124,12 @@ See ["lsd" folder](/lsd) for full info.
 
 Check out the [live demo](https://codepen.io/robjoeol/full/dyXqYrp).
 
+## Foldable Decoration
+
+ This an idea for a customisible decoration. It is like an accordian of cards. There are different designs on each side, you can fold them to create different combinations.
+
+See ["foldable-decoration" folder](/foldable-decoration) for full info.
+
+![demo](foldable-decoration/img/demo.gif)
+
+See [live demo](https://codepen.io/robjoeol/full/WNojGdm)
