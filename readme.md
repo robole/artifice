@@ -23,7 +23,7 @@ Each experiment is organised into a folder. If the folder has:
 1. [Train Parallax](#train-parallax)
 1. [Black to White Disks](#black-to-white-disks)
 1. [LSD](#lsd)
-1. [Foldable Decoration](#foldable-decoration)
+1. [Christmas Decoration](#christmas-decoration)
 <!-- /TOC -->
 
 ## Straight Outta Some Swiss Canton
@@ -124,12 +124,12 @@ See ["lsd" folder](/lsd) for full info.
 
 Check out the [live demo](https://codepen.io/robjoeol/full/dyXqYrp).
 
-## Foldable Decoration
+## Christmas Decoration
 
- This an idea for a customisible decoration. It is like an accordian of cards. There are different designs on each side, you can fold them to create different combinations.
+ This an idea for a customisible Christmas decoration. It is like an accordian of cards. There are different designs on each side, you can fold them to create different combinations.
 
-See ["foldable-decoration" folder](/foldable-decoration) for full info.
+See ["christmas-decoration" folder](/christmas-decoration) for full info.
 
-![demo](foldable-decoration/img/demo.gif)
+![demo](christmas-decoration/img/demo.gif)
 
 See [live demo](https://codepen.io/robjoeol/full/WNojGdm)
