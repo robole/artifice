@@ -1,0 +1,156 @@
+*,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bubble-color: hsl(30, 100%, 60%);
+  --top-margin: 200px;
+}
+
+svg {
+  --width: 800px;
+
+  position: absolute;
+  top: var(--top-margin);
+  left: calc((100% - var(--width)) / 2);
+  display: block;
+  width: var(--width);
+}
+
+#bubble {
+  --size: 800px;
+
+  position: absolute;
+  z-index: 50;
+  top: 10px;
+  left: calc((100% - var(--size)) / 2);
+  width: var(--size);
+  padding: 0.25rem;
+  margin: 0 2px;
+  background: var(--bubble-color);
+  border-radius: 0.4em;
+  font-family: "Comic Sans MS", cursive;
+  font-size: calc(0.75em + 1vw);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#bubble::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 2.3em solid transparent;
+  border-top-color: var(--bubble-color);
+  border-bottom: 0;
+  border-left: 0;
+  margin-bottom: -2.2em;
+  margin-left: -1em;
+  content: "";
+}
+
+@media only screen and (max-width: 599px) {
+  :root {
+    --top-margin: 150px;
+  }
+
+  #bubble {
+    --size: 100%;
+
+    left: 0;
+  }
+
+  svg {
+    --width: 300px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  svg {
+    --width: 600px;
+  }
+
+  #bubble {
+    --size: 600px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .head {
+    animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation: none;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+  }
+}
+
+.head {
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-name: head;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+}
+
+@keyframes head {
+  0% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-9deg);
+  }
+  20% {
+    transform: translate(-5px, 0) rotate(1deg);
+  }
+  30% {
+    transform: translate(0, 5px) rotate(-9deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(7deg);
+  }
+  70% {
+    transform: translate(2px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(-4deg);
+  }
+  90% {
+    transform: translate(2px, 2px) rotate(2deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .raised-arm {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation: none;
+    animation-timing-function: linear;
+    transform-origin: 50% 50%;
+  }
+}
+
+.raised-arm {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: raise;
+  animation-timing-function: linear;
+  transform-origin: 50% 50%;
+}
+
+@keyframes raise {
+  100% {
+    transform: translate(1px, 1px) rotate(1deg);
+  }
+}
