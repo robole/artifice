@@ -21,6 +21,7 @@ Each experiment is organised into a folder. If the folder has:
 1. [Straight Outta Some Swiss Canton](#straight-outta-some-swiss-canton)
 1. [They See Me Rollin](#they-see-me-rollin)
 1. [Dada](#dada)
+1. [Trump channeling Kanye](#trump-channeling-kanye)
 1. [Train Parallax](#train-parallax)
 1. [Black to White Disks](#black-to-white-disks)
 1. [LSD](#lsd)
@@ -41,11 +42,11 @@ Check out the [live demo](https://codepen.io/robjoeol/pen/KKgKzXp).
 
 Whimsical take on a product card for orange juice. On hover, it reveals the product with an animation.
 
-See ["orange-you-thirsty" folder](/orange-you-thirsty) for full info.
-
 <img src="orange-you-thirsty/img/screenshots/demo.gif" alt="animated demo of Orange, you thirsty?" width=432 height=504 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/full/jObydPw).
+
+See ["orange-you-thirsty" folder](/orange-you-thirsty) for full info.
 
 ## Straight Outta Some Swiss Canton
 
@@ -71,11 +72,11 @@ Check out the [live demo](https://codepen.io/robjoeol/full/YzWoMGE).
 
 Kitsch wordplay of the opening lines of Chamillionaires' song *Ridin Dirty*. This only looks as intended in **Chrome**.
 
-See ["they-see-me-rollin" folder](/they-see-me-rollin) for full info.
-
 <img src="they-see-me-rollin/img/screenshot.gif" alt="animated demo of They See Me Rollin" width=401 height=405 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/pen/ZEpEKOb).
+
+See ["they-see-me-rollin" folder](/they-see-me-rollin) for full info.
 
 ## Dada
 
@@ -92,6 +93,16 @@ See ["dada" folder](/dada) for full info.
 <img src="dada/img/screenshot.gif" alt="animated demo of Dada" width=250 height=350 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/full/XWKGEoR).
+
+## Trump channeling Kanye
+
+Trump spitting quotes from Kanye. Quotes are fetched from the [kanye.rest API](https://kanye.rest/).
+
+<img src="trump-channeling-kanye/img/demo.gif" alt="demo of trump channeling Kanye" width="400" height="520" loading="lazy">
+
+Check out the [live demo](https://codepen.io/robjoeol/full/qeabZe).
+
+See ["trump-channeling-kanye" folder](/trump-channeling-kanye) for full info.
 
 ## Train Parallax
 
