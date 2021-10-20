@@ -36,13 +36,13 @@ See ["straight-outta-some-swiss-canton" folder](/straight-outta-some-swiss-canto
 
 ### Original
 
-![original screenshot](straight-outta-some-swiss-canton/img/screenshot-original.png)
+<img src="straight-outta-some-swiss-canton/img/screenshot-original.png" alt="Straight Outta Some Swiss Canton screenshot" width=400 height=601 loading="lazy"/>
 
 ### Remix
 
 Animated variant.
 
-![screenshot](straight-outta-some-swiss-canton/img/screenshot.gif)
+<img src="straight-outta-some-swiss-canton/img/screenshot.gif" alt="animated variant of Straight Outta Some Swiss Canton" width=400 height=457 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/full/YzWoMGE).
 
@@ -58,7 +58,7 @@ Check out the [live demo](https://codepen.io/robjoeol/pen/KKgKzXp).
 
 ## They See Me Rollin
 
-Kitsch wordplay of the opening lines of Chamillionaires' song *Ridin Dirty*.
+Kitsch wordplay of the opening lines of Chamillionaires' song *Ridin Dirty*. This only looks as intended in **Chrome**.
 
 See ["they-see-me-rollin" folder](/they-see-me-rollin) for full info.
 

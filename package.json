@@ -1,0 +1,31 @@
+{
+  "name": "artifice",
+  "description": "**ar•ti•fice** *är′tə-fĭs* ►",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robole/artifice.git"
+  },
+  "author": "rob oleary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robole/artifice/issues"
+  },
+  "homepage": "https://github.com/robole/artifice#readme",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier src test --check",
+    "prettier:fix": "npm run prettier -- --write"
+  },
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-roboleary": ">=0.2.7",
+    "prettier": "^2.3.2",
+    "stylelint-config-roboleary": "^0.0.4"
+  },
+  "dependencies": {
+    "gsap": "^3.7.1"
+  }
+}
