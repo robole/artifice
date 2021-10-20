@@ -7,7 +7,7 @@
     n.
     Something contrived or made up to achieve an end, especially by deceiving; a stratagem or ruse: synonym: wile.
 
-This is home to (art) experiments to improve my web dev trickery.
+This is home to some (art) experiments to improve my frontend trickery.
 
 Each experiment is organised into a folder. If the folder has:
 - A subfolder with the title "original" - I recreated the original artwork in here (with a smidge of artistic license).
@@ -16,8 +16,9 @@ Each experiment is organised into a folder. If the folder has:
 
 <!-- TOC -->
 **Table of Contents**
-1. [Straight Outta Some Swiss Canton](#straight-outta-some-swiss-canton)
 1. [Join the Alliance (Star Wars)](#join-the-alliance-star-wars)
+1. [Orange, you thirsty?](#orange-you-thirsty)
+1. [Straight Outta Some Swiss Canton](#straight-outta-some-swiss-canton)
 1. [They See Me Rollin](#they-see-me-rollin)
 1. [Dada](#dada)
 1. [Train Parallax](#train-parallax)
@@ -25,6 +26,26 @@ Each experiment is organised into a folder. If the folder has:
 1. [LSD](#lsd)
 1. [Christmas Decoration](#christmas-decoration)
 <!-- /TOC -->
+
+## Join the Alliance (Star Wars)
+
+Star Wars recruitment poster, sort of.
+
+See ["join-the-alliance" folder](/join-the-alliance) for full info.
+
+<img src="join-the-alliance/img/screenshot.gif" alt="animated demo of Join the Alliance (Star Wars)" width=396 height=476 loading="lazy"/>
+
+Check out the [live demo](https://codepen.io/robjoeol/pen/KKgKzXp).
+
+## Orange, you thirsty?
+
+Whimsical take on a product card for orange juice. On hover, it reveals the product with an animation.
+
+See ["orange-you-thirsty" folder](/orange-you-thirsty) for full info.
+
+<img src="orange-you-thirsty/img/screenshots/demo.gif" alt="animated demo of Orange, you thirsty?" width=432 height=504 loading="lazy"/>
+
+Check out the [live demo](https://codepen.io/robjoeol/full/jObydPw).
 
 ## Straight Outta Some Swiss Canton
 
@@ -46,23 +67,13 @@ Animated variant.
 
 Check out the [live demo](https://codepen.io/robjoeol/full/YzWoMGE).
 
-## Join the Alliance (Star Wars)
-
-Star Wars recruitment poster, sort of.
-
-See ["join-the-alliance" folder](/join-the-alliance) for full info.
-
-![screenshot](join-the-alliance/img/screenshot.gif)
-
-Check out the [live demo](https://codepen.io/robjoeol/pen/KKgKzXp).
-
 ## They See Me Rollin
 
 Kitsch wordplay of the opening lines of Chamillionaires' song *Ridin Dirty*. This only looks as intended in **Chrome**.
 
 See ["they-see-me-rollin" folder](/they-see-me-rollin) for full info.
 
-![screenshot](they-see-me-rollin/img/screenshot.gif)
+<img src="they-see-me-rollin/img/screenshot.gif" alt="animated demo of They See Me Rollin" width=401 height=405 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/pen/ZEpEKOb).
 
@@ -74,11 +85,11 @@ See ["dada" folder](/dada) for full info.
 
 ### Original
 
-![original screenshot](dada/img/screenshot.png)
+<img src="dada/img/screenshot.png" alt="screenshot of Dada" width=256 height=355 loading="lazy"/>
 
 ### Remix
 
-![screenshot](dada/img/screenshot.gif)
+<img src="dada/img/screenshot.gif" alt="animated demo of Dada" width=250 height=350 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/full/XWKGEoR).
 
@@ -86,7 +97,7 @@ Check out the [live demo](https://codepen.io/robjoeol/full/XWKGEoR).
 
 Created for an article - [How to make an awesome horizontal parallax animation](https://roboleary.net/css/2020/11/17/parallax-animation.html).
 
-![screenshot](train-parallax/img/screenshot.gif)
+<img src="train-parallax/img/screenshot.gif" alt="animated demo of Train Parallax" width=400 height=394 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/pen/KKMYdQP).
 
@@ -100,11 +111,11 @@ This is a web rendition of the painting [Black to White Disks](https://www.wikia
 
 The original is recreated faithfully in the 'original' folder.
 
-![screenshot](black-to-white-disks/img/screenshot.png)
+<img src="black-to-white-disks/img/screenshot.png" alt="screenshot of Black to White Disks" width=536 height=616 loading="lazy"/>
 
 ### Remix
 
-![animation](black-to-white-disks/img/screenshot.gif)
+<img src="black-to-white-disks/img/screenshot.gif" alt="demo of Black to White Disks" width=527 height=632 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/pen/rNLqZPV).
 
@@ -116,11 +127,11 @@ See ["lsd" folder](/lsd) for full info.
 
 ### Original
 
-![lsd by damian hirst painting](lsd/img/original.png)
+<img src="lsd/img/original.png" alt="screenshot of LSD" width=527 height=434 loading="lazy"/>
 
 ### Remix
 
-![screenshot of animated version](lsd/img/screenshot.gif)
+<img src="lsd/img/screenshot.gif" alt="demo of LSD" width=526 height=403 loading="lazy"/>
 
 Check out the [live demo](https://codepen.io/robjoeol/full/dyXqYrp).
 
@@ -130,6 +141,6 @@ Check out the [live demo](https://codepen.io/robjoeol/full/dyXqYrp).
 
 See ["christmas-decoration" folder](/christmas-decoration) for full info.
 
-![demo](christmas-decoration/img/demo.gif)
+<img src="christmas-decoration/img/demo.gif" alt="demo of LSD" width=600 height=293 loading="lazy"/>
 
 See [live demo](https://codepen.io/robjoeol/full/WNojGdm)
