@@ -1,3 +1,7 @@
+/* Source code:
+https://github.com/robole/artifice
+*/
+
 :root {
   --panel-width: 250px;
 }
@@ -17,12 +21,12 @@ body {
   width: inherit;
   height: inherit;
   object-fit: cover;
-  mask-image: url(https://raw.githubusercontent.com/robole/artifice/main/foldable-decoration/img/hat-mask.png);
+  mask-image: url(https://raw.githubusercontent.com/robole/artifice/main/christmas-decoration/img/hat-mask.png);
   mask-mode: alpha;
   mask-size: cover;
   mask-repeat: no-repeat;
   mask-position: 50% 50%;
-  -webkit-mask-image: url(https://raw.githubusercontent.com/robole/artifice/main/foldable-decoration/img/hat-mask.png);
+  -webkit-mask-image: url(https://raw.githubusercontent.com/robole/artifice/main/christmas-decoration/img/hat-mask.png);
   -webkit-mask-mode: alpha;
   -webkit-mask-size: cover;
   -webkit-mask-repeat: no-repeat;
@@ -66,7 +70,7 @@ body {
   transform: rotateY(-23deg) translate3d(-66px, 0, 73px);
 }
 
-.regular {
+.hat {
   width: inherit;
   height: inherit;
   object-fit: cover;

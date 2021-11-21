@@ -6,4 +6,6 @@ If you were to make this, you could take this further. You could create differen
 
 ![demo](img/demo.gif)
 
-See [live demo](https://codepen.io/robjoeol/full/WNojGdm)
+To see it action:
+- You can check out the [codepen](https://codepen.io/robjoeol/full/WNojGdm), or
+- Run the local dev server (`npm run dev`) and find it at <http://localhost:3000/christmas-decoration/index.html>.

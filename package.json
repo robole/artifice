@@ -14,16 +14,17 @@
   },
   "homepage": "https://github.com/robole/artifice#readme",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
-    "prettier": "prettier src test --check",
-    "prettier:fix": "npm run prettier -- --write"
+    "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
     "eslint": "^7.31.0",
     "eslint-config-roboleary": ">=0.2.7",
-    "prettier": "^2.3.2",
-    "stylelint-config-roboleary": "^0.0.4"
+    "stylelint-config-roboleary": ">=0.0.4",
+    "vite": "^2.6.14"
   },
   "dependencies": {
     "gsap": "^3.7.1"

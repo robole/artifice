@@ -10,12 +10,12 @@ body {
   background-size: contain;
 }
 
-main {
+.starfield {
   position: relative;
   overflow: hidden;
   width: 100%;
   min-height: 98vh;
-  perspective: 340px;
+  perspective: 200px;
 }
 
 svg {

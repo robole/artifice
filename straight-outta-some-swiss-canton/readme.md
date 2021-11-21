@@ -16,11 +16,13 @@ Fitting for the world's most dangerous rap crew.
 
 ![screenshot](img/screenshot.gif)
 
-Check out the [live demo](https://codepen.io/robjoeol/full/YzWoMGE).
+To see it in action:
+- You can check out the [codepen](https://codepen.io/robjoeol/full/YzWoMGE), or
+- You can run the local dev server with `npm run dev`, and find it at <http://localhost:3000/straight-outta-some-swiss-canton/remix/index.html>.
 
 The code is available in the "remix" folder.
 
-#### Lesson Learned
+### Lesson Learned
 
 - The performance was a bit sluggish on mobile. To optimise it, I did the following:
 

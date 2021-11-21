@@ -14,4 +14,4 @@ The remix adds a staggered introduction animation for the 2 strings.
 
 ![screenshot](img/screenshot.gif)
 
-Check out the [live demo](https://codepen.io/robjoeol/full/XWKGEoR).
+Check out the [codepe](https://codepen.io/robjoeol/full/XWKGEoR).

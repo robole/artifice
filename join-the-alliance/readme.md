@@ -10,7 +10,9 @@ I modified the outline of some of the characters with the form of some star wars
 
 I also wanted to see how an animation within text looked. This effect is created with a SVG mask. The light saber extends within the text. This might be a bit much in this instance, but I think it is a cool effect that can be used elsewhere.
 
-Check out the [live demo](https://codepen.io/robjoeol/pen/KKgKzXp).
+To see it action:
+- You can check out the [codepen](https://codepen.io/robjoeol/pen/KKgKzXp)., or
+- You can run the local dev server with `npm run dev`, and find it at <http://localhost:3000/join-the-alliance/index.html>.
 
 ## Attribution
 

@@ -14,6 +14,15 @@ Each experiment is organised into a folder. If the folder has:
 - A subfolder with the title "remix" -  this is where I go off and create my own thing.
 - If there is neither of these subfolders, it's likely to be my own creation.
 
+To try out the experiments, you can run a local dev server:
+
+```
+npm install
+npm run dev
+```
+
+The default URL is <http://localhost:3000>. The default page (*index.html*) will outline the experiments with links to explore them.
+
 <!-- TOC -->
 **Table of Contents**
 1. [Join the Alliance (Star Wars)](#join-the-alliance-star-wars)
@@ -25,6 +34,7 @@ Each experiment is organised into a folder. If the folder has:
 1. [Train Parallax](#train-parallax)
 1. [Black to White Disks](#black-to-white-disks)
 1. [LSD](#lsd)
+1. [Shiny book reveal](#shiny-book-reveal)
 1. [Christmas Decoration](#christmas-decoration)
 <!-- /TOC -->
 
@@ -36,7 +46,7 @@ See ["join-the-alliance" folder](/join-the-alliance) for full info.
 
 <img src="join-the-alliance/img/screenshot.gif" alt="animated demo of Join the Alliance (Star Wars)" width=396 height=476 loading="lazy"/>
 
-Check out the [live demo](https://codepen.io/robjoeol/pen/KKgKzXp).
+You can check out the [codepen](https://codepen.io/robjoeol/pen/KKgKzXp).
 
 ## Orange, you thirsty?
 
@@ -44,7 +54,7 @@ Whimsical take on a product card for orange juice. On hover, it reveals the prod
 
 <img src="orange-you-thirsty/img/screenshots/demo.gif" alt="animated demo of Orange, you thirsty?" width=432 height=504 loading="lazy"/>
 
-Check out the [live demo](https://codepen.io/robjoeol/full/jObydPw).
+You can check out the [codepen](https://codepen.io/robjoeol/full/jObydPw).
 
 See ["orange-you-thirsty" folder](/orange-you-thirsty) for full info.
 
@@ -66,15 +76,15 @@ Animated variant.
 
 <img src="straight-outta-some-swiss-canton/img/screenshot.gif" alt="animated variant of Straight Outta Some Swiss Canton" width=400 height=457 loading="lazy"/>
 
-Check out the [live demo](https://codepen.io/robjoeol/full/YzWoMGE).
+You can check out the [codepen](https://codepen.io/robjoeol/full/YzWoMGE).
 
 ## They See Me Rollin
 
-Kitsch wordplay of the opening lines of Chamillionaires' song *Ridin Dirty*. This only looks as intended in **Chrome**.
+Kitsch wordplay of the opening lines of Chamillionaires' song *Ridin Dirty*.
 
 <img src="they-see-me-rollin/img/screenshot.gif" alt="animated demo of They See Me Rollin" width=401 height=405 loading="lazy"/>
 
-Check out the [live demo](https://codepen.io/robjoeol/pen/ZEpEKOb).
+You can check out the [codepen](https://codepen.io/robjoeol/pen/ZEpEKOb).
 
 See ["they-see-me-rollin" folder](/they-see-me-rollin) for full info.
 
@@ -92,7 +102,7 @@ See ["dada" folder](/dada) for full info.
 
 <img src="dada/img/screenshot.gif" alt="animated demo of Dada" width=250 height=350 loading="lazy"/>
 
-Check out the [live demo](https://codepen.io/robjoeol/full/XWKGEoR).
+Check out the [codepen](https://codepen.io/robjoeol/full/XWKGEoR).
 
 ## Trump channeling Kanye
 
@@ -100,7 +110,7 @@ Trump spitting quotes from Kanye. Quotes are fetched from the [kanye.rest API](h
 
 <img src="trump-channeling-kanye/img/demo.gif" alt="demo of trump channeling Kanye" width="400" height="520" loading="lazy">
 
-Check out the [live demo](https://codepen.io/robjoeol/full/qeabZe).
+You can check out the [codepen](https://codepen.io/robjoeol/full/qeabZe).
 
 See ["trump-channeling-kanye" folder](/trump-channeling-kanye) for full info.
 
@@ -110,7 +120,7 @@ Created for an article - [How to make an awesome horizontal parallax animation](
 
 <img src="train-parallax/img/screenshot.gif" alt="animated demo of Train Parallax" width=400 height=394 loading="lazy"/>
 
-Check out the [live demo](https://codepen.io/robjoeol/pen/KKMYdQP).
+You can check out the [codepen](https://codepen.io/robjoeol/pen/KKMYdQP).
 
 See ["train parallax" folder](/train-parallax) for full info.
 
@@ -128,7 +138,7 @@ The original is recreated faithfully in the 'original' folder.
 
 <img src="black-to-white-disks/img/screenshot.gif" alt="demo of Black to White Disks" width=527 height=632 loading="lazy"/>
 
-Check out the [live demo](https://codepen.io/robjoeol/pen/rNLqZPV).
+You can check out the [codepen](https://codepen.io/robjoeol/pen/rNLqZPV).
 
 ## LSD
 
@@ -144,14 +154,24 @@ See ["lsd" folder](/lsd) for full info.
 
 <img src="lsd/img/screenshot.gif" alt="demo of LSD" width=526 height=403 loading="lazy"/>
 
-Check out the [live demo](https://codepen.io/robjoeol/full/dyXqYrp).
+You can check out the [codepen](https://codepen.io/robjoeol/full/dyXqYrp).
+
+## Shiny book reveal
+
+3D hover effect to open a book and reveal a synopsis of the story. I wanted to try out creating realistic reflections.
+
+<img src="shiny-book-reveal/img/demo.gif" alt="demo of hover effect" width="470" height="552" loading="lazy"/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/WmgVvx).
+
+See ["shiny-book-reveal" folder](/shiny-book-reveal) for full info.
 
 ## Christmas Decoration
 
- This an idea for a customisible Christmas decoration. It is like an accordian of cards. There are different designs on each side, you can fold them to create different combinations.
+This an idea for a customisible Christmas decoration. It is like an accordian of cards. There are different designs on each side, you can fold them to create different combinations.
 
 See ["christmas-decoration" folder](/christmas-decoration) for full info.
 
 <img src="christmas-decoration/img/demo.gif" alt="demo of LSD" width=600 height=293 loading="lazy"/>
 
-See [live demo](https://codepen.io/robjoeol/full/WNojGdm)
+You can check out the [codepen](https://codepen.io/robjoeol/full/WNojGdm).
