@@ -21,7 +21,8 @@ npm install
 npm run dev
 ```
 
-The default URL is <http://localhost:3000>. The default page (*index.html*) will outline the experiments with links to explore them.
+The default URL is <http://localhost:3000>. The default page (*index.html*) will outline the experiments with links to explore them
+.
 
 <!-- TOC -->
 **Table of Contents**
