@@ -3,10 +3,11 @@ Source code: https://github.com/robole/artifice
 */
 
 body {
-  background: black;
+  overflow: hidden;
   height: 100%;
-  /* background-image: url(img/bg.jpg); */
-  background-image: url(https://cdn.imgpaste.net/2020/11/26/Otr0s.jpg);
+  background: black;
+
+  background-image: url("img/bg.jpg");
   background-size: contain;
 }
 
@@ -26,9 +27,9 @@ svg {
 }
 
 #xwing {
-  transform: scale(4) translateX(-110%);
-  fill: rgb(185, 185, 185);
   animation: dart 1s forwards;
+  fill: rgb(185 185 185);
+  transform: scale(4) translateX(-110%);
 }
 
 @keyframes dart {
@@ -38,11 +39,11 @@ svg {
 }
 
 .line1 {
-  fill: rgb(255, 255, 255);
+  fill: rgb(255 255 255);
 }
 
 .letter {
-  fill: rgb(255, 255, 255);
+  fill: rgb(255 255 255);
 }
 
 #logo {
@@ -50,11 +51,11 @@ svg {
 }
 
 #blade {
-  transform: scaleX(0);
   animation: extend 1.25s forwards;
-  transform-origin: 0% 100%;
-  animation-timing-function: cubic-bezier(0.2, -2, 0.8, 2);
   animation-delay: 1.25s;
+  animation-timing-function: cubic-bezier(0.2, -2, 0.8, 2);
+  transform: scaleX(0);
+  transform-origin: 0% 100%;
 }
 
 @keyframes extend {
@@ -64,8 +65,8 @@ svg {
 }
 
 #blade-glow {
-  opacity: 0.75;
   animation: pulse 0.5s linear forwards infinite;
+  opacity: 0.75;
 }
 
 #blade-beam {
@@ -85,63 +86,83 @@ svg {
   left: 50%;
   width: 2px;
   height: 2px;
-  box-shadow: -238px 108px #f7f7f7, 193px -376px #f7f7f7, -1264px -60px #fafafa,
-    145px -443px #c9c9c9, -1440px 37px #f7f7f7, 262px -136px #cfcfcf,
-    212px 219px #e3e3e3, 319px 223px #c7c7c7, 1246px -51px #c9c9c9,
-    308px 26px #e0e0e0, 147px 229px #e6e6e6, -1041px 450px #d1d1d1,
-    671px 86px white, -921px 234px #f0f0f0, -957px 242px #e8e8e8,
-    1249px -285px #d1d1d1, 741px 434px #d9d9d9, -1030px 330px #ededed,
-    311px -475px #fcfcfc, -413px -105px #d4d4d4, 868px -435px #f7f7f7,
-    -790px 289px #dbdbdb, 202px 427px #fcfcfc, -22px -158px #c9c9c9,
-    -1294px -297px #cccccc, -63px 200px #f0f0f0, -592px -86px #f7f7f7,
-    -732px 366px white, -1426px -262px #e8e8e8, 475px -400px #c9c9c9,
-    -1442px -153px #f7f7f7, 1124px -219px #ededed, 701px 257px #f0f0f0,
-    36px -179px #ebebeb, -937px 480px #f7f7f7, -267px -418px #f2f2f2,
-    1467px 127px #cfcfcf, -1128px 274px #d1d1d1, -180px 430px #e0e0e0,
-    624px 275px #fafafa, -473px 150px #e6e6e6, -537px -348px #d4d4d4,
-    410px 455px #ebebeb, 497px -29px #cccccc, 416px -370px whitesmoke,
-    977px 82px #c2c2c2, 1209px -222px #f0f0f0, 637px 360px #fcfcfc,
-    -1049px 409px white, 959px 407px #c9c9c9, -1153px -168px #dedede,
-    -437px -216px #dbdbdb, -572px 420px #fcfcfc, -228px 78px #dbdbdb,
-    -925px 452px #cccccc, 244px 30px #c4c4c4, 453px -336px #dedede,
-    993px -63px #c2c2c2, 670px -343px #d9d9d9, -1088px 344px #fcfcfc,
-    -170px -153px #c4c4c4, 987px -208px #d1d1d1, 596px 166px #fcfcfc,
-    -1362px -28px #c4c4c4, 1291px -106px #e3e3e3, -1128px 169px #ededed,
-    1056px 367px #ebebeb, 261px -128px #cccccc, 1017px 401px #cccccc,
-    1381px 245px #e3e3e3, 536px -113px #fafafa, -92px -217px #e3e3e3,
-    1481px 268px #d1d1d1, 832px -345px #cccccc, -863px 138px #f0f0f0,
-    -997px -412px #e3e3e3, -330px -260px #d9d9d9, 691px -39px #fcfcfc,
-    -468px -135px #d6d6d6, -535px 405px #e8e8e8, -1289px -284px #e3e3e3,
-    823px -225px #cccccc, -1172px -348px white, 505px -319px #ededed,
-    94px -45px #ededed, -687px -64px #c7c7c7, -1133px -456px #f2f2f2,
-    1357px 135px #e0e0e0, -919px -249px whitesmoke, 206px 32px white,
-    1453px -338px #cccccc, -764px 83px #e8e8e8, 726px 85px #fafafa,
-    205px 103px #e3e3e3, 85px 116px #d1d1d1, 1104px -121px #f0f0f0,
-    649px -304px #dbdbdb, -313px 313px whitesmoke, 491px -419px #c9c9c9,
-    -1405px 397px #cfcfcf, 30px -81px #e6e6e6;
   animation: fly 3s linear infinite;
+  box-shadow: -238px 108px hsl(0deg 0% 97%), 193px -376px hsl(0deg 0% 97%),
+    -1264px -60px hsl(0deg 0% 98%), 145px -443px hsl(0deg 0% 79%),
+    -1440px 37px hsl(0deg 0% 97%), 262px -136px hsl(0deg 0% 81%),
+    212px 219px hsl(0deg 0% 89%), 319px 223px hsl(0deg 0% 78%),
+    1246px -51px hsl(0deg 0% 79%), 308px 26px hsl(0deg 0% 88%),
+    147px 229px hsl(0deg 0% 90%), -1041px 450px hsl(0deg 0% 82%),
+    671px 86px white, -921px 234px hsl(0deg 0% 94%),
+    -957px 242px hsl(0deg 0% 91%), 1249px -285px hsl(0deg 0% 82%),
+    741px 434px hsl(0deg 0% 85%), -1030px 330px hsl(0deg 0% 93%),
+    311px -475px hsl(0deg 0% 99%), -413px -105px hsl(0deg 0% 83%),
+    868px -435px hsl(0deg 0% 97%), -790px 289px hsl(0deg 0% 86%),
+    202px 427px hsl(0deg 0% 99%), -22px -158px hsl(0deg 0% 79%),
+    -1294px -297px hsl(0deg 0% 80%), -63px 200px hsl(0deg 0% 94%),
+    -592px -86px hsl(0deg 0% 97%), -732px 366px white,
+    -1426px -262px hsl(0deg 0% 91%), 475px -400px hsl(0deg 0% 79%),
+    -1442px -153px hsl(0deg 0% 97%), 1124px -219px hsl(0deg 0% 93%),
+    701px 257px hsl(0deg 0% 94%), 36px -179px hsl(0deg 0% 92%),
+    -937px 480px hsl(0deg 0% 97%), -267px -418px hsl(0deg 0% 95%),
+    1467px 127px hsl(0deg 0% 81%), -1128px 274px hsl(0deg 0% 82%),
+    -180px 430px hsl(0deg 0% 88%), 624px 275px hsl(0deg 0% 98%),
+    -473px 150px hsl(0deg 0% 90%), -537px -348px hsl(0deg 0% 83%),
+    410px 455px hsl(0deg 0% 92%), 497px -29px hsl(0deg 0% 80%),
+    416px -370px whitesmoke, 977px 82px hsl(0deg 0% 76%),
+    1209px -222px hsl(0deg 0% 94%), 637px 360px hsl(0deg 0% 99%),
+    -1049px 409px white, 959px 407px hsl(0deg 0% 79%),
+    -1153px -168px hsl(0deg 0% 87%), -437px -216px hsl(0deg 0% 86%),
+    -572px 420px hsl(0deg 0% 99%), -228px 78px hsl(0deg 0% 86%),
+    -925px 452px hsl(0deg 0% 80%), 244px 30px hsl(0deg 0% 77%),
+    453px -336px hsl(0deg 0% 87%), 993px -63px hsl(0deg 0% 76%),
+    670px -343px hsl(0deg 0% 85%), -1088px 344px hsl(0deg 0% 99%),
+    -170px -153px hsl(0deg 0% 77%), 987px -208px hsl(0deg 0% 82%),
+    596px 166px hsl(0deg 0% 99%), -1362px -28px hsl(0deg 0% 77%),
+    1291px -106px hsl(0deg 0% 89%), -1128px 169px hsl(0deg 0% 93%),
+    1056px 367px hsl(0deg 0% 92%), 261px -128px hsl(0deg 0% 80%),
+    1017px 401px hsl(0deg 0% 80%), 1381px 245px hsl(0deg 0% 89%),
+    536px -113px hsl(0deg 0% 98%), -92px -217px hsl(0deg 0% 89%),
+    1481px 268px hsl(0deg 0% 82%), 832px -345px hsl(0deg 0% 80%),
+    -863px 138px hsl(0deg 0% 94%), -997px -412px hsl(0deg 0% 89%),
+    -330px -260px hsl(0deg 0% 85%), 691px -39px hsl(0deg 0% 99%),
+    -468px -135px hsl(0deg 0% 84%), -535px 405px hsl(0deg 0% 91%),
+    -1289px -284px hsl(0deg 0% 89%), 823px -225px hsl(0deg 0% 80%),
+    -1172px -348px white, 505px -319px hsl(0deg 0% 93%),
+    94px -45px hsl(0deg 0% 93%), -687px -64px hsl(0deg 0% 78%),
+    -1133px -456px hsl(0deg 0% 95%), 1357px 135px hsl(0deg 0% 88%),
+    -919px -249px whitesmoke, 206px 32px white, 1453px -338px hsl(0deg 0% 80%),
+    -764px 83px hsl(0deg 0% 91%), 726px 85px hsl(0deg 0% 98%),
+    205px 103px hsl(0deg 0% 89%), 85px 116px hsl(0deg 0% 82%),
+    1104px -121px hsl(0deg 0% 94%), 649px -304px hsl(0deg 0% 86%),
+    -313px 313px whitesmoke, 491px -419px hsl(0deg 0% 79%),
+    -1405px 397px hsl(0deg 0% 81%), 30px -81px hsl(0deg 0% 90%);
   transform-style: preserve-3d;
 }
-.stars:before,
-.stars:after {
-  content: "";
+
+.stars::before,
+.stars::after {
   position: absolute;
   width: inherit;
   height: inherit;
   box-shadow: inherit;
+  content: "";
 }
-.stars:before {
-  transform: translateZ(-300px);
+
+.stars::before {
   animation: fade1 3s linear infinite;
+  transform: translateZ(-300px);
 }
-.stars:after {
-  transform: translateZ(-600px);
+
+.stars::after {
   animation: fade2 3s linear infinite;
+  transform: translateZ(-600px);
 }
 @keyframes fly {
   from {
-    transform: translateZ(0px);
+    transform: translateZ(0);
   }
+
   to {
     transform: translateZ(300px);
   }
@@ -150,6 +171,7 @@ svg {
   from {
     opacity: 0.5;
   }
+
   to {
     opacity: 1;
   }
@@ -158,6 +180,7 @@ svg {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 0.5;
   }
