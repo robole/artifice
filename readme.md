@@ -28,6 +28,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 **Table of Contents**
 1. [Join the Alliance (Star Wars)](#join-the-alliance-star-wars)
 1. [Orange, you thirsty?](#orange-you-thirsty)
+1. [Johnny Cash Busted](#johnny-cash-busted)
 1. [Straight Outta Some Swiss Canton](#straight-outta-some-swiss-canton)
 1. [They See Me Rollin](#they-see-me-rollin)
 1. [Dada](#dada)
@@ -43,11 +44,11 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 
 Star Wars recruitment poster, sort of.
 
-See ["join-the-alliance" folder](/join-the-alliance) for full info.
-
 <img src="join-the-alliance/img/screenshot.gif" alt="animated demo of Join the Alliance (Star Wars)" width=396 height=476 loading="lazy"/>
 
 You can check out the [codepen](https://codepen.io/robjoeol/pen/KKgKzXp).
+
+See ["join-the-alliance" folder](/join-the-alliance) for full info.
 
 ## Orange, you thirsty?
 
@@ -58,6 +59,16 @@ Whimsical take on a product card for orange juice. On hover, it reveals the prod
 You can check out the [codepen](https://codepen.io/robjoeol/full/jObydPw).
 
 See ["orange-you-thirsty" folder](/orange-you-thirsty) for full info.
+
+## Johnny Cash Busted
+
+Animation of Johnny Cash's arrest sheet being filled out.
+
+<img src="johnny-cash-busted/img/screenshots/demo.gif" alt="animated demo of Johnny Cash Busted" width=600 height=628 loading="lazy"/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/QxeqaE).
+
+See ["johnny-cash-busted" folder](/johnny-cash-busted) for full info.
 
 ## Straight Outta Some Swiss Canton
 
@@ -129,6 +140,8 @@ See ["train parallax" folder](/train-parallax) for full info.
 
 This is a web rendition of the painting [Black to White Disks](https://www.wikiart.org/en/bridget-riley/black-to-white-disks-1952) by Bridget Riley.
 
+See ["black-to-white-disks" folder](/black-to-white-disks) for full info.
+
 ### Original
 
 The original is recreated faithfully in the 'original' folder.
@@ -171,8 +184,8 @@ See ["shiny-book-reveal" folder](/shiny-book-reveal) for full info.
 
 This an idea for a customisible Christmas decoration. It is like an accordian of cards. There are different designs on each side, you can fold them to create different combinations.
 
-See ["christmas-decoration" folder](/christmas-decoration) for full info.
-
 <img src="christmas-decoration/img/demo.gif" alt="demo of LSD" width=600 height=293 loading="lazy"/>
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/WNojGdm).
+
+See ["christmas-decoration" folder](/christmas-decoration) for full info.
