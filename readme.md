@@ -16,7 +16,7 @@ Each experiment is organised into a folder. If the folder has:
 
 To try out the experiments, you can run a local dev server:
 
-```
+```bash
 npm install
 npm run dev
 ```
@@ -38,6 +38,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [LSD](#lsd)
 1. [Shiny book reveal](#shiny-book-reveal)
 1. [Christmas Decoration](#christmas-decoration)
+1. [Logo tilt](#logo-tilt)
 <!-- /TOC -->
 
 ## Join the Alliance (Star Wars)
@@ -189,3 +190,22 @@ This an idea for a customisible Christmas decoration. It is like an accordian of
 You can check out the [codepen](https://codepen.io/robjoeol/full/WNojGdm).
 
 See ["christmas-decoration" folder](/christmas-decoration) for full info.
+
+## Logo tilt
+
+I wanted to try out a goofy idea. I wanted to animate a website’s logo so
+that it would fall over when you scroll down, and right itself when you
+scroll up. In particular, I wanted the logo to be a head or have a
+cartoonish look.
+
+<img
+		src="logo-tilt/img/demo.gif"
+		alt="demo of logo tilt"
+		width="638"
+		height="604"
+		loading="lazy"
+/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/LYeQRwq).
+
+See ["logo-tilt" folder](/logo-tilt) for full info.
