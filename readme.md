@@ -26,6 +26,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 
 <!-- TOC -->
 **Table of Contents**
+1. [Sin City (Microaction Graphic Novel)](#sin-city-microaction-graphic-novel)
 1. [Join the Alliance (Star Wars)](#join-the-alliance-star-wars)
 1. [Orange, you thirsty?](#orange-you-thirsty)
 1. [Johnny Cash Busted](#johnny-cash-busted)
@@ -40,6 +41,26 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Christmas Decoration](#christmas-decoration)
 1. [Logo tilt](#logo-tilt)
 <!-- /TOC -->
+
+## Sin City (Microaction Graphic Novel)
+
+Add short bursts of action (animation) to a graphic novel.
+
+<img
+		src="sin-city-microaction-graphic-novel/img/demo.gif"
+		alt="demo of sin city animation"
+		width="688"
+		height="271"
+		loading="lazy"
+/>
+
+It autoscrolls to show each tab at the top of the page and cycles through to the next.
+
+I discuss this more in my post - [Make your own (interactive) graphic novel](https://www.roboleary.net/2021/07/14/make-your-own-graphic-novel.html).
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/eYVaZOr).
+
+See ["sin-city-microaction-graphic-novel" folder](/sin-city-action-graphic-novel) for full info.
 
 ## Join the Alliance (Star Wars)
 
@@ -169,7 +190,7 @@ See ["lsd" folder](/lsd) for full info.
 
 <img src="lsd/img/screenshot.gif" alt="demo of LSD" width=526 height=403 loading="lazy"/>
 
-You can check out the [codepen](https://codepen.io/robjoeol/full/dyXqYrp).
+You can check out the [codepen](https://codepen.io/robjoeol/full/VwQObmw).
 
 ## Shiny book reveal
 

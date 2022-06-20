@@ -1,0 +1,76 @@
+.smooth {
+  scroll-behavior: smooth;
+}
+
+svg {
+  display: block;
+
+  width: 100%;
+  margin: 0 auto;
+
+  opacity: 0;
+}
+
+#bg,
+.outline,
+.bubble,
+#marv {
+  fill: hsl(0, 0%, 100%);
+}
+
+#blam3,
+#victim {
+  fill: hsl(0, 0%, 0%);
+}
+
+#grave {
+  fill: black;
+  stroke: black;
+  stroke-width: 2;
+}
+
+.outline,
+.box1,
+.box2,
+.box3,
+.box4,
+.text1,
+.text2,
+.bigText2,
+.text3,
+.bigText3,
+.text4,
+#brains {
+  opacity: 0;
+}
+
+text {
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.bigText1,
+.bigText2,
+.bigText3 {
+  font-size: 53px;
+  line-height: 1.5;
+}
+
+.container {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
+  border-radius: 5px;
+
+  color: hsl(0, 100%, 50%);
+
+  inline-size: 100%;
+  inset-block-start: 20px;
+  inset-inline-start: 0;
+  margin-block-end: 20px;
+  margin-inline-start: 2px;
+  margin-inline-start: 20px;
+}
