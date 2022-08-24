@@ -14,7 +14,7 @@ Each experiment is organised into a folder. If the folder has:
 - A subfolder with the title "remix" -  this is where I go off and create my own thing.
 - If there is neither of these subfolders, it's likely to be my own creation.
 
-To try out the experiments, you can run a local dev server:
+To try out the experiments, you can install the dependencies and run a local dev server:
 
 ```bash
 npm install
@@ -60,7 +60,7 @@ I discuss this more in my post - [Make your own (interactive) graphic novel](htt
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/eYVaZOr).
 
-See ["sin-city-microaction-graphic-novel" folder](/sin-city-action-graphic-novel) for full info.
+See ["sin-city-microaction-graphic-novel" folder](/sin-city-microaction-graphic-novel) for full info.
 
 ## Join the Alliance (Star Wars)
 

@@ -14,7 +14,6 @@
   },
   "homepage": "https://github.com/robole/artifice#readme",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
