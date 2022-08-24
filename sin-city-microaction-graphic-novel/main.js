@@ -1,7 +1,11 @@
+import gsap from "gsap";
+
+// CSSRulePlugin is not required to be explicitly declared
+
 let x = "blah";
 let y = x * 2;
 
-const tl = new TimelineMax({});
+const tl = new gsap.timeline();
 const pauseBetween = 1;
 const textRevealDelay = 0.5;
 const mainSvg = document.getElementById("sinCity");
@@ -162,7 +166,6 @@ function isOverflowing() {
 }
 
 function addGunMask() {
-  let gun = document.getElementById("gun");
   gun.setAttribute("mask", "url(#blam1Mask)");
 }
 

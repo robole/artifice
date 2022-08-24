@@ -1,3 +1,5 @@
+import gsap from "gsap";
+
 gsap.set(".roller", {
   transformOrigin: "100% center",
 });
