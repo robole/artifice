@@ -1,4 +1,5 @@
 import "./style.css";
+import * as _ from "lodash";
 
 let logo = document.querySelector(".logo");
 let previousScrollPosition = 0;

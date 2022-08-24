@@ -4,11 +4,13 @@ specifiers:
   eslint: ^7.31.0
   eslint-config-roboleary: '>=0.2.7'
   gsap: ^3.7.1
+  lodash: ^4.17.21
   stylelint-config-roboleary: '>=0.0.4'
   vite: ^2.6.14
 
 dependencies:
   gsap: 3.8.0
+  lodash: 4.17.21
 
 devDependencies:
   eslint: 7.32.0
@@ -1376,7 +1378,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
