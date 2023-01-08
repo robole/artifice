@@ -1,0 +1,17 @@
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: lightblue;
+}
+
+svg {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.credits,
+#diamondUse {
+  opacity: 0;
+}
