@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "VCR OSD Mono";
+  src: url("fonts/VCR_OSD_MONO.woff2");
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(255, 153, 247);
+  font-family: "VCR OSD Mono";
+}
+
+svg {
+  max-width: 1000px;
+}
+
+#boxUse,
+#boxClip {
+  transform: scale(0);
+  animation: grow 1s ease-in forwards;
+  transform-origin: center;
+}
+
+@keyframes grow {
+  to {
+    transform: scale(3);
+  }
+}

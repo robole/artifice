@@ -26,6 +26,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 
 <!-- TOC -->
 **Table of Contents**
+1. [Diamond Swipe](#diamond-swipe)
 1. [Sin City (Microaction Graphic Novel)](#sin-city-microaction-graphic-novel)
 1. [Join the Alliance (Star Wars)](#join-the-alliance-star-wars)
 1. [Orange, you thirsty?](#orange-you-thirsty)
@@ -42,6 +43,21 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Logo tilt](#logo-tilt)
 <!-- /TOC -->
 
+## Diamond Swipe
+
+A diamond-shaped swipe reveal of text.
+
+<img
+		src="diamond-swipe/img/demo.webp"
+		alt="demo of sin city animation"
+		width="787"
+		height="604"
+/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/NWBdYRj).
+
+See ["diamond-swipe" folder](/diamond-swipe) for code.
+
 ## Sin City (Microaction Graphic Novel)
 
 Add short bursts of action (animation) to a graphic novel.
@@ -51,7 +67,6 @@ Add short bursts of action (animation) to a graphic novel.
 		alt="demo of sin city animation"
 		width="688"
 		height="271"
-		loading="lazy"
 />
 
 It autoscrolls to show each tab at the top of the page and cycles through to the next.

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diamond Swipe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+      <defs>
+        <symbol id="boxSymbol">
+          <path
+            fill="none"
+            stroke="#cb00e8"
+            stroke-width="23.94"
+            d="M599.95 16.928l583.022 583.02-583.022 583.025L16.928 599.95z"
+          />
+        </symbol>
+        <clipPath id="boxClip">
+          <!-- duplicte of path in #boxSymbol -->
+          <path
+            fill="none"
+            stroke="#cb00e8"
+            stroke-width="23.94"
+            d="M599.95 16.928l583.022 583.02-583.022 583.025L16.928 599.95z"
+          />
+        </clipPath>
+      </defs>
+      <text
+        x="199.219"
+        y="560.736"
+        fill="#ecd65a"
+        stroke="#d54c22"
+        stroke-width="3"
+        font-family="VCR OSD Mono"
+        font-size="72"
+        clip-path="url(#boxClip)"
+      >
+        MADE FOR THE WEB BY
+      </text>
+      <text
+        x="277.734"
+        y="691.998"
+        fill="#ecd65a"
+        stroke="#d54c22"
+        stroke-width="3"
+        font-family="VCR OSD Mono"
+        font-size="100"
+        clip-path="url(#boxClip)"
+      >
+        ROB O&apos;LEARY
+      </text>
+      <use id="boxUse" href="#boxSymbol" />
+    </svg>
+  </body>
+</html>
