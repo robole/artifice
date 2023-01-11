@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artifice</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
+
       body {
         display: grid;
         width: 100%;
         max-width: 600px;
         margin: 0 auto;
-        justify-items: center;
         background: hsl(159.8, 50%, 63.7%);
+        padding: 0 0.5rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
       }
     </style>
   </head>
@@ -325,6 +334,23 @@
         href="http://localhost:3000/sin-city-microaction-graphic-novel/index.html"
         >demo</a
       >
+    </p>
+    <h2>NES Controller</h2>
+    <p>
+      This is a CSS recreation of a NES (Nintendo) game controller. It is an
+      experiment to see the impact shadows can have on the realism of a design.
+      You can toggle the shadows on/off to judge for yourself!
+    </p>
+    <img
+      src="nes-controller/img/screenshot.png"
+      alt="screenshot of nes controller demo"
+      width="867"
+      height="443"
+      loading="lazy"
+    />
+    <p>
+      Check out the
+      <a href="http://localhost:3000/nes-controller/index.html">demo</a>
     </p>
   </body>
 </html>

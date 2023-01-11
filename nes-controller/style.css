@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr&family=Exo:wght@700&display=swap");
+
+:root {
+  --controller-width: 700px;
+  --controller-height: calc(var(--controller-width) * 0.45);
+  --light-black: hsl(165, 10%, 16%);
+  --dark-black: hsl(0, 0%, 10%);
+  --bevel-color: hsl(0, 0%, 90%);
+  --bar-color: hsl(0, 0%, 70%);
+  --extrusion-color: hsl(0, 0%, 90%);
+  --border-radius: 10px;
+  --circular-button-size: 4.8rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Exo", cursive;
+}
+
+#controller {
+  position: relative;
+  width: var(--controller-width);
+  height: var(--controller-height);
+  margin: 60px auto;
+  background-color: var(--light-black);
+  color: red;
+  border-radius: var(--border-radius);
+  display: grid;
+  grid-template-columns: 0.5fr 6fr 3fr 3fr 7fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1.75fr 0.5fr 0.5fr;
+  box-shadow: -2px 0 2px 0px rgb(255, 255, 255),
+    -3px 0 2px 0px rgb(128, 128, 128), 0 2px 1px 0px rgb(128, 128, 128),
+    2px 0 2px 0px rgb(255, 255, 255), 3px 0 2px 1px rgb(128, 128, 128),
+    0 -1px 2px 0px rgb(128, 128, 128);
+  transition: box-shadow 0.3s;
+}
+
+/* cable */
+#controller::before {
+  content: "";
+  position: absolute;
+  height: 8rem;
+  width: 1.5rem;
+  top: -8rem;
+  left: 25%;
+  background-color: #000000;
+}
+
+/* cable divet */
+.divet {
+  position: absolute;
+  height: 0.5em;
+  width: 1.5rem;
+  top: 0;
+  left: 25%;
+  box-shadow: 0 0 1px 1px rgb(128, 128, 128), -1px 0 2px rgb(219, 219, 219),
+    -1px -1px 1px rgb(128, 128, 128) inset;
+  transition: box-shadow 0.3s;
+}
+
+.bevel {
+  background-color: var(--bevel-color);
+  border-radius: var(--border-radius);
+}
+
+.bevelTop {
+  grid-row: 1;
+  grid-column: 1 / -1;
+}
+
+.bevelLeft {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  border-radius: 5px 0 5px 5px;
+}
+
+.bevelRight {
+  grid-row: 1 / -1;
+  grid-column: 6;
+}
+
+.bevelBottom {
+  grid-row: 7;
+  grid-column: 1 / -1;
+}
+
+button {
+  cursor: pointer;
+}
+
+.dPad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row: 3 / span 3;
+  grid-column: 2;
+  margin: 7.5% 15%;
+}
+
+.cursor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-black);
+  border: none;
+  transition: all 0.3s;
+}
+
+.cursor::before {
+  --size: 40%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc((100% - var(--size)) / 2);
+  left: calc((100% - var(--size)) / 2);
+  width: var(--size);
+  height: var(--size);
+  border-width: 0.1em;
+  border-style: solid;
+  transform: rotate(315deg);
+}
+
+.left::before {
+  left: 25%;
+  border-color: #444 transparent transparent #151515;
+}
+
+.right::before {
+  right: 25%;
+  border-color: transparent #444 #444 transparent;
+}
+
+.up::before {
+  top: 25%;
+  border-color: #151515 #444 transparent transparent;
+}
+
+.down::before {
+  bottom: 25%;
+  border-color: transparent transparent #444 #444;
+}
+
+.cursor::after {
+  --height: 40%;
+  --width: 25%;
+  content: "";
+  display: block;
+  position: absolute;
+  width: var(--width);
+  height: var(--height);
+  top: calc((100% - var(--height)) / 2);
+  left: calc((100% - var(--width)) / 2);
+  border-width: 0.1em;
+  border-style: solid;
+}
+
+.left::after {
+  left: 50%;
+  border-color: #444 #151515 #444 transparent;
+}
+
+.right::after {
+  left: 20%;
+  border-color: #444 transparent #444 #444;
+}
+
+.up::after {
+  --height: 25%;
+  --width: 40%;
+  top: 50%;
+  border-color: transparent #151515 #151515 #444;
+}
+
+.down::after {
+  --height: 25%;
+  --width: 40%;
+  top: 20%;
+  border-color: #444 #444 transparent #444;
+}
+
+.cursor.up {
+  grid-row: 1;
+  grid-column: 2;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 3px 0 3px black inset, 0 0 0 5px var(--bevel-color),
+    0 0 0 7px rgb(99, 99, 99);
+}
+
+.cursor.left {
+  grid-row: 2;
+  grid-column: 1;
+  border-radius: 5px 0 0 5px;
+  box-shadow: 3px 0 0 3px black inset, -4px 0 0 3px var(--bevel-color);
+}
+
+.dPad .center {
+  position: relative;
+  grid-row: 2;
+  grid-column: 2;
+  background-color: var(--dark-black);
+}
+
+.circle {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 1px solid rgb(58, 58, 58);
+  box-shadow: -2px 0 2px 0px rgba(179, 179, 179, 0.6),
+    0px 0px 2px 1px rgb(61, 61, 61) inset, 0px 0px 8px 1px rgb(41, 41, 41) inset;
+}
+
+.cursor.right {
+  grid-row: 2;
+  grid-column: 3;
+  border-radius: 0 5px 5px 0;
+  box-shadow: -3px 0 0 3px black inset, 3px 0 0 2px var(--bevel-color);
+}
+
+.cursor.down {
+  grid-row: 3;
+  grid-column: 2;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 -3px 0 3px black inset, 0 4px 0 2px var(--bevel-color);
+}
+
+.bar {
+  background-color: var(--bar-color);
+  height: 80%;
+}
+
+.bar1 {
+  grid-row: 2;
+  grid-column: 3 / span 2;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.bar2 {
+  grid-row: 3;
+  grid-column: 3 / span 2;
+  border-radius: var(--border-radius);
+}
+
+.bar3 {
+  grid-row: 4;
+  grid-column: 3 / span 2;
+  border-radius: var(--border-radius);
+}
+
+.bar4 {
+  grid-column: 3 / span 2;
+  grid-row: 6;
+  height: 80%;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  align-self: end;
+}
+
+.brand {
+  font-family: Mitr, sans-serif;
+  grid-row: 3;
+  grid-column: 5;
+  place-self: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+sup {
+  font-size: 0.75rem;
+}
+
+#selectBtnLabel,
+#startBtnLabel {
+  align-self: center;
+  justify-self: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+#selectBtnLabel {
+  grid-row: 4;
+  grid-column: 3;
+  border-radius: 5px 0 0 5px;
+  margin-left: 5px;
+}
+
+#startBtnLabel {
+  grid-row: 4;
+  grid-column: 4;
+}
+
+#lozengeButtonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--extrusion-color);
+  grid-row: 5;
+  grid-column: 3 / span 2;
+  border-radius: var(--border-radius);
+  margin: 0 5px 10px 5px;
+  box-shadow: 0 0 2px 6px var(--extrusion-color) inset,
+    0 0 2px 10px rgb(179, 176, 176) inset, 0 -1px 2px 1px rgb(138, 138, 138);
+  transition: box-shadow 0.3s;
+}
+
+.lozengeButton {
+  background-color: #3a3d3c;
+  width: 55%;
+  height: 25%;
+  border: none;
+  place-self: center;
+  border-radius: var(--border-radius);
+  box-shadow: 2px 0px 2px 3px #000000;
+  transition: all 0.3s;
+}
+
+.lozengeButton:active {
+  box-shadow: 2px 0px 2px 2px #000000;
+  transform: scale(0.975);
+}
+
+#circularButtonContainer {
+  grid-row: 4 / span 3;
+  grid-column: 5;
+  display: grid;
+  grid-template-columns:
+    1fr var(--circular-button-size) var(--circular-button-size)
+    2.5fr;
+  grid-template-rows: 1fr var(--circular-button-size) 1.5rem;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+#aBtnLabel,
+#bBtnLabel {
+  font-size: 1.25rem;
+  justify-self: end;
+  align-self: end;
+  grid-row: 3;
+}
+
+#aBtnLabel {
+  grid-column: 3;
+}
+
+#bBtnLabel {
+  grid-column: 2;
+}
+
+.circularButtonExtrusion {
+  background-color: var(--extrusion-color);
+  border-radius: 5px;
+  box-shadow: 1px -2px 1px 1px darkgrey;
+  grid-row: 2;
+}
+
+.circularButtonExtrusion:nth-child(1) {
+  grid-column: 2;
+}
+
+.circularButtonExtrusion:nth-child(2) {
+  grid-column: 3;
+}
+
+.circularButton {
+  position: relative;
+  background-color: #e50000;
+  border-radius: 50%;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  z-index: 3;
+  border: none;
+  box-shadow: 1px 0px 3px 2px #000000, 2px 1px 2px 1px #d80000 inset;
+}
+
+.circularButton:active {
+  box-shadow: 1px 0px 2px 1px #000000;
+  transform: scale(0.975);
+}
+
+.text {
+  color: #e50000;
+}
+
+.noShadows {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 800px) {
+  #controller {
+    margin: 100px auto;
+  }
+}
+
+.dg,
+.dg.ac {
+  top: 5px !important;
+  left: 5px !important;
+  right: initial !important;
+}

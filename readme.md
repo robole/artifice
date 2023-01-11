@@ -41,6 +41,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Shiny book reveal](#shiny-book-reveal)
 1. [Christmas Decoration](#christmas-decoration)
 1. [Logo tilt](#logo-tilt)
+1. [NES Controller](#nes-controller)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -245,3 +246,19 @@ cartoonish look.
 You can check out the [codepen](https://codepen.io/robjoeol/full/LYeQRwq).
 
 See ["logo-tilt" folder](/logo-tilt) for full info.
+
+## NES Controller
+
+This is a CSS recreation of a NES (Nintendo)  game controller. It is an experiment to see the impact shadows can have on the realism of a design. You can toggle the shadows on/off to judge for yourself!
+
+<img
+		src="nes-controller/img/screenshot.png"
+		alt="screenshot of nes controller demo"
+		width="867"
+		height="443"
+		loading="lazy"
+/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/pen/ZELzVPV).
+
+See ["nes-controller" folder](/nes-controller) for code.

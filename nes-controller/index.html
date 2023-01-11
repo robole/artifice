@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NES Controller</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="controller">
+      <div class="bevelTop bevel"></div>
+      <div class="bevelLeft bevel"></div>
+      <div class="divet"></div>
+      <div class="bar1 bar"></div>
+      <div class="bar2 bar"></div>
+      <div class="bar3 bar"></div>
+      <div class="brand">Nintendo<sup>®</sup></div>
+      <div class="dPad">
+        <button class="cursor up"></button>
+        <button class="cursor left"></button>
+        <div class="center">
+          <div class="circle"></div>
+        </div>
+        <button class="cursor right"></button>
+        <button class="cursor down"></button>
+      </div>
+      <label id="selectBtnLabel" for="selectBtn" class="text">SELECT</label>
+      <label id="startBtnLabel" for="startBtn" class="text">START</label>
+      <div id="lozengeButtonContainer">
+        <button id="selectBtn" class="lozengeButton"></button>
+        <button id="startBtn" class="lozengeButton"></button>
+      </div>
+      <div id="circularButtonContainer">
+        <div class="circularButtonExtrusion">
+          <button id="aBtn" class="circularButton"></button>
+        </div>
+        <div class="circularButtonExtrusion">
+          <button id="bBtn" class="circularButton"></button>
+        </div>
+        <label id="aBtnLabel" for="aBtn text">A</label>
+        <label id="bBtnLabel" for="bBtn text">B</label>
+      </div>
+      <div class="bar bar4"></div>
+      <div class="bevelRight bevel"></div>
+      <div class="bevelBottom bevel"></div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
