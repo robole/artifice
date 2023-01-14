@@ -266,14 +266,14 @@ See ["star-wars-join-the-alliance" folder](/star-wars-join-the-alliance) for ful
 
 ## Star Wars Circular Wipe Transition
 
-Circular wipe transition between scenes.
+Circular wipe transition of scenes.
 
-The `clip-path` property is the basis of the animation. The `mask` property is not fully implemented across browsers, so I have skipped it.
+Since the [`mask` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/mask) is not fully implemented across browsers, I looked for alternatives that have better support.
 
-Will Boyd covered [how to make CSS animations of some Star Wars wipe transitions in a recent blog post](https://codersblock.com/blog/star-wars-scene-transition-effects-in-css/). All of the animations center around animating CSS masks. You can see [his version in this codepen.](https://codepen.io/lonekorean/pen/yLvjbrr).
+I created 2 versions:
+1. `clip-path` version: The `clip-path` property is the basis of the animation. The transition edges are hard. You can see it in [this codepen](https://codepen.io/robjoeol/full/YzjQmoG).
+1. SVG version: A SVG mask is used. The transition edges are soft - a `radial-gradient` is applied to the `mask`. You can see it in [this codepen](https://codepen.io/robatronbobby/full/abjyOOb).
 
-<img src="star-wars-circular-wipe/img/demo.webp" alt="animated demo of circular wipe transition" width=954 height=732 loading="lazy"/>
+<img src="star-wars-circular-wipe/assets/img/demo.webp" alt="animated demo of circular wipe transition" width=954 height=732 loading="lazy"/>
 
-You can check out the [codepen](https://codepen.io/robjoeol/full/YzjQmoG).
-
-See ["star-wars-circular-wipe" folder](/star-wars-circular-wipe/) for full info.
+See ["star-wars-circular-wipe" folder](/star-wars-circular-wipe/) for code.

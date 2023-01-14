@@ -23,6 +23,10 @@
         max-width: 100%;
         height: auto;
       }
+
+      li {
+        margin-bottom: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -345,18 +349,37 @@
       CSS animation of the circulr wipe used for scene transitions in Star Wars.
     </p>
     <img
-      src="star-wars-circular-wipe/img/demo.webp"
+      src="star-wars-circular-wipe/assets/img/demo.webp"
       alt="animated demo of circular wipe transition"
       width="954"
       height="732"
       loading="lazy"
     />
     <p>
-      Check out the
-      <a href="http://localhost:3000/star-wars-circular-wipe/index.html"
-        >demo</a
-      >
+      Since the `mask` CSS property is not fully implemented across browsers, I
+      looked for alternatives that have better support.
     </p>
+
+    <p>I created 2 versions:</p>
+    <ol>
+      <li>
+        <code>clip-path</code> version: The <code>clip-path</code> property is
+        the basis of the animation. The transition edges are hard. Check out the
+        <a
+          href="http://localhost:3000/star-wars-circular-wipe/clippath-version/index.html"
+          >demo</a
+        >
+      </li>
+      <li>
+        SVG version: A SVG mask is used. The transition edges are soft. It
+        applies a
+        <code>radial-gradient</code> to the mask. Check out the
+        <a
+          href="http://localhost:3000/star-wars-circular-wipe/svg-version/index.html"
+          >demo</a
+        >
+      </li>
+    </ol>
     <h2>Star Wars - Join the Alliance Recruitment Poster</h2>
     <p>Star Wars recruitment poster, sort of.</p>
     <img
