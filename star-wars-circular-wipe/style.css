@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Star Jedi Hollow";
+  src: url("fonts/Starjedi-hollow.woff2");
+}
+
+.scenes {
+  position: relative;
+  aspect-ratio: 1920 / 820;
+  outline: 2px solid #ccc;
+}
+
+.scene-1,
+.scene-2 {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+}
+
+.scene-1 {
+  background-image: url("img/scene-1.jpg");
+}
+
+.scene-2 {
+  clip-path: circle(0% at 50% 50%);
+  background-image: url("img/scene-2.jpg");
+}
+
+@keyframes scene-transition {
+  100% {
+    clip-path: circle(85% at 50% 50%);
+  }
+}
+
+.scenes:is(:hover, :focus) .scene-2 {
+  animation: scene-transition 2s linear forwards;
+}
+
+/* everything else */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+  background-color: #111;
+  font-size: clamp(0.75rem, 0.3rem + 1.9vw, 1.5rem);
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1.5rem;
+  width: min(1000px, 100%);
+}
+
+.wrapper heading {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Star Jedi Hollow", serif;
+  font-size: clamp(1.5rem, 1.25rem + 1.9vw, 3rem);
+  color: rgb(255, 255, 44);
+  margin: 0;
+}
+
+.visualizer {
+  display: flex;
+  justify-content: center;
+}
+
+.visualizer-frame {
+  position: relative;
+  width: min(150px, 25vw);
+  aspect-ratio: 2.4 / 1;
+  outline: 2px solid #ccc;
+  background-color: #333;
+  background-image: linear-gradient(
+      45deg,
+      #444 25%,
+      transparent 25%,
+      transparent 75%,
+      #444 75%
+    ),
+    linear-gradient(45deg, #444 25%, transparent 25%, transparent 75%, #444 75%);
+  background-size: 16px 16px, 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+.visualizer-mask {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(10% at 50% 50%);
+}
+
+.scenes:is(:hover, :focus) + .visualizer .visualizer-mask {
+  animation: scene-transition 2s linear forwards;
+}

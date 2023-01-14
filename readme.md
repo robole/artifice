@@ -28,7 +28,6 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 **Table of Contents**
 1. [Diamond Wipe](#diamond-wipe)
 1. [Sin City (Microaction Graphic Novel)](#sin-city-microaction-graphic-novel)
-1. [Join the Alliance (Star Wars)](#join-the-alliance-star-wars)
 1. [Orange, you thirsty?](#orange-you-thirsty)
 1. [Johnny Cash Busted](#johnny-cash-busted)
 1. [Straight Outta Some Swiss Canton](#straight-outta-some-swiss-canton)
@@ -42,6 +41,8 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Christmas Decoration](#christmas-decoration)
 1. [Logo tilt](#logo-tilt)
 1. [NES Controller](#nes-controller)
+1. [Star Wars Join the Alliance Recruitment Poster](#star-wars-join-the-alliance-recruitment-poster)
+1. [Star Wars Circular Wipe Transition](#star-wars-circular-wipe-transition)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -77,16 +78,6 @@ I discuss this more in my post - [Make your own (interactive) graphic novel](htt
 You can check out the [codepen](https://codepen.io/robjoeol/full/eYVaZOr).
 
 See ["sin-city-microaction-graphic-novel" folder](/sin-city-microaction-graphic-novel) for full info.
-
-## Join the Alliance (Star Wars)
-
-Star Wars recruitment poster, sort of.
-
-<img src="join-the-alliance/img/screenshot.gif" alt="animated demo of Join the Alliance (Star Wars)" width=396 height=476 loading="lazy"/>
-
-You can check out the [codepen](https://codepen.io/robjoeol/pen/KKgKzXp).
-
-See ["join-the-alliance" folder](/join-the-alliance) for full info.
 
 ## Orange, you thirsty?
 
@@ -262,3 +253,27 @@ This is a CSS recreation of a NES (Nintendo)  game controller. It is an experime
 You can check out the [codepen](https://codepen.io/robjoeol/pen/ZELzVPV).
 
 See ["nes-controller" folder](/nes-controller) for code.
+
+## Star Wars Join the Alliance Recruitment Poster
+
+Star Wars recruitment poster, sort of.
+
+<img src="star-wars-join-the-alliance/img/screenshot.gif" alt="animated demo of Join the Alliance (Star Wars)" width=396 height=476 loading="lazy"/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/pen/KKgKzXp).
+
+See ["star-wars-join-the-alliance" folder](/star-wars-join-the-alliance) for full info.
+
+## Star Wars Circular Wipe Transition
+
+Circular wipe transition between scenes.
+
+The `clip-path` property is the basis of the animation. The `mask` property is not fully implemented across browsers, so I have skipped it.
+
+Will Boyd covered [how to make CSS animations of some Star Wars wipe transitions in a recent blog post](https://codersblock.com/blog/star-wars-scene-transition-effects-in-css/). All of the animations center around animating CSS masks. You can see [his version in this codepen.](https://codepen.io/lonekorean/pen/yLvjbrr).
+
+<img src="star-wars-circular-wipe/img/demo.webp" alt="animated demo of circular wipe transition" width=954 height=732 loading="lazy"/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/YzjQmoG).
+
+See ["star-wars-circular-wipe" folder](/star-wars-circular-wipe/) for full info.
