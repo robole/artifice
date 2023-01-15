@@ -41,8 +41,8 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Christmas Decoration](#christmas-decoration)
 1. [Logo tilt](#logo-tilt)
 1. [NES Controller](#nes-controller)
-1. [Star Wars Join the Alliance Recruitment Poster](#star-wars-join-the-alliance-recruitment-poster)
-1. [Star Wars Circular Wipe Transition](#star-wars-circular-wipe-transition)
+1. [Star Wars - Join the Alliance Recruitment Poster](#star-wars---join-the-alliance-recruitment-poster)
+1. [Star Wars - Circular Wipe Transition](#star-wars---circular-wipe-transition)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -254,7 +254,7 @@ You can check out the [codepen](https://codepen.io/robjoeol/pen/ZELzVPV).
 
 See ["nes-controller" folder](/nes-controller) for code.
 
-## Star Wars Join the Alliance Recruitment Poster
+## Star Wars - Join the Alliance Recruitment Poster
 
 Star Wars recruitment poster, sort of.
 
@@ -264,15 +264,17 @@ You can check out the [codepen](https://codepen.io/robjoeol/pen/KKgKzXp).
 
 See ["star-wars-join-the-alliance" folder](/star-wars-join-the-alliance) for full info.
 
-## Star Wars Circular Wipe Transition
+## Star Wars - Circular Wipe Transition
 
 Circular wipe transition of scenes.
 
 Since the [`mask` CSS property](https://developer.mozilla.org/en-US/docs/Web/CSS/mask) is not fully implemented across browsers, I looked for alternatives that have better support.
 
 I created 2 versions:
-1. `clip-path` version: The `clip-path` property is the basis of the animation. The transition edges are hard. You can see it in [this codepen](https://codepen.io/robjoeol/full/YzjQmoG).
-1. SVG version: A SVG mask is used. The transition edges are soft - a `radial-gradient` is applied to the `mask`. You can see it in [this codepen](https://codepen.io/robatronbobby/full/abjyOOb).
+1. CSS `clip-path` version: The [`clip-path`](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path) property is the basis of the animation. The transition edges are hard. You can see it in [this codepen](https://codepen.io/robjoeol/full/YzjQmoG).
+1. SVG `mask` version: A SVG [`mask`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/mask) is used. The transition edges are soft. You can see it in [this codepen](https://codepen.io/robjoeol/full/dyjzvdb).
+
+I discuss these implementations in the post - [An awesome, cross-browser Star Wars circular wipe transition? CSS houdini vs clippath vs mask](https://www.roboleary.net/css/2023/01/16/awesome-cross-browser-starwars-circular-wipe-transition-css-houdini-clipath-mask.html).
 
 <img src="star-wars-circular-wipe/assets/img/demo.webp" alt="animated demo of circular wipe transition" width=954 height=732 loading="lazy"/>
 
