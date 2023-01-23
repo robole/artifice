@@ -1,0 +1,37 @@
+@font-face {
+  font-family: Gluten;
+  src: url("fonts/Gluten-VariableFont.ttf");
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #5cffe4;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 0;
+}
+
+h1 {
+  --shadow-color: hsl(290, 100%, 62%);
+
+  font-size: clamp(5rem, 23vw + -0.1rem, 15rem);
+  letter-spacing: 1rem;
+  font-family: Gluten, Grandstander, cursive;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: url("img/miami.jpg");
+  background-position: center;
+
+  color: transparent;
+  filter: brightness(1.1) drop-shadow(-2px -2px 4px var(--shadow-color))
+    drop-shadow(2px 8px 4px var(--shadow-color));
+
+  -webkit-text-stroke: var(--shadow-color) 4px;
+}

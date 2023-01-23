@@ -43,6 +43,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [NES Controller](#nes-controller)
 1. [Star Wars - Join the Alliance Recruitment Poster](#star-wars---join-the-alliance-recruitment-poster)
 1. [Star Wars - Circular Wipe Transition](#star-wars---circular-wipe-transition)
+1. [Bubble text with image background](#bubble-text-with-image-background)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -279,3 +280,11 @@ I discuss these implementations in the post - [An awesome, cross-browser Star Wa
 <img src="star-wars-circular-wipe/assets/img/demo.webp" alt="animated demo of circular wipe transition" width=954 height=732 loading="lazy"/>
 
 See ["star-wars-circular-wipe" folder](/star-wars-circular-wipe/) for code.
+
+## Bubble text with image background
+
+I wanted to see if I could create text with a background image and a stroked outline.
+
+We need to use some non-standard properties to achieve this: `-webkit-background-clip: text` and `-webkit-text-stroke`.
+
+See ["bubble-text-image-background" folder](/bubble-text-image-background/) for code.
