@@ -285,6 +285,10 @@ See ["star-wars-circular-wipe" folder](/star-wars-circular-wipe/) for code.
 
 I wanted to see if I could create text with a background image and a stroked outline.
 
-We need to use some non-standard properties to achieve this: `-webkit-background-clip: text` and `-webkit-text-stroke`.
+To achieve this, the following non-standard properties are required: `-webkit-background-clip: text` and `-webkit-text-stroke`.
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/OJwQYvy).
+
+<img src="bubble-text-image-background/img/screenshot.png" alt="screenshot of miami text example of Bubble text with image background" width="1637" height="897" loading="lazy"/>
 
 See ["bubble-text-image-background" folder](/bubble-text-image-background/) for code.
