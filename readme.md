@@ -289,6 +289,6 @@ To achieve this, the following non-standard properties are required: `-webkit-ba
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/OJwQYvy).
 
-<img src="bubble-text-image-background/img/screenshot.png" alt="screenshot of miami text example of Bubble text with image background" width="1637" height="897" loading="lazy"/>
+<img src="bubble-text-image-background/img/screenshot.jpg" alt="screenshot of miami text example of Bubble text with image background" width="1637" height="897" loading="lazy"/>
 
 See ["bubble-text-image-background" folder](/bubble-text-image-background/) for code.
