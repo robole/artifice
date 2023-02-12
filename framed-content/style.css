@@ -1,0 +1,51 @@
+.framed {
+  border-image-source: url("img/frame.png");
+  border-image-slice: 93 92 87 92;
+  border-image-repeat: stretch;
+
+  border-style: inset;
+  border-width: 60px;
+
+  display: block;
+
+  background-color: #ffe;
+  margin: 0 auto;
+
+  resize: both;
+  overflow: auto;
+
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3), 0 0 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+body {
+  background-color: biege;
+
+  display: grid;
+  max-width: 1000px;
+  place-items: center;
+
+  font-family: "Roboto", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 1rem auto;
+}
+
+p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+img {
+  height: 1.5em;
+  aspect-ratio: 1 /1;
+}
+
+@keyframes pointing {
+  to {
+    transform: translateY(3px);
+  }
+}
+
+span {
+  display: inline-block;
+  font-size: 1.5em;
+  animation: 0.5s linear 0s infinite alternate pointing;
+}

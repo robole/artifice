@@ -44,6 +44,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Star Wars - Join the Alliance Recruitment Poster](#star-wars---join-the-alliance-recruitment-poster)
 1. [Star Wars - Circular Wipe Transition](#star-wars---circular-wipe-transition)
 1. [Bubble text with image background](#bubble-text-with-image-background)
+1. [Framed content](#framed-content)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -292,3 +293,15 @@ You can check out the [codepen](https://codepen.io/robjoeol/full/OJwQYvy).
 <img src="bubble-text-image-background/img/screenshot.jpg" alt="screenshot of miami text example of Bubble text with image background" width="1637" height="897" loading="lazy"/>
 
 See ["bubble-text-image-background" folder](/bubble-text-image-background/) for code.
+
+## Framed content
+
+I wanted to see if you can have content with a picture frame as a border. The border image should enclose the content whatever its dimensions.
+
+I used the `border-image` family of properties. I use `border-image-repeat: repeat;` to handle when the width of the content is greater than the border image width. This degrades the image fidelity but in this case, it looks fine.
+
+<img src="framed-content/img/screenshot.png" alt="screenshot of content with a picture as border image" width="656" height="414" loading="lazy"/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/zYJOGjx).
+
+See ["framed-content" folder](/framed-content/) for code.
