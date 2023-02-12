@@ -6,10 +6,8 @@
   border-style: inset;
   border-width: 60px;
 
-  display: block;
-
   background-color: #ffe;
-  margin: 0 auto;
+  margin: 0;
 
   resize: both;
   overflow: auto;
@@ -19,6 +17,8 @@
 
 body {
   background-color: biege;
+  background-image: url(img/background.jpg);
+  background-size: cover;
 
   display: grid;
   max-width: 1000px;
