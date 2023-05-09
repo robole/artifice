@@ -305,3 +305,9 @@ I used the `border-image` family of properties. I use `border-image-repeat: repe
 You can check out the [codepen](https://codepen.io/robjoeol/full/dygmZJr).
 
 See ["framed-content" folder](/framed-content/) for code.
+
+## Talk to the hand blockquote
+
+Use `shape-outside` to have an image of a handpuppet affect outline of a quotation.
+
+See ["talk-to-the-hand-quote" folder](/talk-to-the-hand-quote/) for code.

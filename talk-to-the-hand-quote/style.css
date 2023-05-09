@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+.handpuppet {
+  width: 500px;
+  max-width: 100%;
+  font-family: "Poor Story", cursive;
+  font-size: 1.5rem;
+}
+
+/* image source: https://thenounproject.com/search/?q=hand+puppet&i=3749419 */
+.handpuppet::before {
+  content: "";
+  float: left;
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  background-image: url(img/handpuppet.svg);
+  background-position: 100% 0;
+  background-size: 10rem 10rem;
+  background-repeat: no-repeat;
+
+  /* chrome doesn't create a shape with url() for this image, so 
+	use polygon instead */
+  shape-outside: url(img/handpuppet.svg);
+
+  -webkit-shape-outside: polygon(
+    87.78% 10px,
+    87.23% 28.33%,
+    88.71% 60.59%,
+    52.26% 64.44%,
+    53.89% 98.89%,
+    0px 100%,
+    0px 0px
+  );
+
+  shape-margin: 0.6rem;
+}
