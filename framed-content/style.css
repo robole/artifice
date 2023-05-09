@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pompiere&display=swap");
+
 .framed {
   border-image-source: url("img/frame.png");
   border-image-slice: 93 92 87 92;
@@ -7,7 +9,11 @@
   border-width: 60px;
 
   background-color: #ffe;
-  margin: 0;
+  margin-block-start: 2rem;
+  padding: 0.5rem;
+
+  display: grid;
+  row-gap: 2rem;
 
   resize: both;
   overflow: auto;
@@ -15,22 +21,8 @@
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3), 0 0 6px 0 rgba(0, 0, 0, 0.18);
 }
 
-body {
-  background-color: biege;
-  background-image: url(img/background.jpg);
-  background-size: cover;
-
-  display: grid;
-  max-width: 1000px;
-  place-items: center;
-
-  font-family: "Roboto", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 1rem auto;
-}
-
-p:nth-of-type(2) {
-  font-weight: bold;
+blockquote {
+  margin: 0;
 }
 
 img {
@@ -44,8 +36,27 @@ img {
   }
 }
 
-span {
-  display: inline-block;
-  font-size: 1.5em;
+.framed div {
+  font-size: 0.45em;
+  font-family: "Roboto", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-self: end;
+  padding-inline-end: 0.75rem;
+
   animation: 0.5s linear 0s infinite alternate pointing;
+}
+
+body {
+  background-color: biege;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+
+  display: grid;
+  max-width: 1000px;
+  place-items: center;
+
+  font-family: "Pompiere", cursive;
+  font-size: 1.75rem;
+
+  margin: 1rem auto;
 }

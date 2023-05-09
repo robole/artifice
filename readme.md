@@ -300,8 +300,8 @@ I wanted to see if you can have content with a picture frame as a border. The bo
 
 I used the `border-image` family of properties. I use `border-image-repeat: repeat;` to handle when the width of the content is greater than the border image width. This degrades the image fidelity but in this case, it looks fine.
 
-<img src="framed-content/img/screenshot.png" alt="screenshot of content with a picture as border image" width="656" height="414" loading="lazy"/>
+<img src="framed-content/img/screenshot.png" alt="screenshot of content with a picture as border image" width="654" height="275" loading="lazy"/>
 
-You can check out the [codepen](https://codepen.io/robjoeol/full/zYJOGjx).
+You can check out the [codepen](https://codepen.io/robjoeol/full/dygmZJr).
 
 See ["framed-content" folder](/framed-content/) for code.
