@@ -25,7 +25,6 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 .
 
 <!-- TOC -->
-**Table of Contents**
 1. [Diamond Wipe](#diamond-wipe)
 1. [Sin City (Microaction Graphic Novel)](#sin-city-microaction-graphic-novel)
 1. [Orange, you thirsty?](#orange-you-thirsty)
@@ -45,6 +44,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Star Wars - Circular Wipe Transition](#star-wars---circular-wipe-transition)
 1. [Bubble text with image background](#bubble-text-with-image-background)
 1. [Framed content](#framed-content)
+1. [Talk to the hand blockquote](#talk-to-the-hand-blockquote)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -309,6 +309,8 @@ See ["framed-content" folder](/framed-content/) for code.
 ## Talk to the hand blockquote
 
 Use `shape-outside` to have an image of a handpuppet affect outline of a quotation.
+
+<img src="talk-to-the-hand-quote/img/screenshot.png" alt="screenshot of quotation" loading="lazy"/>
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/yLRKvLW).
 
