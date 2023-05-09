@@ -310,4 +310,6 @@ See ["framed-content" folder](/framed-content/) for code.
 
 Use `shape-outside` to have an image of a handpuppet affect outline of a quotation.
 
+You can check out the [codepen](https://codepen.io/robjoeol/full/yLRKvLW).
+
 See ["talk-to-the-hand-quote" folder](/talk-to-the-hand-quote/) for code.
