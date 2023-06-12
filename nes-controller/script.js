@@ -1,5 +1,6 @@
-import dat from "https://cdn.skypack.dev/dat.gui";
+import * as dat from "dat.gui";
 
+let controller = document.querySelector("#controller");
 let everything = controller.querySelectorAll("*");
 
 const gui = new dat.GUI({});
