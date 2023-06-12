@@ -14,7 +14,8 @@
   padding: var(--unit);
   gap: var(--unit);
   margin: 20px auto;
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.15),
+    0 0 12px rgba(0, 0, 0, 0.1);
 }
 
 .circle {
@@ -597,11 +598,11 @@
 }
 
 .circle:nth-of-type(odd) {
-  animation: blend 6s 1;
+  animation: blend 6s infinite;
 }
 
 .circle:nth-of-type(even) {
-  animation: blacken 6s 1;
+  animation: blacken 6s infinite;
 }
 
 h1 {
