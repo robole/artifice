@@ -44,7 +44,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Star Wars - Circular Wipe Transition](#star-wars---circular-wipe-transition)
 1. [Bubble text with image background](#bubble-text-with-image-background)
 1. [Framed content](#framed-content)
-1. [Talk to the hand blockquote](#talk-to-the-hand-blockquote)
+1. [Handpuppet blockquote](#handpuppet-blockquote)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -306,12 +306,12 @@ You can check out the [codepen](https://codepen.io/robjoeol/full/dygmZJr).
 
 See ["framed-content" folder](/framed-content/) for code.
 
-## Talk to the hand blockquote
+## Handpuppet blockquote
 
-Use `shape-outside` to have an image of a handpuppet affect outline of a quotation.
+Have an image of a handpuppet affect the outline of a quotation. Uses `shape-outside` property.
 
-<img src="talk-to-the-hand-quote/img/screenshot.png" alt="screenshot of quotation" loading="lazy"/>
+<img src="handpuppet-blockquote/img/screenshot.png" alt="screenshot of quotation" loading="lazy"/>
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/yLRKvLW).
 
-See ["talk-to-the-hand-quote" folder](/talk-to-the-hand-quote/) for code.
+See ["handpuppet-blockquote" folder](/handpuppet-blockquote/) for code.
