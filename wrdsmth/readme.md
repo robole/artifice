@@ -13,11 +13,4 @@ You can do the following with the controls:
 - You can change the colours of the different elements of the artwork.
 - You can download the edited artwork as a SVG.
 
-![controls](img/controls.png)
 
-## Attribution
-
-- Background Photo by <a href="https://unsplash.com/@judebeck?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jude Beck</a> from Unsplash.
-- Playback Icons from [Material Design](https://material.io/resources/icons/?style=baseline).
-- Original audio sourced from Freesound:
-	- [Typewriter by exterminat](https://freesound.org/people/exterminat/sounds/164807/)

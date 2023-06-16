@@ -319,3 +319,9 @@ See ["handpuppet-blockquote" folder](/handpuppet-blockquote/) for code.
 An interactive playground of the signature artwork of street artist WRDSMTH. [WRDSMTH](https://www.wrdsmth.com/) is a Los Angeles-based street artist known for his iconic image of a vintage typewriter featuring different sheets of inspirational text.
 
 See ["wrdsmth" folder](/wrdsmth/) for code.
+
+### Attribution
+
+- Icons from [Material Design](https://material.io/resources/icons/?style=baseline).
+- Original audio sourced from Freesound:
+	- [Typewriter by exterminat](https://freesound.org/people/exterminat/sounds/164807/)
