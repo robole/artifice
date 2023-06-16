@@ -21,9 +21,6 @@ npm install
 npm run dev
 ```
 
-The default URL is <http://localhost:3000>. The default page (*index.html*) will outline the experiments with links to explore them
-.
-
 <!-- TOC -->
 1. [Diamond Wipe](#diamond-wipe)
 1. [Sin City (Microaction Graphic Novel)](#sin-city-microaction-graphic-novel)
@@ -45,6 +42,7 @@ The default URL is <http://localhost:3000>. The default page (*index.html*) will
 1. [Bubble text with image background](#bubble-text-with-image-background)
 1. [Framed content](#framed-content)
 1. [Handpuppet blockquote](#handpuppet-blockquote)
+1. [WRDSMTH interactive art playground](#wrdsmth-interactive-art-playground)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -315,3 +313,9 @@ Have an image of a handpuppet affect the outline of a quotation. Uses `shape-out
 You can check out the [codepen](https://codepen.io/robjoeol/full/yLRKvLW).
 
 See ["handpuppet-blockquote" folder](/handpuppet-blockquote/) for code.
+
+## WRDSMTH interactive art playground
+
+An interactive playground of the signature artwork of street artist WRDSMTH. [WRDSMTH](https://www.wrdsmth.com/) is a Los Angeles-based street artist known for his iconic image of a vintage typewriter featuring different sheets of inspirational text.
+
+See ["wrdsmth" folder](/wrdsmth/) for code.

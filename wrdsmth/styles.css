@@ -1,0 +1,219 @@
+/* source code available at: https://github.com/robole/artifice */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Audiowide&family=Special+Elite&display=swap");
+
+:root {
+  --max-width: 800px;
+  --animation-duration: 0.2s;
+
+  --display-color: hsl(180, 77%, 56%);
+  --blur: 0px 2px 10px hsl(185, 96%, 78%, 0.4),
+    0px -2px 10px hsl(185, 96%, 78%, 0.4), 0px 2px 20px hsl(185, 96%, 78%, 0.2);
+
+  /* artwork colors */
+  --page-color: white;
+  --typewriter-text-color: blue;
+  --typewriter-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Audiowide, Orbitron, "Courier New", monospace;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.wall {
+  background-image: url(img/wall.jpg);
+  background-size: cover;
+}
+
+.artwork {
+  display: block;
+  width: 40%;
+  margin: 1rem auto;
+  fill: var(--typewriter-color);
+}
+
+.page {
+  fill: var(--page-color);
+}
+
+.quote,
+.overflow-quote {
+  fill: var(--typewriter-text-color);
+}
+
+.controls-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto min-content auto;
+
+  background-color: rgb(39, 38, 38);
+  border: 1px solid rgb(199, 199, 199);
+  box-shadow: 0 0 0 1px hsla(0, 0%, 7%, 0.3),
+    0 0 4px 2px inset hsla(0, 0%, 7%, 0.2);
+
+  padding: 0.25rem 0.5rem;
+  padding-block-end: 1rem;
+}
+
+.display {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+
+  background-color: hsl(0, 0%, 9%);
+  color: var(--display-color);
+  text-shadow: 0px 2px 10px hsl(185, 96%, 78%, 0.4),
+    0px -2px 10px hsl(185, 96%, 78%, 0.4), 0px 2px 20px hsl(185, 96%, 78%, 0.2);
+  box-shadow: 0 0 1px 1px inset hsla(0, 0%, 100%, 0.15),
+    0 0 0px 2px inset hsla(0, 0%, 100%, 0.1);
+
+  grid-column: span 10;
+  padding: 0.25em 0.5em;
+
+  font-size: 0.75em;
+}
+
+.track {
+  grid-column: span 10;
+  justify-self: center;
+
+  font-size: 1.4rem;
+}
+
+.typing-speed {
+  grid-column: span 2;
+  justify-self: center;
+}
+
+.quote-pause {
+  grid-column: 5 / span 2;
+  justify-self: center;
+}
+
+.filename {
+  grid-column: 8 / span 2;
+}
+
+.lozenge-button {
+  --size: 1.1em;
+
+  grid-row: 2;
+  margin-block-start: 3px;
+
+  background-color: hsl(0, 0%, 12%);
+  border: none;
+  box-shadow: 0 0 0 1px hsla(0, 0%, 36%, 0.3),
+    0 0 1px 2px inset hsla(0, 0%, 36%, 0.2);
+
+  color: rgb(224, 224, 224);
+  height: var(--size);
+}
+
+.lozenge-button svg {
+  height: 100%;
+  fill: white;
+}
+
+.btn-typing-speed-increment {
+  grid-column: 1;
+  border-radius: 4px 0 0 4px;
+}
+
+.btn-typing-speed-decrement {
+  grid-column: 2;
+  border-radius: 0 4px 4px 0;
+}
+
+.btn-quote-pause-increment {
+  grid-column: 5;
+  border-radius: 4px 0 0 4px;
+}
+
+.btn-quote-pause-decrement {
+  grid-column: 6;
+  border-radius: 0 4px 4px 0;
+}
+
+.btn-download {
+  grid-column: 8;
+  border-radius: 4px;
+
+  justify-self: center;
+}
+
+.playback-controls {
+  grid-row: 3;
+  display: flex;
+  justify-content: space-around;
+  grid-column: 1 / span 6;
+  margin-block-start: 1rem;
+}
+
+.playback {
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  width: 3.5em;
+  height: 3.5em;
+  box-shadow: var(--blur);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.playback:active svg {
+  fill: var(--display-color);
+}
+
+.playback svg {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+  left: 0.1em;
+  padding: 0.6em;
+  fill: rgb(54, 54, 54);
+}
+
+.volume-controls {
+  grid-row: 3;
+  grid-column: span 4;
+
+  display: flex;
+  justify-content: center;
+  margin-block-start: 1rem;
+  align-items: center;
+  width: 80%;
+  gap: 0.5em;
+}
+
+.btn-mute {
+  --size: 1.75em;
+
+  width: var(--size);
+  height: var(--size);
+}
+
+.btn-mute svg {
+  padding: 0.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+.typing {
+  animation: type var(--animation-duration);
+}
+
+@keyframes type {
+  to {
+    transform: translateY(5px);
+  }
+}
