@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wrdsmth</title>
-    <link rel="stylesheet" href="wrdsmth.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <div class="wall">
       <svg
-        id="picture"
+        class="artwork"
+        viewBox="0 0 1200 1400"
         font-family="Special Elite, Courier New, monospace"
         font-size="30px"
-        viewBox="0 0 1200 1400"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
       >
@@ -286,182 +286,148 @@
     </div>
 
     <div class="controls-container">
-      <div class="controls metallic-bg">
-        <h2 class="title">Quote 1 of x</h2>
-        <div class="playback-buttons">
-          <button
-            id="previous-button"
-            class="playback metal radial"
-            aria-label="previous"
-          >
-            <svg viewBox="0 0 24 24">
-              <path d="M6 18V6h2v12H6m3.5-6L18 6v12l-8.5-6z" />
-            </svg>
-          </button>
-          <button
-            id="stop-button"
-            class="playback metal radial"
-            aria-label="stop"
-          >
-            <svg viewBox="0 0 20 20">
-              <rect x="4" y="4" width="12" height="12" rx="1.9" />
-            </svg>
-          </button>
-          <button
-            id="play-button"
-            class="playback metal radial selected"
-            aria-label="play"
-          >
-            <svg id="play-icon" viewBox="0 0 20 20">
-              <path d="m16 9.7745-10 5.7484 0.01507-11.523z" />
-            </svg>
-          </button>
-          <button
-            id="next-button"
-            class="playback metal radial"
-            aria-label="next"
-          >
-            <svg viewBox="0 0 24 24">
-              <path d="M16 18h2V6h-2M6 18l8.5-6L6 6v12z" />
-            </svg>
-          </button>
+      <div class="display">
+        <h2 class="track">Quote 1 of x</h2>
+        <div class="typing-speed">
+          <span class="number">100</span>ms char speed
         </div>
-        <div class="volume-controls">
-          <button id="mute-button" class="playback metal radial selected">
-            <svg viewBox="0 0 100 100" class="volume-off">
-              <path
-                d="m9.3756 64.596h15.925c0.68066 0 1.3455 0.20575 1.9071 0.59036l20.764 14.218c2.2402 1.534 5.2828-0.070136 5.2828-2.7852v-53.237c0-2.7151-3.0425-4.3192-5.2828-2.7852l-20.764 14.218c-0.56163 0.3846-1.2265 0.59043-1.9071 0.59043h-15.925c-1.8643 0-3.3756 1.5113-3.3756 3.3756v22.44c0 1.8643 1.5113 3.3756 3.3756 3.3756z"
-              />
-              <path
-                d="m63.973 61.058c0.48897 0.48897 1.1295 0.73346 1.7701 0.73346 0.64055 0 1.2811-0.24449 1.7701-0.73346l9.0551-9.0546 9.0551 9.0546c0.48897 0.48897 1.1295 0.73346 1.7701 0.73346 0.64055 0 1.2811-0.24449 1.7701-0.73346 0.97794-0.97733 0.97794-2.5628 0-3.5401l-9.055-9.0545 9.055-9.0545c0.97794-0.97733 0.97794-2.5628 0-3.5401-0.97794-0.97794-2.5622-0.97794-3.5401 0l-9.0551 9.0546-9.0551-9.0546c-0.97794-0.97794-2.5622-0.97794-3.5401 0-0.97794 0.97733-0.97794 2.5628 0 3.5401l9.055 9.0545-9.055 9.0545c-0.97794 0.97733-0.97794 2.5628 0 3.5401z"
-              />
-            </svg>
-            <svg class="volume-on hidden" viewBox="0 0 100 100">
-              <path
-                d="m66.071 64.438c0.59296 0.53307 1.3719 0.79927 2.1516 0.79927 0.77454 0 1.5491-0.2629 2.1412-0.79 3.9246-3.4891 6.0859-8.1404 6.0859-13.098 0-4.9493-2.1539-9.5991-6.0651-13.093-1.1859-1.0582-3.1078-1.0588-4.2936 6.61e-4 -1.1852 1.0595-1.1852 2.7766 7.39e-4 3.836 2.7639 2.4686 4.2862 5.7558 4.2862 9.2562 0 3.503-1.5261 6.7888-4.2966 9.2528-1.1889 1.0562-1.1933 2.7739-0.010375 3.8355z"
-              />
-              <path
-                d="m89.877 50c0 9.7797-4.3458 18.966-12.238 25.868-1.0793 0.94389-1.0807 2.4761-0.003368 3.4217 0.53934 0.47312 1.2465 0.70998 1.9544 0.70998 0.70586 0 1.4118-0.23568 1.9511-0.70703 8.9368-7.8163 13.859-18.219 13.859-29.293 0-11.073-4.9215-21.476-13.859-29.293-1.08-0.9433-2.8282-0.94271-3.9054 0.002952-1.0773 0.94566-1.076 2.4773 0.003368 3.4217 7.8919 6.9026 12.238 16.089 12.238 25.868z"
-              />
-              <path
-                d="m9.2621 64.105h15.39c0.65778 0 1.2843 0.19883 1.843 0.57051l20.066 13.74c2.165 1.4824 5.1052-0.067779 5.1052-2.6916v-51.448c0-2.6238-2.9403-4.174-5.1052-2.6916l-20.066 13.74c-0.54275 0.37168-1.1852 0.57059-1.843 0.57059h-15.39c-1.8016 0-3.2621 1.4605-3.2621 3.2621v21.686c-1.2e-6 1.8017 1.4605 3.2622 3.2621 3.2622z"
-              />
-            </svg>
-          </button>
-          <input
-            type="range"
-            id="volume"
-            aria-label="volume"
-            min="0"
-            max="1"
-            step="0.01"
-            value="0.20"
+        <div class="quote-pause">
+          <span class="number">100</span>ms quote pause
+        </div>
+        <div class="filename">wrdsmth.svg</div>
+      </div>
+      <button
+        class="btn-typing-speed-increment lozenge-button"
+        aria-label="increment typing speed"
+      >
+        <svg viewBox="0 -960 960 960">
+          <path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z" />
+        </svg>
+      </button>
+      <button
+        class="btn-typing-speed-decrement lozenge-button"
+        aria-label="decrement typing speed"
+      >
+        <svg viewBox="0 -960 960 960">
+          <path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
+        </svg>
+      </button>
+      <button
+        class="btn-quote-pause-increment lozenge-button"
+        aria-label="increment pause between quotes"
+      >
+        <svg viewBox="0 -960 960 960">
+          <path d="m283-345-43-43 240-240 240 239-43 43-197-197-197 198Z" />
+        </svg>
+      </button>
+      <button
+        class="btn-quote-pause-decrement lozenge-button"
+        aria-label="decrement pause between quotes"
+      >
+        <svg viewBox="0 -960 960 960">
+          <path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z" />
+        </svg>
+      </button>
+      <button class="btn-download lozenge-button" type="button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          viewBox="0 -960 960 960"
+          width="48"
+        >
+          <path
+            d="M220-160q-24 0-42-18t-18-42v-143h60v143h520v-143h60v143q0 24-18 42t-42 18H220Zm260-153L287-506l43-43 120 120v-371h60v371l120-120 43 43-193 193Z"
           />
-        </div>
-        <div class="typing-control">
-          <button
-            id="typing-plus"
-            class="number-toggle mono"
-            aria-label="increment typing speed"
-          >
-            <svg viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-              />
-            </svg>
-          </button>
-          <input
-            id="typing-speed"
-            type="number"
-            class="mono"
-            min="20"
-            max="60000"
-            value="100"
-            aria-label="typing speed"
-          />
-          <button
-            id="typing-minus"
-            class="number-toggle mono"
-            aria-label="decrement typing speed"
-          >
-            <svg viewBox="0 0 24 24">
-              <path fill="currentColor" d="M19,13H5V11H19V13Z" />
-            </svg>
-          </button>
-          <div class="suffix">ms per character.</div>
-        </div>
-        <div class="quote-control">
-          <button
-            id="quote-plus"
-            class="number-toggle mono"
-            aria-label="increment pause between quotes"
-          >
-            <svg viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-              />
-            </svg>
-          </button>
-          <input
-            id="quote-pause"
-            type="number"
-            class="mono"
-            min="0"
-            max="60000"
-            value="284"
-            aria-label="pause between quotes"
-          />
-          <button
-            id="quote-minus"
-            class="number-toggle mono"
-            aria-label="decrement pause between quotes"
-          >
-            <svg viewBox="0 0 24 24">
-              <path fill="currentColor" d="M19,13H5V11H19V13Z" />
-            </svg>
-          </button>
-          <div class="suffix">ms between quotes.</div>
-        </div>
-        <button id="download" type="button" class="metal linear">
-          Download Artwork (SVG)
+        </svg>
+      </button>
+      <div class="playback-controls">
+        <button class="btn-previous playback" aria-label="previous">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 18V6h2v12H6m3.5-6L18 6v12l-8.5-6z" />
+          </svg>
+        </button>
+        <button class="btn-stop playback" aria-label="stop">
+          <svg viewBox="0 0 20 20">
+            <rect x="4" y="4" width="12" height="12" rx="1.9" />
+          </svg>
+        </button>
+        <button class="btn-play playback selected" aria-label="play">
+          <svg id="play-icon" viewBox="0 0 20 20">
+            <path d="m16 9.7745-10 5.7484 0.01507-11.523z" />
+          </svg>
+        </button>
+        <button class="btn-next playback" aria-label="next">
+          <svg viewBox="0 0 24 24">
+            <path d="M16 18h2V6h-2M6 18l8.5-6L6 6v12z" />
+          </svg>
         </button>
       </div>
-
-      <div class="color-controls metallic-bg">
-        <h2>Artwork Colours</h2>
-
-        <label for="typewriter-color">Typewriter</label>
-        <div id="typewriter-color-wrapper" class="color-input-wrapper">
-          <input id="typewriter-color" type="color" value="#000000" />
-        </div>
-
-        <label id="page-color-label" for="text-color">Page</label>
-        <div id="page-color-wrapper" class="color-input-wrapper">
-          <input id="page-color" type="color" value="#ffffff" />
-        </div>
-
-        <label id="text-color-label" for="text-color">Text</label>
-        <div id="text-color-wrapper" class="color-input-wrapper">
-          <input id="text-color" type="color" value="#000000" />
-        </div>
-      </div>
-
-      <div class="bg-controls metallic-bg">
-        <h2>Artwork Background</h2>
-        <span>Enabled?</span>
-        <label class="checkbox" aria-label="enabled?">
-          <input id="enable-bg" type="checkbox" />
-          <span class="styled-checkbox"></span>
-        </label>
-
-        <label for="background-color">Colour</label>
-        <div id="bg-color-wrapper" class="color-input-wrapper">
-          <input id="background-color" type="color" value="#F5A61D" />
-        </div>
+      <div class="volume-controls">
+        <button class="btn-mute playback selected">
+          <svg viewBox="0 0 100 100" class="volume-off">
+            <path
+              d="m9.3756 64.596h15.925c0.68066 0 1.3455 0.20575 1.9071 0.59036l20.764 14.218c2.2402 1.534 5.2828-0.070136 5.2828-2.7852v-53.237c0-2.7151-3.0425-4.3192-5.2828-2.7852l-20.764 14.218c-0.56163 0.3846-1.2265 0.59043-1.9071 0.59043h-15.925c-1.8643 0-3.3756 1.5113-3.3756 3.3756v22.44c0 1.8643 1.5113 3.3756 3.3756 3.3756z"
+            />
+            <path
+              d="m63.973 61.058c0.48897 0.48897 1.1295 0.73346 1.7701 0.73346 0.64055 0 1.2811-0.24449 1.7701-0.73346l9.0551-9.0546 9.0551 9.0546c0.48897 0.48897 1.1295 0.73346 1.7701 0.73346 0.64055 0 1.2811-0.24449 1.7701-0.73346 0.97794-0.97733 0.97794-2.5628 0-3.5401l-9.055-9.0545 9.055-9.0545c0.97794-0.97733 0.97794-2.5628 0-3.5401-0.97794-0.97794-2.5622-0.97794-3.5401 0l-9.0551 9.0546-9.0551-9.0546c-0.97794-0.97794-2.5622-0.97794-3.5401 0-0.97794 0.97733-0.97794 2.5628 0 3.5401l9.055 9.0545-9.055 9.0545c-0.97794 0.97733-0.97794 2.5628 0 3.5401z"
+            />
+          </svg>
+          <svg class="volume-on hidden" viewBox="0 0 100 100">
+            <path
+              d="m66.071 64.438c0.59296 0.53307 1.3719 0.79927 2.1516 0.79927 0.77454 0 1.5491-0.2629 2.1412-0.79 3.9246-3.4891 6.0859-8.1404 6.0859-13.098 0-4.9493-2.1539-9.5991-6.0651-13.093-1.1859-1.0582-3.1078-1.0588-4.2936 6.61e-4 -1.1852 1.0595-1.1852 2.7766 7.39e-4 3.836 2.7639 2.4686 4.2862 5.7558 4.2862 9.2562 0 3.503-1.5261 6.7888-4.2966 9.2528-1.1889 1.0562-1.1933 2.7739-0.010375 3.8355z"
+            />
+            <path
+              d="m89.877 50c0 9.7797-4.3458 18.966-12.238 25.868-1.0793 0.94389-1.0807 2.4761-0.003368 3.4217 0.53934 0.47312 1.2465 0.70998 1.9544 0.70998 0.70586 0 1.4118-0.23568 1.9511-0.70703 8.9368-7.8163 13.859-18.219 13.859-29.293 0-11.073-4.9215-21.476-13.859-29.293-1.08-0.9433-2.8282-0.94271-3.9054 0.002952-1.0773 0.94566-1.076 2.4773 0.003368 3.4217 7.8919 6.9026 12.238 16.089 12.238 25.868z"
+            />
+            <path
+              d="m9.2621 64.105h15.39c0.65778 0 1.2843 0.19883 1.843 0.57051l20.066 13.74c2.165 1.4824 5.1052-0.067779 5.1052-2.6916v-51.448c0-2.6238-2.9403-4.174-5.1052-2.6916l-20.066 13.74c-0.54275 0.37168-1.1852 0.57059-1.843 0.57059h-15.39c-1.8016 0-3.2621 1.4605-3.2621 3.2621v21.686c-1.2e-6 1.8017 1.4605 3.2622 3.2621 3.2622z"
+            />
+          </svg>
+        </button>
+        <input
+          type="range"
+          id="volume"
+          aria-label="volume"
+          min="0"
+          max="1"
+          step="0.01"
+          value="0.20"
+        />
       </div>
     </div>
+
+    <!-- <div class="color-controls lic-bg">
+      <h2>Artwork Colours</h2>
+
+      <label for="typewriter-color">Typewriter</label>
+      <div id="typewriter-color-wrapper" class="color-input-wrapper">
+        <input id="typewriter-color" type="color" value="#000000" />
+      </div>
+
+      <label id="page-color-label" for="text-color">Page</label>
+      <div id="page-color-wrapper" class="color-input-wrapper">
+        <input id="page-color" type="color" value="#ffffff" />
+      </div>
+
+      <label id="text-color-label" for="text-color">Text</label>
+      <div id="text-color-wrapper" class="color-input-wrapper">
+        <input id="text-color" type="color" value="#000000" />
+      </div>
+    </div>
+
+    <div class="bg-controls lic-bg">
+      <h2>Artwork Background</h2>
+      <span>Enabled?</span>
+      <label class="checkbox" aria-label="enabled?">
+        <input id="enable-bg" type="checkbox" />
+        <span class="styled-checkbox"></span>
+      </label>
+
+      <label for="background-color">Colour</label>
+      <div id="bg-color-wrapper" class="color-input-wrapper">
+        <input id="background-color" type="color" value="#F5A61D" />
+      </div>
+    </div> -->
 
     <script src="main.js"></script>
   </body>

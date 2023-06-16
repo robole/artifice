@@ -24,7 +24,7 @@
     "eslint": "^7.31.0",
     "eslint-config-roboleary": ">=0.2.7",
     "stylelint-config-roboleary": ">=0.0.4",
-    "vite": "^2.6.14"
+    "vite": "^4.3.9"
   },
   "dependencies": {
     "gsap": "^3.7.1",
