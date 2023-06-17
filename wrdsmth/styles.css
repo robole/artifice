@@ -1,6 +1,14 @@
 /* source code available at: https://github.com/robole/artifice */
 
-@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Audiowide&family=Special+Elite&display=swap");
+@font-face {
+  font-family: "Special Elite";
+  src: url("font/SpecialElite-Regular.ttf");
+}
+
+@font-face {
+  font-family: Audiowide;
+  src: url("font/Audiowide-Regular.ttf");
+}
 
 :root {
   --max-width: 800px;

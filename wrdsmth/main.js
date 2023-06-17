@@ -228,8 +228,6 @@ function playAudio() {
 }
 
 function playFastAudio() {
-  // fetch("https://github.com/robole/artifice/raw/main/wrdsmth/audio/fast-typing-mono5s.mp3")
-
   fetch("./audio/fast-typing-mono5s.mp3")
     .then((resp) => resp.arrayBuffer())
     .then((buf) => audioContext.decodeAudioData(buf))
@@ -260,7 +258,6 @@ function getAudioFastPlaybackRate() {
 }
 
 function playIntermediateAudio() {
-  // fetch("https://github.com/robole/artifice/raw/main/wrdsmth/audio/typing-200ms-freq.mp3")
   fetch("./audio/typing-200ms-freq.mp3")
     .then((resp) => resp.arrayBuffer())
     .then((buf) => audioContext.decodeAudioData(buf))
@@ -313,12 +310,6 @@ function playSlowAudio() {
 
 function getRandomKeyPressAudioPath() {
   let index = Math.floor(Math.random() * 3); // random integer from 0 to 3
-
-  // let audio = [
-  //   "https://github.com/robole/artifice/raw/main/wrdsmth/audio/single-keypress-280ms-freq.mp3",
-  //   "https://github.com/robole/artifice/raw/main/wrdsmth/audio/single-keypress-300ms-freq-a.mp3",
-  //   "https://github.com/robole/artifice/raw/main/wrdsmth/audio/single-keypress-300ms-freq-b.mp3",
-  // ];
 
   let audio = [
     "./audio/single-keypress-280ms-freq.mp3",
