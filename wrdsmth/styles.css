@@ -18,11 +18,6 @@
     hsl(0, 0%, 6%) 90%,
     hsla(0, 0%, 2%, 0) 100%
   );
-
-  /* artwork colors */
-  --page-color: white;
-  --typewriter-text-color: rgb(53, 52, 52);
-  --typewriter-color: black;
 }
 
 * {
@@ -44,16 +39,6 @@ body {
   display: block;
   width: 40%;
   margin: 1rem auto;
-  fill: var(--typewriter-color);
-}
-
-.page {
-  fill: var(--page-color);
-}
-
-.quote,
-.overflow-quote {
-  fill: var(--typewriter-text-color);
 }
 
 .controls-container {
