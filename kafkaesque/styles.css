@@ -30,11 +30,13 @@ body {
   width: inherit;
   height: inherit;
   top: 0;
+  left: 0;
 
   transform-origin: left center;
   backface-visibility: hidden;
 
   animation: open var(--open-animation-len) forwards;
+  animation-delay: 0.5s;
 }
 
 @keyframes open {
