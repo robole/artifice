@@ -1,3 +1,7 @@
+
+
+https://github.com/robole/artifice/assets/3703647/c1661d19-e2f0-4772-ac39-b91d00837d93
+
 # Artifice
 
  **ar•ti•fice** *är′tə-fĭs* ►
@@ -335,7 +339,7 @@ A 3D CSS animation inspired by a quotation from the late, great author Franz Kaf
 
 > A book must be the axe for the frozen sea in us
 
-https://github.com/robole/artifice/assets/3703647/0b034ed8-f787-47b7-91eb-5073106398ca
+https://github.com/robole/artifice/assets/3703647/c2b717e3-17f0-4245-bde5-40ef3abdd0d5
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/VRVEOK).
 
