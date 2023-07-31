@@ -43,6 +43,7 @@ npm run dev
 1. [Framed content](#framed-content)
 1. [Handpuppet blockquote](#handpuppet-blockquote)
 1. [WRDSMTH interactive art playground](#wrdsmth-interactive-art-playground)
+1. [Kafkaesque 3D animation](#kafkaesque-3d-animation)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -327,3 +328,13 @@ See ["wrdsmth" folder](/wrdsmth/) for code.
 - Icons from [Material Design](https://material.io/resources/icons/?style=baseline).
 - Original audio sourced from Freesound:
 	- [Typewriter by exterminat](https://freesound.org/people/exterminat/sounds/164807/)
+
+## Kafkaesque 3D animation
+
+A 3D CSS animation inspired by a quotation from the late, great author Franz Kafka:
+
+> A book must be the axe for the frozen sea in us
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/VRVEOK).
+
+See ["kafkaesque" folder](/kafkaesque/) for code.

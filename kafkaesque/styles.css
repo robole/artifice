@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --open-animation-len: 3s;
+  --axe-animation-len: 2.5s;
+  --smash-animation-len: 1s;
+}
+
+body {
+  font-family: "Lucida Sans", Georgia, Arial;
+}
+
+.book {
+  position: relative;
+  width: 315px;
+  height: 460px;
+
+  margin: 2rem auto;
+  overflow: hidden;
+
+  perspective: 1000px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0 3px, rgba(0, 0, 0, 0.1) 0 0 6px,
+    rgba(0, 0, 0, 0.05) 0 0 12px;
+}
+
+.cover {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0;
+
+  transform-origin: left center;
+  backface-visibility: hidden;
+
+  animation: open var(--open-animation-len) forwards;
+}
+
+@keyframes open {
+  to {
+    transform: rotateY(100deg);
+  }
+}
+
+/*---Icy background---*/
+.hole,
+.shattered-hole {
+  opacity: 0;
+  transform-origin: center;
+}
+
+.hole {
+  animation: show 0.1s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(
+    var(--open-animation-len) + var(--axe-animation-len) - 1s
+  );
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+  }
+}
+
+.shattered-hole {
+  animation: crack 1.25s ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(
+    var(--open-animation-len) + var(--axe-animation-len) - 1.1s
+  );
+}
+
+@keyframes crack {
+  0%,
+  50% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(10deg) scale(0);
+    opacity: 0;
+  }
+}
+
+.heart {
+  fill: #0000b8;
+  opacity: 0.6;
+  transform-origin: center center;
+  animation: beat 2s linear;
+  animation-delay: calc(
+    var(--open-animation-len) + var(--axe-animation-len) + 0.75s
+  );
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes beat {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    fill: red;
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  67%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.axe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+
+  transform-origin: center;
+  transform: rotatey(80deg) rotatex(0deg) rotatez(0deg) translate(0%, 50%);
+  opacity: 0;
+
+  animation: move var(--axe-animation-len);
+  animation-delay: calc(var(--open-animation-len) - 0.5s);
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  30% {
+    transform: rotatey(60deg) rotatex(0deg) rotatez(0deg) translate(120%, 25%);
+  }
+  85%,
+  100% {
+    opacity: 1;
+    transform: rotatex(60deg) rotatey(80deg) rotatez(-120deg) translate(0, 25%);
+  }
+  95%,
+  100% {
+    opacity: 0;
+  }
+}

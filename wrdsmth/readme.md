@@ -7,10 +7,7 @@ An interactive playground of the signature artwork of street artist WRDSMTH. Try
 ![screenshot](img/demo.gif)
 
 You can do the following with the controls:
-- You can play the quotes as a slideshow, or just cycle through them yourself with the playback buttons.
-- You can turn on audio for a typing sound effect. It is changes to match the animation speed.
+- You can play the quotes as a slideshow, or just cycle through them yourself with the skip buttons.
+- You can turn on audio for a typing sound effect. It changes to match the animation speed.
 - You can adjust the speed of the typing animation, and the duration of the pause between quotes.
-- You can change the colours of the different elements of the artwork.
 - You can download the edited artwork as a SVG.
-
-

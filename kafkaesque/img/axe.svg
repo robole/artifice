@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+	<defs id="defs8">
+		<linearGradient id="linearGradient853" y1="10.786" x1="36.993" x2="62.191" y2="10.786" gradientUnits="userSpaceOnUse"  gradientTransform="translate(.10880 .69786)" >
+			<stop id="stop847" style="stop-color:#757575" offset="0"/>
+			<stop id="stop849" style="stop-color:#1e1e1e" offset="1"/>
+		</linearGradient>
+	</defs>
+	<g>
+		<path class="axe-arm" style="stroke:#3e1900;stroke-width:.2;fill:#a05a2c" d="m40.568 18.96s4.131 29.866 4.775 34.422c5.142 36.429-1.002 42.571-1.002 42.571l-0.085-0.165s3.541 5.732 9.602 1.877l0.342-14.141c-4.286-44.57 0.331-47.854 0.331-47.854l1.038-17.561c-4.883-0.334-10.992-0.076-15.001 0.851z"/>
+		<path class="axe-head" style="fill-rule:evenodd;stroke:#d9d9d9;stroke-width:.1;fill:url(#linearGradient853)" d="m44.453 18.5c-4.539 0.473-8.098 1.382-10.792 2.676-1.473-2.034-4.065-4.424-4.048-10.727 0.229-2.9014 1.326-5.7538 2.765-8.0503 3.614 0.5438 7.344 1.1646 10.842 1.4776 4.429 0.3706 9.05 0.481 13.402 0.3715l2.855-0.1134c-0.32 5.3119-0.491 9.4756-0.429 14.329l-2.517-0.237c-4.261-0.261-8.225-0.078-12.078 0.274z"/>
+	</g>
+</svg>
