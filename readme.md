@@ -335,6 +335,8 @@ A 3D CSS animation inspired by a quotation from the late, great author Franz Kaf
 
 > A book must be the axe for the frozen sea in us
 
+kafkaesque/img/demo.mp4
+
 You can check out the [codepen](https://codepen.io/robjoeol/full/VRVEOK).
 
 See ["kafkaesque" folder](/kafkaesque/) for code.
