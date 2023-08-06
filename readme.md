@@ -44,6 +44,7 @@ npm run dev
 1. [Handpuppet blockquote](#handpuppet-blockquote)
 1. [WRDSMTH interactive art playground](#wrdsmth-interactive-art-playground)
 1. [Kafkaesque 3D animation](#kafkaesque-3d-animation)
+1. [Scrabble pseudo-typeface](#scrabble-pseudo-typeface)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -335,8 +336,18 @@ A 3D CSS animation inspired by a quotation from the late, great author Franz Kaf
 
 > A book must be the axe for the frozen sea in us
 
-https://github.com/robole/artifice/assets/3703647/c2b717e3-17f0-4245-bde5-40ef3abdd0d5
+<https://github.com/robole/artifice/assets/3703647/c2b717e3-17f0-4245-bde5-40ef3abdd0d5>
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/VRVEOK).
 
 See ["kafkaesque" folder](/kafkaesque/) for code.
+
+## Scrabble pseudo-typeface
+
+Creates a pseudo-typeface that changes letters of a paragraph text into scrabble tiles.
+
+<img src="scrabble-typeface/img/screenshot.png" alt="screenshot of demo" width="755" height="586" loading="lazy"/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/dyyxgRZ).
+
+See ["scrabble-typeface" folder](/scrabble-typeface/) for code.

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+body{
+	background-color: #b30000;
+	font-family:"Roboto Mono", sans-serif;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+.char{
+	transform: translateY(-50%) rotate(25deg);
+	opacity: 0;
+}
+
+.char.show {
+  animation-delay: calc(50ms* var(--char-index));
+  animation-direction: alternate;
+  animation-duration: 900ms;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-fill-mode: both;
+	animation-name: slide-in;
+}
+
+@keyframes slide-in {
+  to {
+    transform: translateY(0) rotate(-1deg);
+    opacity: 1;
+  }
+}
+
+.tile{
+	border: 1px #fcf5e3 solid;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	padding: .1em .3em;
+	margin: .1em;
+	border-radius: .1em;
+	text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+	background: rgb(243,230,210);
+	background-image: url(tile.png);
+}
+
+.tile{
+	position: relative;
+	display: inline-block;
+}
+
+.value{
+	position: absolute;
+	font-size: .3em;
+	right: .15em;
+	bottom: .5em;
+}
+
+.word{
+	margin-right: 1em;
+}
+
+.punctuation{
+	position: absolute;
+	color:white;
+	bottom: -.2em;
+}
