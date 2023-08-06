@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Rule</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p id="rule">
+      The first rule of fight club is: you do not talk about fight club.
+    </p>
+    <script>
+      let words = window.rule.innerText.split(" "),
+        newHTML = ``;
+      words.forEach((word) => {
+        newHTML += `<span>${word}</span> `;
+      });
+      window.rule.innerHTML = newHTML;
+    </script>
+  </body>
+</html>

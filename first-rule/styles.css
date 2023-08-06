@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:900&display=swap");
+
+:root {
+  --text-color: #ff4dd2;
+  --bg-color: #00ffcc;
+  --reference-bg: #f6ed3c;
+  --link-color: #010790;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Raleway", "Open Sans", sans-serif;
+
+  display: grid;
+  place-items: center;
+  margin: 0;
+
+  height: 100dvh;
+}
+
+p {
+  font-size: 3em;
+  color: var(--text-color);
+  width: 400px;
+  text-shadow: 2px 1px #00ff00;
+  text-align: justify;
+  border: 3px solid var(--text-color);
+  border-radius: 5px;
+  padding: 20px 20px;
+  text-transform: uppercase;
+}
+
+span:nth-child(n + 5):nth-child(-n + 6),
+span:nth-child(n + 13):nth-child(-n + 14) {
+  position: relative;
+}
+
+span:nth-child(n + 5):nth-child(-n + 6)::after,
+span:nth-child(n + 13):nth-child(-n + 14)::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  opacity: 0;
+  background: var(--bg-color);
+  animation-name: strike;
+  animation-delay: 0.2s;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes strike {
+  0% {
+    opacity: 0.9;
+    width: 0;
+  }
+  100% {
+    opacity: 0.9;
+    width: 110%;
+  }
+}

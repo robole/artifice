@@ -45,6 +45,7 @@ npm run dev
 1. [WRDSMTH interactive art playground](#wrdsmth-interactive-art-playground)
 1. [Kafkaesque 3D animation](#kafkaesque-3d-animation)
 1. [Scrabble pseudo-typeface](#scrabble-pseudo-typeface)
+1. [First rule](#first-rule)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -351,3 +352,13 @@ Creates a pseudo-typeface that changes letters of a paragraph text into scrabble
 You can check out the [codepen](https://codepen.io/robjoeol/full/dyyxgRZ).
 
 See ["scrabble-typeface" folder](/scrabble-typeface/) for code.
+
+## First rule
+
+Simple animation riffing on the novel Fight Club's first rule.
+
+<img src="first-rule/img/screenshot.png" alt="screenshot of demo" width="498" height="368" loading="lazy"/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/KKwwJdo).
+
+See ["first-rule" folder](/first-rule/) for code.
