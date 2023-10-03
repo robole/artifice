@@ -368,7 +368,7 @@ See ["first-rule" folder](/first-rule/) for code.
 
 A poster inspired by the phrase from the book [*The Handmaid's Tale*](https://en.wikipedia.org/wiki/The_Handmaid%27s_Tale). I am playing with the typographic style to give the text more character.
 
-<img src="june-poster/img/screenshot.png" alt="screenshot of demo" width="826" height="1156" loading="lazy"/>
+<img src="june-poster/img/screenshot.png" alt="screenshot of demo" width="413" height="578" loading="lazy"/>
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/vYvVBEz).
 
