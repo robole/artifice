@@ -379,7 +379,7 @@ See ["june-poster" folder](/june-poster/) for code.
 
 A Halloween themed design with animated bats and a transmuting cat.  
 
-Animated images can be used as a mask to create an animated element, and you can apply custom styles to the element to create interesting silhouettes.
+Animated images (GIF, WEBP) can be used as a mask to create an animated element. Then, you can apply custom styles to the element to create interesting silhouettes.
 
 https://github.com/robole/artifice/assets/3703647/1fd4a497-7f49-432e-a6b6-567190e9961c
 
