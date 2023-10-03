@@ -46,6 +46,7 @@ npm run dev
 1. [Kafkaesque 3D animation](#kafkaesque-3d-animation)
 1. [Scrabble pseudo-typeface](#scrabble-pseudo-typeface)
 1. [First rule](#first-rule)
+1. [Don't let the bastards grind you down (June poster)](#dont-let-the-bastards-grind-you-down-june-poster)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -362,3 +363,13 @@ Simple animation riffing on the novel Fight Club's first rule.
 You can check out the [codepen](https://codepen.io/robjoeol/full/KKwwJdo).
 
 See ["first-rule" folder](/first-rule/) for code.
+
+## Don't let the bastards grind you down (June poster)
+
+A poster inspired by the phrase from the book [*The Handmaid's Tale*](https://en.wikipedia.org/wiki/The_Handmaid%27s_Tale). I am playing with the typographic style to give the text more character.
+
+<img src="june-poster/img/screenshot.png" alt="screenshot of demo" width="826" height="1156" loading="lazy"/>
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/vYvVBEz).
+
+See ["june-poster" folder](/june-poster/) for code.

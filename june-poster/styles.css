@@ -1,0 +1,35 @@
+/* @import url(http://fonts.googleapis.com/css?family=Rubik+Mono+One); */
+
+* {
+  box-sizing: border-box;
+}
+
+svg {
+  display: block;
+  width: clamp(12rem, 100%, 600px);
+  margin: 3em auto;
+  box-shadow: 1px 1px 2px hsla(60, 22%, 90%, 0.5),
+    0 0 8px hsla(60, 22%, 90%, 0.5), 0 4px 2px hsla(60, 22%, 90%, 0.15);
+  height: 100%;
+}
+
+#smoke {
+  animation-name: rise;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rise {
+  33% {
+    transform: translateY(-3px) rotate(-0.5deg);
+  }
+  66% {
+    transform: translateY(-6px) rotate(0.5deg);
+  }
+  88% {
+    transform: translateY(-9px) rotate(-0.5deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
