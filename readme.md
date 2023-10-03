@@ -377,8 +377,14 @@ See ["june-poster" folder](/june-poster/) for code.
 
 ## Witchin' masks
 
-A halloween themed design. Animated images can be used as a mask to create an animated element, and you can apply custom styles to the element to create interesting sillohoutes.
+A Halloween themed design with animated bats and a transmuting cat.  
+
+Animated images can be used as a mask to create an animated element, and you can apply custom styles to the element to create interesting silhouettes.
 
 https://github.com/robole/artifice/assets/3703647/1fd4a497-7f49-432e-a6b6-567190e9961c
+
+Chrome still requires that you use prefixed mask properties for this to work! [Interop 2023](https://web.dev/interop-2023/) is meant to sort this out soon..
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/QWzZWzr).
 
 See ["witchin-masks" folder](/witchin-masks/) for code.

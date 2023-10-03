@@ -1,21 +1,31 @@
 .mask {
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
+
+  /* chrome requires this, firefox does not */
+  -webkit-mask-size: 100% 100%;
 }
 
 .cat-mask {
-  --size: 14rem;
+  --size: clamp(10rem, 40dvh, 28rem);
 
+  /* chrome still requires prefixed property */
+  -webkit-mask-image: url("img/cat.webp");
   mask-image: url("img/cat.webp");
+
+  align-self: end;
 }
 
 .bat-mask {
-  --size: 10rem;
+  --size: clamp(8rem, 30dvh, 22rem);
 
+  -webkit-mask-image: url("img/bat.webp");
   mask-image: url("img/bat.webp");
 
+  -webkit-mask-size: 100% 100%;
+
   position: absolute;
-  top: 0;
+  top: -2rem;
 }
 
 div {
@@ -28,7 +38,7 @@ div {
 body {
   position: relative;
   background-color: black;
-  height: 50dvh;
+  height: 100dvh;
   width: auto;
   display: grid;
   place-items: center;
