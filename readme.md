@@ -359,7 +359,7 @@ See ["scrabble-typeface" folder](/scrabble-typeface/) for code.
 
 Simple animation riffing on the novel Fight Club's first rule.
 
-<img src="first-rule/img/screenshot.png" alt="screenshot of demo" width="498" height="368" loading="lazy"/>
+https://github.com/robole/artifice/assets/3703647/0f34ec86-91f9-4fcd-b51c-ad5ebfa36c58
 
 You can check out the [codepen](https://codepen.io/robjoeol/full/KKwwJdo).
 
