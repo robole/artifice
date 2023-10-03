@@ -1,0 +1,35 @@
+.mask {
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+.cat-mask {
+  --size: 14rem;
+
+  mask-image: url("img/cat.webp");
+}
+
+.bat-mask {
+  --size: 10rem;
+
+  mask-image: url("img/bat.webp");
+
+  position: absolute;
+  top: 0;
+}
+
+div {
+  width: var(--size);
+  height: var(--size);
+
+  background: radial-gradient(#eb6122, #431c52);
+}
+
+body {
+  position: relative;
+  background-color: black;
+  height: 50dvh;
+  width: auto;
+  display: grid;
+  place-items: center;
+}
