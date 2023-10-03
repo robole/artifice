@@ -47,6 +47,7 @@ npm run dev
 1. [Scrabble pseudo-typeface](#scrabble-pseudo-typeface)
 1. [First rule](#first-rule)
 1. [Don't let the bastards grind you down (June poster)](#dont-let-the-bastards-grind-you-down-june-poster)
+1. [Witchin' masks](#witchin-masks)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -373,3 +374,9 @@ A poster inspired by the phrase from the book [*The Handmaid's Tale*](https://en
 You can check out the [codepen](https://codepen.io/robjoeol/full/vYvVBEz).
 
 See ["june-poster" folder](/june-poster/) for code.
+
+## Witchin' masks
+
+A halloween themed design. Animated images can be used as a mask to create an animated element, and you can apply custom styles to the element to create interesting sillohoutes.
+
+See ["witchin-masks" folder](/witchin-masks/) for code.
