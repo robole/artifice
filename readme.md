@@ -1,3 +1,7 @@
+
+
+https://github.com/robole/artifice/assets/3703647/e9b23e84-6840-4b9b-83ec-9c68fdd93db3
+
 # Artifice
 
  **ar•ti•fice** *är′tə-fĭs* ►
@@ -378,5 +382,7 @@ See ["june-poster" folder](/june-poster/) for code.
 ## Witchin' masks
 
 A halloween themed design. Animated images can be used as a mask to create an animated element, and you can apply custom styles to the element to create interesting sillohoutes.
+
+https://github.com/robole/artifice/assets/3703647/1fd4a497-7f49-432e-a6b6-567190e9961c
 
 See ["witchin-masks" folder](/witchin-masks/) for code.
