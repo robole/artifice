@@ -1,7 +1,3 @@
-
-
-https://github.com/robole/artifice/assets/3703647/e9b23e84-6840-4b9b-83ec-9c68fdd93db3
-
 # Artifice
 
  **ar•ti•fice** *är′tə-fĭs* ►
