@@ -1,11 +1,11 @@
 # Artifice
 
- **ar•ti•fice** *är′tə-fĭs* ►
-
-    n.
-    Deception or trickery.
-    n.
-    Something contrived or made up to achieve an end, especially by deceiving; a stratagem or ruse: synonym: wile.
+> **ar•ti•fice** *är′tə-fĭs* ►
+>
+>n.  
+>Deception or trickery.  
+>n.  
+>Something contrived or made up to achieve an end, especially by deceiving; a stratagem or ruse: synonym: wile.
 
 This is home to some (art) experiments to improve my frontend trickery.
 
