@@ -48,6 +48,7 @@ npm run dev
 1. [First rule](#first-rule)
 1. [Don't let the bastards grind you down (June poster)](#dont-let-the-bastards-grind-you-down-june-poster)
 1. [Witchin' masks](#witchin-masks)
+1. [Consolesque marqueeish text](#consolesque-marqueeish-text)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -388,3 +389,11 @@ Chrome still requires that you use prefixed mask properties for this to work! [I
 You can check out the [codepen](https://codepen.io/robjoeol/full/QWzZWzr).
 
 See ["witchin-masks" folder](/witchin-masks/) for code.
+
+## Consolesque marqueeish text
+
+I wanted to play with the idea of showcasing my name within a console. I went for columns of scrolling text similar to what the HTML element [`marquee`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) did, but hopefully in a tasteful way!
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/PoVjQzj)
+
+See ["consolesque-marqueeish-text" folder](/consolesque-marqueeish-text/) for code.

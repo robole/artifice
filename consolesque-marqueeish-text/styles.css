@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Limelight&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --cols: 3;
+  --animation-len: 9s;
+}
+
+body {
+  margin: 0;
+  width: 100dvw;
+}
+
+.console {
+  position: relative;
+  background-color: hsl(140, 50%, 10%);
+  width: 100%;
+  height: 100dvh;
+  overflow: hidden;
+  cursor: default;
+}
+
+.name {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  -webkit-text-stroke-color: hsl(140, 100%, 70%);
+  -webkit-text-stroke-width: 2px;
+
+  filter: drop-shadow(0 0 2px hsl(140, 100%, 70%));
+  font-size: calc(98dvw / var(--cols));
+  line-height: 1;
+
+  font-family: Limelight, "Cutive Mono", sans-serif;
+
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.name:nth-of-type(even) {
+  animation: scroll-up;
+  animation-duration: var(--animation-len);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.name:nth-of-type(odd) {
+  transform: rotate(-180deg) translateY(33.33%);
+
+  animation: scroll-down;
+  animation-duration: var(--animation-len);
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes scroll-up {
+  to {
+    transform: translateY(-33.33%);
+  }
+}
+
+@keyframes scroll-down {
+  to {
+    transform: rotate(-180deg) translateY(0);
+  }
+}
