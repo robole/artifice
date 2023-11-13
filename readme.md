@@ -394,6 +394,8 @@ See ["witchin-masks" folder](/witchin-masks/) for code.
 
 I wanted to play with the idea of showcasing my name within a console. I went for columns of scrolling text similar to what the HTML element [`marquee`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) did, but hopefully in a tasteful way!
 
+https://github.com/robole/artifice/assets/3703647/c9614128-41f7-4360-a69d-d78cf8189852
+
 You can check out the [codepen](https://codepen.io/robjoeol/full/PoVjQzj)
 
 See ["consolesque-marqueeish-text" folder](/consolesque-marqueeish-text/) for code.
