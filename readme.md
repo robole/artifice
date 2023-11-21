@@ -49,6 +49,7 @@ npm run dev
 1. [Don't let the bastards grind you down (June poster)](#dont-let-the-bastards-grind-you-down-june-poster)
 1. [Witchin' masks](#witchin-masks)
 1. [Consolesque marqueeish text](#consolesque-marqueeish-text)
+1. [Snippets Ranger loader](#snippets-ranger-loader)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -399,3 +400,15 @@ https://github.com/robole/artifice/assets/3703647/c9614128-41f7-4360-a69d-d78cf8
 You can check out the [codepen](https://codepen.io/robjoeol/full/PoVjQzj)
 
 See ["consolesque-marqueeish-text" folder](/consolesque-marqueeish-text/) for code.
+
+## Snippets Ranger loader
+
+This is a loading animation for a VS Code extension I wrote called [Snippets Ranger](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger).
+
+It is meant to whimsical and eccentric. I wanted make something silly and annoying, and then dial it back enough so it is merely fun!
+
+![screenshot of snippets ranger loader. It is a pink hero on a rocket horse with a rotating stripey background](/snippets-ranger-loader/img/screenshot.png)
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/gOqeXZw).
+
+See ["snippets-ranger-loader" folder](snippets-ranger-loader/) for code.
