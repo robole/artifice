@@ -49,6 +49,7 @@ npm run dev
 1. [Don't let the bastards grind you down (June poster)](#dont-let-the-bastards-grind-you-down-june-poster)
 1. [Witchin' masks](#witchin-masks)
 1. [Consolesque marqueeish text](#consolesque-marqueeish-text)
+1. [Snippets Ranger loader](#snippets-ranger-loader)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -397,3 +398,11 @@ I wanted to play with the idea of showcasing my name within a console. I went fo
 You can check out the [codepen](https://codepen.io/robjoeol/full/PoVjQzj)
 
 See ["consolesque-marqueeish-text" folder](/consolesque-marqueeish-text/) for code.
+
+## Snippets Ranger loader
+
+This is a loading animation for a VS Code extension I wrote called [Snippets Ranger](https://marketplace.visualstudio.com/items?itemName=robole.snippets-ranger). It is meant to whimsical and eccentric.
+
+![screenshot of snippets ranger loader. It is a pink hero on a rocket horse with a rotating stripey background](/snippets-ranger-loader/img/screenshot.png)
+
+See ["snippets-ranger-loader" folder](snippets-ranger-loader/) for code.
