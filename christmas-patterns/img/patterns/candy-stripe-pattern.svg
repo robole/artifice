@@ -1,0 +1,14 @@
+<svg width="100%" height="100%">
+  <defs>
+          <pattern
+            id="candy-stripes"
+            patternUnits="userSpaceOnUse"
+            width="32"
+            height="32"
+            patternTransform="rotate(53)"
+          >
+            <line x1="0" y="0" x2="0" y2="32" stroke="red" stroke-width="30" />
+          </pattern>
+        </defs>
+  <rect x="0" y="0" width="100%" height="100%" fill="url(#candy-stripes)"></rect>
+</svg>

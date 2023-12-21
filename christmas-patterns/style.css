@@ -1,5 +1,13 @@
 :root {
   --width: 300px;
+  --cgreen: hsl(157, 100%, 33%);
+  --cred: hsl(355, 80%, 50%);
+  --cyellow: hsl(60, 80%, 60%);
+  --cbrown: hsl(0, 19%, 35%);
+
+  --cgreener: hsl(120, 80%, 25%);
+  --credder: hsl(0, 80%, 50%);
+  --cbrowner: hsl(0, 19%, 21%);
 }
 
 body {
@@ -9,68 +17,87 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px 1fr 1fr;
+  grid-template-rows: repeat(7, 50px) 1fr;
   width: var(--width);
   height: calc(var(--width) * 1.5);
-  border: red 1px solid;
+
   margin: 0 auto;
+  padding: 0;
   overflow: hidden;
   background-color: white;
 }
 
-.container > * {
-  border: 1px solid black;
-}
+/* .container > * {
+  outline: 1px solid black;
+} */
 
-.candyStripes {
-  animation: rolling 1s linear infinite;
+.candy-cane {
+  --size: 6%;
+
   grid-row: 1 / span 2;
+
+  background: repeating-linear-gradient(
+    -53deg,
+    white 0 var(--size),
+    var(--cred) var(--size) calc(var(--size) * 2)
+  );
+
+  height: 200%;
+
+  animation: rolling-cane 1s linear infinite;
 }
 
-.greenRhombus,
-.stipeyGreen,
-.expandingWhiteBall {
-}
-
-.polkaDots {
-  z-index: 5;
-}
-
-.furryLining {
-  grid-row: 6;
-  grid-column: 1 / span 5;
-}
-
-.pudding {
-  grid-row: 3;
-  grid-column: 2 / span 2;
-}
-
-.eatingMan {
-  grid-row: 3;
-  grid-column: 1;
-  z-index: 5;
-  align-self: center;
-}
-
-@keyframes rolling {
+@keyframes rolling-cane {
   to {
-    transform: translateY(-40%);
+    transform: translateY(-50%);
   }
 }
 
-.rolling2 {
-  animation: rolling2 1s linear infinite;
+.stripey-green-white {
+  --size: 10%;
+
+  background: repeating-linear-gradient(
+    0,
+    var(--cgreen) 0 var(--size),
+    var(--cred) var(--size) calc(var(--size) * 2)
+  );
+
+  height: 160%;
+
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 2;
+
+  animation: rolling-stripe 0.4s linear infinite;
 }
 
-@keyframes rolling2 {
+@keyframes rolling-stripe {
   to {
-    transform: translateY(-33%);
+    transform: translateY(-20%);
   }
 }
 
-.expanding {
-  animation: expanding 0.5s infinite alternate;
+.white-ball {
+  grid-column: 2;
+  grid-row: 1;
+
+  background-color: red;
+  position: relative;
+}
+
+.white-ball::after {
+  content: "";
+  --size: 35%;
+  display: block;
+  position: relative;
+  top: calc((100% - var(--size)) / 2);
+  left: calc((100% - var(--size)) / 2);
+  border-radius: 50%;
+
+  background-color: whitesmoke;
+  width: var(--size);
+  height: var(--size);
+
+  animation: expanding 0.75s infinite alternate;
   animation-timing-function: ease-in-out;
   transform-origin: 50%;
 }
@@ -81,27 +108,10 @@ body {
   }
 }
 
-.rightToLeft {
-  animation: rightToLeft 1s linear infinite;
-}
-
-@keyframes rightToLeft {
-  to {
-    transform: translate(-50%);
-  }
-}
-
-.rightToLeft2 {
-  animation: rightToLeft2 3s linear infinite;
-}
-
-@keyframes rightToLeft2 {
-  to {
-    transform: translate(-97px);
-  }
-}
-
-.spinning {
+.rhombus-green {
+  grid-row: 2;
+  grid-column: 2;
+  fill: var(--cgreener);
   animation: spinning 2s linear infinite;
   transform-origin: center;
 }
@@ -112,7 +122,86 @@ body {
   }
 }
 
-.mouth {
+.snowflake {
+  background-color: var(--cred);
+  grid-row: 1;
+}
+
+#flake {
+  fill: white;
+
+  transform-origin: 50%;
+  animation: drift 2s infinite;
+}
+
+@keyframes drift {
+  from {
+    transform: scale(0.7) translate(0px, -100px);
+  }
+  20% {
+    transform: scale(0.7) translate(-10px, 0px);
+  }
+
+  40% {
+    transform: scale(0.7) translate(0px, 100px);
+  }
+
+  60% {
+    transform: scale(0.7) translate(10px, 200px);
+  }
+
+  80% {
+    transform: scale(0.7) translate(0px, 300px);
+  }
+
+  100% {
+    transform: scale(0.7) translate(-10px, 400px);
+  }
+}
+
+.star {
+  grid-row: 2;
+  grid-column: 5;
+  background-color: var(--cgreen);
+}
+
+.star path {
+  transform-origin: center;
+  transform: scale(0);
+  animation: starry 1s infinite;
+}
+
+@keyframes starry {
+  to {
+    transform: scale(1) rotate(1turn);
+  }
+}
+
+.polka-dots {
+  z-index: 5;
+  grid-row: 3;
+  grid-column: 1 / -1;
+
+  width: 200%;
+  height: 100%;
+  transform: translateX(-50%);
+  animation: polka-move 1.5s infinite linear;
+}
+
+@keyframes polka-move {
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.eating-man {
+  grid-row: 4;
+  grid-column: 1;
+  z-index: 5;
+  align-self: center;
+}
+
+.eating-man .mouth {
   animation: chew 0.25s linear infinite alternate;
   transform-origin: 0 50%;
 }
@@ -122,3 +211,91 @@ body {
     transform: scaleY(0.5);
   }
 }
+
+.pudding {
+  grid-row: 4;
+  grid-column: 2 / -1;
+  background-color: var(--cbrown);
+
+  width: 200%;
+  animation: gobble-pudding 1.25s infinite linear;
+}
+
+@keyframes gobble-pudding {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* https://css-tricks.com/how-to-create-wavy-shapes-patterns-in-css/ */
+.pudding::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  --mask: radial-gradient(10.2px at 50% calc(100% - 12px), #000 99%, #0000 101%)
+      calc(50% - 20px) 0/40px 100%,
+    radial-gradient(10.2px at 50% calc(100% + 2px), #0000 99%, #000 101%) 50%
+      calc(100% - 10px) / 40px 100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+
+  background-color: white;
+}
+
+.mistletoe {
+  grid-row: 5;
+  grid-column: 1;
+  background-color: var(--cred);
+}
+
+.mistletoe .plant {
+  transform-origin: 50% 50%;
+  animation: jiggle 0.5s infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes jiggle {
+  to {
+    transform: rotate(8deg);
+  }
+}
+
+.lips {
+  grid-row: 6 / span 2;
+  grid-column: 1 / span 2;
+  background-color: var(--cgreen);
+  fill: var(--credder);
+}
+
+.lips path,
+.lips ellipse {
+  transform-origin: center;
+  transform: scale(0.25);
+  animation: kiss 2s infinite;
+}
+
+@keyframes kiss {
+  to {
+    transform: scale(6);
+  }
+}
+
+.filler {
+  grid-row: 6;
+  grid-column: 3 / -1;
+  background-color: var(--cgreen);
+}
+
+.furry-lining {
+  grid-row: 8;
+  grid-column: 1 / -1;
+  z-index: 200;
+}
+
+/* *,
+::after {
+  animation: none !important;
+} */
