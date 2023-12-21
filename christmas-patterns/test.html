@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      svg {
+        --size: 400px;
+        width: var(--size);
+        height: var(--size);
+        display: block;
+        margin: 1rem auto;
+      }
+
+      path {
+        animation: chew 0.25s linear infinite alternate;
+        transform-origin: 0 50%;
+      }
+
+      @keyframes chew {
+        to {
+          transform: scaleY(0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg version="1.1" viewBox="0 0 1000 3000">
+      <pattern
+        id="pacman"
+        width="100"
+        height="100"
+        patternUnits="userSpaceOnUse"
+      >
+        <rect width="100%" height="100%" fill="green" />
+        <circle cx="50" cy="50" r="45" fill="yellow" />
+        <path
+          class="mouth"
+          d="m96.57 17.359a68 45 0 0 1 21.129 34.548 68 45 0 0 1-25.474 33.24l-42.465-35.147z"
+          fill="green"
+        />
+      </pattern>
+      <rect width="100%" height="10%" fill="url(#pacman)" />
+    </svg>
+  </body>
+</html>

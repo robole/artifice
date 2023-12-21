@@ -1,0 +1,9 @@
+<svg class="polkaDots" width="100%" height="100%" viewBox="0 0 400 200">
+    <defs>
+        <pattern id="polka" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <circle fill="white" cx="50" cy="50" r="20"></circle>
+        </pattern>
+    </defs>
+		<rect width="100%" height="100%" fill="#0f500c"></rect>
+    <rect width="100%" height="100%" fill="url(#polka)"></rect>
+</svg>

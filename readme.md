@@ -47,9 +47,9 @@ npm run dev
 1. [Scrabble pseudo-typeface](#scrabble-pseudo-typeface)
 1. [First rule](#first-rule)
 1. [Don't let the bastards grind you down (June poster)](#dont-let-the-bastards-grind-you-down-june-poster)
-1. [Witchin' masks](#witchin-masks)
 1. [Consolesque marqueeish text](#consolesque-marqueeish-text)
 1. [Snippets Ranger loader](#snippets-ranger-loader)
+1. [Christmas patterns](#christmas-patterns)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -372,12 +372,7 @@ See ["first-rule" folder](/first-rule/) for code.
 A poster inspired by the phrase from the book [*The Handmaid's Tale*](https://en.wikipedia.org/wiki/The_Handmaid%27s_Tale). I am playing with the typographic style to give the text more character.
 
 <img src="june-poster/img/screenshot.png" alt="screenshot of demo" width="413" height="578" loading="lazy"/>
-
-You can check out the [codepen](https://codepen.io/robjoeol/full/vYvVBEz).
-
-See ["june-poster" folder](/june-poster/) for code.
-
-## Witchin' masks
+Based on
 
 A Halloween themed design with animated bats and a transmuting cat.  
 
@@ -412,3 +407,7 @@ It is meant to whimsical and eccentric. I wanted make something silly and annoyi
 You can check out the [codepen](https://codepen.io/robjoeol/full/gOqeXZw).
 
 See ["snippets-ranger-loader" folder](snippets-ranger-loader/) for code.
+
+## Christmas patterns
+
+Inspired by [this](https://www.instagram.com/p/B6Gr2g6HbHM/) by zzdesign.

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas patterns</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <svg class="candyStripes" width="100%" height="200%">
+          <defs>
+            <pattern
+              id="redDiagonals"
+              patternUnits="userSpaceOnUse"
+              width="32"
+              height="32"
+              patternTransform="rotate(53)"
+            >
+              <line
+                x1="0"
+                y="0"
+                x2="0"
+                y2="32"
+                stroke="red"
+                stroke-width="30"
+              />
+            </pattern>
+          </defs>
+          <rect
+            width="100%"
+            height="100%"
+            fill="url(#redDiagonals)"
+            opacity="1"
+          />
+        </svg>
+        <svg
+          class="greenRhombus"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="xMaxYMax"
+        >
+          <path fill="#fff" d="M0 0h100v100H0z" />
+          <path
+            d="M69.044 69.538c-33.734 31.579-5.65 32.163-37.978-.79-32.328-32.952-32.926-5.518.808-37.098 33.734-31.579 5.65-32.162 37.978.79s32.926 5.519-.808 37.098z"
+            fill="#005400"
+            class="spinning"
+          />
+        </svg>
+        <svg class="stipeyGreen rolling2" width="100%" height="200%">
+          <defs>
+            <pattern
+              id="greenStripes"
+              patternUnits="userSpaceOnUse"
+              width="32"
+              height="32"
+              patternTransform="rotate(90)"
+            >
+              <line
+                x1="0"
+                y="0"
+                x2="0"
+                y2="32"
+                stroke="green"
+                stroke-width="40"
+              />
+            </pattern>
+          </defs>
+          <rect
+            width="100%"
+            height="100%"
+            fill="url(#greenStripes)"
+            opacity="1"
+          />
+        </svg>
+        <svg
+          class="bauble"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 300"
+        >
+          <defs>
+            <pattern
+              id="a"
+              width="100"
+              height="100"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M59.567 92.408c93.194-24.549-115.57-37.394-25.972-1.598 89.597 35.796-71.866-99.272-20.088-16.804 51.777 82.468-.71-123.232-6.53-25.592s70.715-100.12 9.521-24.604C-44.695 99.327 131.63-14.957 38.435 9.592c-93.194 24.549 115.57 37.394 25.973 1.598s71.865 99.272 20.088 16.804c-51.777-82.468.71 123.232 6.53 25.592S20.31 153.706 81.504 78.19c61.194-75.517-115.13 38.767-21.937 14.218z"
+                fill="#d42aff"
+                stroke="#80a"
+                stroke-width="6.025"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="#00b300" />
+          <rect width="100%" height="100%" fill="url(#a)" />
+        </svg>
+        <div></div>
+        <svg class="expandingWhiteBall" viewBox="0 0 100 100">
+          <rect width="100%" height="100%" fill="red" />
+          <circle cx="50%" cy="50%" r="20" fill="white" class="expanding" />
+        </svg>
+        <svg class="polkaDots" width="100%" height="100%" viewBox="0 0 400 200">
+          <defs>
+            <pattern
+              id="polka"
+              x="0"
+              y="0"
+              width="100"
+              height="100"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle fill="white" cx="50" cy="50" r="20"></circle>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="#0f500c"></rect>
+          <rect width="100%" height="100%" fill="url(#polka)"></rect>
+        </svg>
+        <svg
+          class="furryLining"
+          width="100%"
+          height="100%"
+          viewBox="0 0 600 100"
+        >
+          <defs>
+            <pattern
+              id="furry"
+              x="0"
+              y="0"
+              width="100"
+              height="100"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect height="60" width="100" fill="white" />
+              <circle fill="white" cx="0" cy="50" r="20" />
+              <circle fill="white" cx="20" cy="50" r="20" />
+              <circle fill="white" cx="40" cy="50" r="20" />
+              <circle fill="white" cx="60" cy="50" r="20" />
+              <circle fill="white" cx="80" cy="50" r="20" />
+              <circle fill="white" cx="100" cy="50" r="20" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="red"></rect>
+          <rect width="100%" height="100%" fill="url(#furry)"></rect>
+        </svg>
+        <div></div>
+        <div></div>
+        <svg class="eatingMan" viewBox="0 0 100 100">
+          <pattern
+            id="pacman"
+            width="100"
+            height="100"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="100%" height="100%" fill="green" />
+            <circle cx="50" cy="50" r="45" fill="yellow" />
+            <path
+              class="mouth"
+              d="m96.57 17.359a68 45 0 0 1 21.129 34.548 68 45 0 0 1-25.474 33.24l-42.465-35.147z"
+              fill="green"
+            />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#pacman)" />
+        </svg>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <svg
+          class="repeatingTrees"
+          viewbox="0 0 200 100"
+          width="200%"
+          height="100%"
+        >
+          <defs>
+            <pattern
+              id="tree"
+              width="100"
+              height="100"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                style="
+                  opacity: 1;
+                  fill: #245700;
+                  fill-opacity: 1;
+                  stroke: none;
+                  stroke-width: 1;
+                  stroke-miterlimit: 4;
+                  stroke-dasharray: none;
+                  stroke-opacity: 1;
+                "
+                d="M 0,100 50,0 100,100 Z"
+                id="path4749"
+              />
+            </pattern>
+          </defs>
+          <rect
+            style="
+              opacity: 1;
+              fill: #99ff55;
+              fill-opacity: 1;
+              stroke: none;
+              stroke-width: 1;
+              stroke-miterlimit: 4;
+              stroke-dasharray: none;
+              stroke-opacity: 1;
+            "
+            width="100%"
+            height="100%"
+            id="rect5"
+          />
+          <rect
+            style="fill: url(#tree)"
+            width="100%"
+            height="100%"
+            class="rightToLeft"
+          />
+        </svg>
+        <svg
+          class="pudding rightToLeft2"
+          width="260%"
+          height="100%"
+          viewBox="0 0 800 100"
+        >
+          <defs>
+            <pattern
+              id="puddingPattern"
+              x="0"
+              y="0"
+              width="100"
+              height="100"
+              patternUnits="userSpaceOnUse"
+            >
+              <rect width="100" height="60" fill="white" />
+              <circle fill="white" cx="50" cy="35" r="55" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="#422000"></rect>
+          <rect width="100%" height="100%" fill="url(#puddingPattern)"></rect>
+        </svg>
+      </div>
+    </body>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+:root {
+  --width: 300px;
+}
+
+body {
+  background-color: blueviolet;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 1fr 1fr;
+  width: var(--width);
+  height: calc(var(--width) * 1.5);
+  border: red 1px solid;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: white;
+}
+
+.container > * {
+  border: 1px solid black;
+}
+
+.candyStripes {
+  animation: rolling 1s linear infinite;
+  grid-row: 1 / span 2;
+}
+
+.greenRhombus,
+.stipeyGreen,
+.expandingWhiteBall {
+}
+
+.polkaDots {
+  z-index: 5;
+}
+
+.furryLining {
+  grid-row: 6;
+  grid-column: 1 / span 5;
+}
+
+.pudding {
+  grid-row: 3;
+  grid-column: 2 / span 2;
+}
+
+.eatingMan {
+  grid-row: 3;
+  grid-column: 1;
+  z-index: 5;
+  align-self: center;
+}
+
+@keyframes rolling {
+  to {
+    transform: translateY(-40%);
+  }
+}
+
+.rolling2 {
+  animation: rolling2 1s linear infinite;
+}
+
+@keyframes rolling2 {
+  to {
+    transform: translateY(-33%);
+  }
+}
+
+.expanding {
+  animation: expanding 0.5s infinite alternate;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50%;
+}
+
+@keyframes expanding {
+  to {
+    transform: scale(2);
+  }
+}
+
+.rightToLeft {
+  animation: rightToLeft 1s linear infinite;
+}
+
+@keyframes rightToLeft {
+  to {
+    transform: translate(-50%);
+  }
+}
+
+.rightToLeft2 {
+  animation: rightToLeft2 3s linear infinite;
+}
+
+@keyframes rightToLeft2 {
+  to {
+    transform: translate(-97px);
+  }
+}
+
+.spinning {
+  animation: spinning 2s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spinning {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mouth {
+  animation: chew 0.25s linear infinite alternate;
+  transform-origin: 0 50%;
+}
+
+@keyframes chew {
+  to {
+    transform: scaleY(0.5);
+  }
+}

@@ -1,0 +1,10 @@
+<svg class="pudding" width="100%" height="100%" viewBox="0 0 400 100">
+    <defs>
+        <pattern id="puddingPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+						<rect width="100" height="60" fill="white"/>
+            <circle fill="white" cx="50" cy="35" r="55"/>
+        </pattern>
+    </defs>
+		<rect width="100%" height="100%" fill="#422000"></rect>
+    <rect width="100%" height="100%" fill="url(#puddingPattern)"></rect>
+</svg>
