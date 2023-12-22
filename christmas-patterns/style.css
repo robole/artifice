@@ -1,5 +1,6 @@
 :root {
   --width: 300px;
+
   --cgreen: hsl(157, 100%, 33%);
   --cred: hsl(355, 80%, 50%);
   --cyellow: hsl(60, 80%, 60%);
@@ -8,6 +9,14 @@
   --cgreener: hsl(120, 80%, 25%);
   --credder: hsl(0, 80%, 50%);
   --cbrowner: hsl(0, 19%, 21%);
+
+  --clightred: hsl(355, 80%, 70%);
+  --clightestred: hsl(355, 90%, 90%);
+
+  --z-mid: 50;
+  --z-high: 100;
+  --z-higher: 200;
+  --z-top: 300;
 }
 
 body {
@@ -53,7 +62,7 @@ body {
   }
 }
 
-.stripey-green-white {
+.stripes-horizontal-green-red {
   --size: 10%;
 
   background: repeating-linear-gradient(
@@ -127,7 +136,7 @@ body {
   grid-row: 1;
 }
 
-#flake {
+.flake {
   fill: white;
 
   transform-origin: 50%;
@@ -178,7 +187,7 @@ body {
 }
 
 .polka-dots {
-  z-index: 5;
+  z-index: var(--z-mid);
   grid-row: 3;
   grid-column: 1 / -1;
 
@@ -197,7 +206,7 @@ body {
 .eating-man {
   grid-row: 4;
   grid-column: 1;
-  z-index: 5;
+  z-index: var(--z-high);
   align-self: center;
 }
 
@@ -216,6 +225,7 @@ body {
   grid-row: 4;
   grid-column: 2 / -1;
   background-color: var(--cbrown);
+  z-index: var(--z-mid);
 
   width: 200%;
   animation: gobble-pudding 1.25s infinite linear;
@@ -248,6 +258,7 @@ body {
   grid-row: 5;
   grid-column: 1;
   background-color: var(--cred);
+  z-index: 99;
 }
 
 .mistletoe .plant {
@@ -263,6 +274,86 @@ body {
   }
 }
 
+.stripes-vertical-green-white {
+  --size: 0.4rem;
+
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--cgreen) 0 var(--size),
+    white var(--size) calc(var(--size) * 2)
+  );
+
+  grid-row: 5;
+  grid-column: 1 / span 2;
+  animation: stripes-vertical-green-white-move 0.5s infinite;
+  animation-duration: linear;
+}
+
+@keyframes stripes-vertical-green-white-move {
+  to {
+    transform: translateX(50%);
+  }
+}
+
+.stripes-diagonal-green-greener {
+  --size: 0.75rem;
+  background: repeating-linear-gradient(
+    43deg,
+    var(--cgreen) 0 var(--size),
+    var(--cgreener) var(--size) calc(var(--size) * 2)
+  );
+
+  height: 300%;
+
+  animation-name: stripes-diagonal-green-greener-move;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes stripes-diagonal-green-greener-move {
+  to {
+    transform: translateY(-66.6%);
+  }
+}
+
+.rhombus-red {
+  grid-row: 5;
+  grid-column: 4;
+}
+
+.rhombus-red use {
+  transform-origin: center;
+  animation-name: rhombus-red-grow;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+.rhombus-red use:nth-child(1) {
+  fill: var(--cred);
+}
+
+.rhombus-red use:nth-child(2) {
+  fill: var(--clightred);
+  transform-origin: center;
+  transform: scale(0.5);
+  animation-delay: 0.1s;
+}
+
+.rhombus-red use:nth-child(3) {
+  fill: var(--clightestred);
+  transform-origin: center;
+  transform: scale(0.1);
+  animation-delay: 0.2s;
+}
+
+@keyframes rhombus-red-grow {
+  to {
+    transform: scale(5);
+  }
+}
+
 .lips {
   grid-row: 6 / span 2;
   grid-column: 1 / span 2;
@@ -274,12 +365,13 @@ body {
 .lips ellipse {
   transform-origin: center;
   transform: scale(0.25);
-  animation: kiss 2s infinite;
+  animation: kiss 1.5s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes kiss {
   to {
-    transform: scale(6);
+    transform: scale(5);
   }
 }
 
@@ -287,15 +379,15 @@ body {
   grid-row: 6;
   grid-column: 3 / -1;
   background-color: var(--cgreen);
+  z-index: var(--z-mid);
 }
 
 .furry-lining {
-  grid-row: 8;
+  grid-row: 9;
   grid-column: 1 / -1;
-  z-index: 200;
 }
 
-/* *,
+*,
 ::after {
   animation: none !important;
-} */
+}
