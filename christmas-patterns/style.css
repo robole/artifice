@@ -12,6 +12,7 @@
 
   --clightred: hsl(355, 80%, 70%);
   --clightestred: hsl(355, 90%, 90%);
+  --clightgreen: hsl(157, 60%, 73%);
 
   --z-mid: 50;
   --z-high: 100;
@@ -34,6 +35,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: white;
+  perspective: 400px;
 }
 
 /* .container > * {
@@ -133,7 +135,8 @@ body {
 
 .snowflake {
   background-color: var(--cred);
-  grid-row: 1;
+  grid-row: 2;
+  grid-column: 5;
 }
 
 .flake {
@@ -169,14 +172,16 @@ body {
 }
 
 .star {
-  grid-row: 2;
-  grid-column: 5;
+  grid-row: 5;
+  grid-column: 4;
   background-color: var(--cgreen);
+  z-index: var(--z-mid);
 }
 
 .star path {
   transform-origin: center;
   transform: scale(0);
+
   animation: starry 1s infinite;
 }
 
@@ -184,6 +189,63 @@ body {
   to {
     transform: scale(1) rotate(1turn);
   }
+}
+
+.dancing-balls {
+  grid-row: 5;
+  grid-column: 5;
+  background-color: white;
+  position: relative;
+}
+
+.dancing-balls::before,
+.dancing-balls::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  width: 65%;
+  height: 65%;
+  left: 25%;
+  top: 17.5%;
+  background-color: var(--cred);
+
+  transform: translateX(-200%);
+
+  animation: dancing-ball 1.25s infinite;
+  animation-timing-function: cubic-bezier(0.2, 0.67, 0.94, 0.6);
+}
+
+@keyframes dancing-ball {
+  to {
+    transform: translateX(200%);
+  }
+}
+
+.dancing-balls::after {
+  animation-delay: 0.6s;
+}
+
+.dancing-balls-reverse {
+  grid-row: 6;
+  grid-column: 5;
+}
+
+@keyframes dancing-ball-reverse {
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+.dancing-balls-reverse::before,
+.dancing-balls-reverse::after {
+  transform: translateX(200%);
+  animation: dancing-ball-reverse 1.25s infinite;
+  animation-timing-function: cubic-bezier(0.2, 0.67, 0.94, 0.6);
+}
+
+.dancing-balls-reverse::after {
+  animation-delay: 0.6s;
 }
 
 .polka-dots {
@@ -303,23 +365,23 @@ body {
     var(--cgreener) var(--size) calc(var(--size) * 2)
   );
 
-  height: 300%;
+  height: 400%;
 
   animation-name: stripes-diagonal-green-greener-move;
   animation-timing-function: linear;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 
 @keyframes stripes-diagonal-green-greener-move {
   to {
-    transform: translateY(-66.6%);
+    transform: translateY(-33.3%);
   }
 }
 
 .rhombus-red {
-  grid-row: 5;
-  grid-column: 4;
+  grid-row: 1;
+  grid-column: 5;
 }
 
 .rhombus-red use {
@@ -359,6 +421,7 @@ body {
   grid-column: 1 / span 2;
   background-color: var(--cgreen);
   fill: var(--credder);
+  z-index: var(--z-high);
 }
 
 .lips path,
@@ -375,9 +438,148 @@ body {
   }
 }
 
-.filler {
+.trees {
+  grid-row: 7;
+  grid-column: 3 / span 2;
+  fill: var(--cgreener);
+  background-color: var(--clightgreen);
+  width: 300%;
+  z-index: var(--z-mid);
+  animation: trees-move 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes trees-move {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.open-present {
   grid-row: 6;
-  grid-column: 3 / -1;
+  grid-column: 4;
+  background-color: var(--clightestred);
+  z-index: var(--z-high);
+
+  perspective-origin: center;
+  position: relative;
+}
+
+.open-present::after,
+.open-present::before {
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: 35%;
+  left: 35%;
+}
+
+.open-present::after {
+  transform: translateY(10%) rotateX(-180deg);
+  transform-origin: bottom center;
+  background-image: linear-gradient(
+      90deg,
+      transparent 0 40%,
+      var(--cgreen) 40% 60%,
+      transparent 60% 100%
+    ),
+    linear-gradient(
+      var(--cred) 0 40%,
+      var(--cgreen) 40% 60%,
+      var(--cred) 60% 100%
+    );
+
+  animation: open 1.5s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+.open-present::before {
+  background-color: var(--clightred);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset,
+    0 0 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+@keyframes open {
+  to {
+    transform: translate(0) rotateX(0);
+  }
+}
+
+.snowflake2 {
+  grid-row: 8;
+  grid-column: 1 / span 2;
+  background-color: var(--cgreener);
+  z-index: var(--z-high);
+  height: 100%;
+}
+
+.snowflake2 .flake {
+  fill: white;
+}
+
+.snowflake2 .flake:nth-child(odd) {
+  animation-name: drift2;
+}
+
+.snowflake2 .flake:nth-child(even) {
+  animation-name: drift3;
+}
+
+@keyframes drift2 {
+  from {
+    transform: scale(0.7) translate(0px, -200px);
+  }
+  20% {
+    transform: scale(0.7) translate(-10px, 0px);
+  }
+
+  40% {
+    transform: scale(0.7) translate(0px, 150px);
+  }
+
+  60% {
+    transform: scale(0.7) translate(10px, 350px);
+  }
+
+  80% {
+    transform: scale(0.7) translate(0px, 500px);
+  }
+
+  100% {
+    transform: scale(0.7) translate(-10px, 700px);
+  }
+}
+
+@keyframes drift3 {
+  from {
+    transform: scale(0.5) translate(0px, -200px);
+  }
+  20% {
+    transform: scale(0.5) translate(-10px, 0px);
+  }
+
+  40% {
+    transform: scale(0.5) translate(0px, 250px);
+  }
+
+  60% {
+    transform: scale(0.5) translate(10px, 500px);
+  }
+
+  80% {
+    transform: scale(0.5) translate(0px, 700px);
+  }
+
+  100% {
+    transform: scale(0.5) translate(-10px, 900px);
+  }
+}
+
+.filler3 {
+  grid-row: 8;
+  grid-column: 1 / -1;
   background-color: var(--cgreen);
   z-index: var(--z-mid);
 }
@@ -387,7 +589,7 @@ body {
   grid-column: 1 / -1;
 }
 
-*,
+/* *,
 ::after {
   animation: none !important;
-}
+} */

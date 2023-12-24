@@ -30,13 +30,12 @@
         <div class="stripes-horizontal-green-red"></div>
         <div class="white-ball"></div>
         <svg class="snowflake" viewBox="0 0 300 300">
-          <use class="flake" href="#flake" x="0" fill="black" />
+          <use class="flake" href="#flake" x="0" />
         </svg>
-        <svg class="star" viewBox="0 0 512 512">
-          <path
-            d="m256.51 94.585-52.816 105.91-117.19 16.534 84.407 82.961-20.489 116.56 104.98-54.64 104.53 55.507-19.524-116.72 85.091-82.259-117.05-17.503z"
-            fill="var(--cyellow)"
-          />
+        <svg class="rhombus-red" viewBox="0 0 100 100">
+          <use href="#rhombus" />
+          <use href="#rhombus" />
+          <use href="#rhombus" />
         </svg>
         <svg class="polka-dots" viewBox="0 0 1200 100">
           <defs>
@@ -93,11 +92,14 @@
         </svg>
         <div class="stripes-vertical-green-white"></div>
         <div class="stripes-diagonal-green-greener"></div>
-        <svg class="rhombus-red" viewBox="0 0 100 100">
-          <use href="#rhombus" />
-          <use href="#rhombus" />
-          <use href="#rhombus" />
+        <svg class="star" viewBox="0 0 512 512">
+          <path
+            d="m256.51 94.585-52.816 105.91-117.19 16.534 84.407 82.961-20.489 116.56 104.98-54.64 104.53 55.507-19.524-116.72 85.091-82.259-117.05-17.503z"
+            fill="var(--cyellow)"
+          />
         </svg>
+        <div class="dancing-balls"></div>
+        <div class="dancing-balls dancing-balls-reverse"></div>
         <svg
           class="lips"
           viewBox="0 0 100 100"
@@ -114,8 +116,33 @@
             fill="var(--cgreen)"
           />
         </svg>
-
-        <div class="filler"></div>
+        <svg class="trees" viewBox="0 0 600 100">
+          <defs>
+            <pattern
+              id="tree"
+              x="0"
+              y="0"
+              width="100"
+              height="100"
+              patternUnits="userSpaceOnUse"
+            >
+              <path d="m0 100 50-100 50 100z" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#tree)"></rect>
+        </svg>
+        <div class="open-present"></div>
+        <svg class="snowflake2" viewBox="0 0 600 300">
+          <use class="flake" href="#flake" x="20" />
+          <use class="flake" href="#flake" x="200" y="300" />
+          <use class="flake" href="#flake" x="-200" y="-200" />
+          <use class="flake" href="#flake" x="-100" y="-300" />
+          <use class="flake" href="#flake" x="400" y="-350" />
+          <use class="flake" href="#flake" x="600" y="400" />
+          <use class="flake" href="#flake" x="500" y="100" />
+          <use class="flake" href="#flake" x="100" y="-500" />
+        </svg>
+        <div class="filler3"></div>
         <svg class="furry-lining" viewBox="0 0 600 100">
           <defs>
             <pattern
