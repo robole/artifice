@@ -1,0 +1,8 @@
+<svg version="1.1" viewBox="0 0 300 100">
+ <defs>
+    <pattern id="tree" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+ 			<path d="m0 100 50-100 50 100z" fill="#008000"/>
+		</pattern>
+  </defs>
+	<rect width="100%" height="100%" fill="url(#tree)"></rect>
+</svg>

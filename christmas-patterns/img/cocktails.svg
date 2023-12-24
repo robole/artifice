@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="cocktails" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g fill="#f00">
+  <path d="m23.301 6.4824 24.699 43.313v46.205h4v-46.473l24.99-42.76-53.689-0.28516z" stroke-width=".7303"/>
+  <rect x="35" y="95.562" width="30" height="3"/>
+ </g>
+</svg>

@@ -410,4 +410,8 @@ See ["snippets-ranger-loader" folder](snippets-ranger-loader/) for code.
 
 ## Christmas patterns
 
-Inspired by [this](https://www.instagram.com/p/B6Gr2g6HbHM/) by zzdesign.
+Simple geometric christmas patterns, animated for maximuim candy. Playing around with CSS gradients and SVG `pattern` and `symbol` elements to create different types of patterns.
+
+Inspired by [this design by zzdesign](https://www.instagram.com/p/B6Gr2g6HbHM/).
+
+See ["christmas-patterns" folder](christmas-patterns/) for code.
