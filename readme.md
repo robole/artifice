@@ -410,8 +410,10 @@ See ["snippets-ranger-loader" folder](snippets-ranger-loader/) for code.
 
 ## Christmas patterns
 
-Simple geometric christmas patterns, animated for maximuim candy. Playing around with CSS gradients and SVG `pattern` and `symbol` elements to create different types of patterns.
+Simple geometric christmas patterns, animated for maximuim candy. Playing around with CSS gradients and SVG `pattern` and `symbol` elements to create different types of patterns. Inspired by [this design by zzdesign](https://www.instagram.com/p/B6Gr2g6HbHM/).
 
-Inspired by [this design by zzdesign](https://www.instagram.com/p/B6Gr2g6HbHM/).
+![screenshot of christmas patterns card. It is a grid of various patterns animated. Patterns such as candy cane stripe, a wavy white and brown pattern that resembles a christmas pudding with cream on top, and so on.](/christmas-patterns/img/screenshot.png)
+
+You can check out the [codepen](https://codepen.io/robjoeol/full/gOEbPvZ).
 
 See ["christmas-patterns" folder](christmas-patterns/) for code.
