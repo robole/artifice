@@ -19,12 +19,14 @@
 }
 
 body {
-  background-color: #e87493;
+  background-color: var(--cred);
   display: grid;
   place-items: center;
 }
 
 .container {
+  --frame-width: 1.2rem;
+
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
   grid-template-rows: repeat(7, 50px) 1fr;
@@ -36,7 +38,17 @@ body {
   margin: 1rem 0;
   overflow: hidden;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px rgba(0, 0, 0, 0.1);
+
+  border-style: solid;
+  border-width: var(--frame-width);
+  border-block-start-color: hsl(0, 0%, 95%);
+  border-block-end-color: hsl(0, 0%, 86%);
+  border-inline-start-color: hsl(0, 0%, 88%);
+  border-inline-end-color: hsl(0, 0%, 90%);
+
+  box-shadow: 0 14px 8px -4px rgba(0, 0, 0, 0.5),
+    8px 24px 10px -4px rgba(0, 0, 0, 0.2), 0 0 4px 2px rgba(0, 0, 0, 0.2),
+    0 0 12px 4px rgba(0, 0, 0, 0.1);
 }
 
 .candy-cane {
