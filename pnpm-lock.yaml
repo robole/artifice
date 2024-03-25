@@ -20,7 +20,7 @@ devDependencies:
     specifier: ^7.31.0
     version: 7.32.0
   eslint-config-roboleary:
-    specifier: '>=0.2.7'
+    specifier: ^0.3.0
     version: 0.3.0(eslint-plugin-import@2.27.5)(eslint@7.32.0)
   stylelint-config-roboleary:
     specifier: '>=0.0.4'

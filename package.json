@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "eslint": "^7.31.0",
-    "eslint-config-roboleary": ">=0.2.7",
+    "eslint-config-roboleary": "^0.3.0",
     "stylelint-config-roboleary": ">=0.0.4",
     "vite": "^4.3.9"
   },
