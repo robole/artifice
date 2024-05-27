@@ -27,6 +27,7 @@ body {
   position: absolute;
   width: 200%;
   height: 200%;
+  left: -100%;
 
   background-image: repeating-linear-gradient(
     90deg,
@@ -41,7 +42,7 @@ body {
 
 @keyframes move {
   to {
-    transform: translate(-50%, 0%);
+    transform: translate(50%, 0%);
   }
 }
 
