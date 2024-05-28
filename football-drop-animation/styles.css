@@ -1,0 +1,71 @@
+/* similar to https://easings.net/#easeOutBounce */
+:root {
+  --easeOutBounceEasing: linear(
+    /* Start to 1st bounce */ 0,
+    0.063,
+    0.25,
+    0.563,
+    1 36.4%,
+    /* 1st to 2nd bounce */ 0.812,
+    0.75,
+    0.813,
+    1 72.7%,
+    /* 2nd to 3rd bounce */ 0.953,
+    0.938,
+    0.953,
+    1 90.9%,
+    /* 3rd bounce to end */ 0.984,
+    1 100% 100%
+  );
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.ball {
+  height: 25vmin;
+  width: 25vmin;
+
+  translate: 0 -220%;
+
+  animation: drop 2s infinite;
+  animation-timing-function: var(--easeOutBounceEasing);
+}
+
+@keyframes drop {
+  to {
+    translate: 0;
+  }
+}
+
+.floor {
+  position: relative;
+}
+
+.floor::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 10%;
+
+  background: radial-gradient(hsl(0 0% 10% / 0.5), hsl(0 0% 10% / 0.1));
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
+  translate: -50% 50%;
+  scale: 0;
+
+  animation: show 2s infinite;
+
+  animation-timing-function: var(--easeOutBounceEasing);
+}
+
+@keyframes show {
+  to {
+    scale: 1;
+  }
+}

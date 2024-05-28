@@ -50,6 +50,7 @@ npm run dev
 1. [Consolesque marqueeish text](#consolesque-marqueeish-text)
 1. [Snippets Ranger loader](#snippets-ranger-loader)
 1. [Christmas patterns](#christmas-patterns)
+1. [Football drop](#football-drop)
 <!-- /TOC -->
 
 ## Diamond Wipe
@@ -419,3 +420,11 @@ Inspired by [this design by zzdesign](https://www.instagram.com/p/B6Gr2g6HbHM/).
 You can check out the [codepen](https://codepen.io/robjoeol/full/gOEbPvZ).
 
 See ["christmas-patterns" folder](christmas-patterns/) for code.
+
+## Football drop
+
+This CSS animation of a football being dropped and bouncing a few times uses an *easeOutBounce* easing created with `linear()`.  The `@keyframes` is very, very simple! 🙏
+
+See ["football-drop-animation" folder](football-drop-animation/) for code.
+
+You can check out the [codepen](https://codepen.io/robjoeol/pen/NWVbJEY).
