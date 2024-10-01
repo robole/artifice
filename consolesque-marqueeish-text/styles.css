@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Limelight&display=swap");
+@font-face {
+  font-family: LimeLight;
+  src: url("./Limelight-Regular.ttf");
+}
 
 *,
 *::before,
@@ -8,39 +11,48 @@
 
 :root {
   --cols: 3;
-  --animation-len: 9s;
+  --animation-len: 12s;
+}
+
+@media screen and (min-width: 800px) {
+  :root {
+    --animation-len: 16s;
+  }
 }
 
 body {
-  margin: 0;
   width: 100dvw;
+
+  margin: 0;
 }
 
 .console {
-  position: relative;
-  background-color: hsl(140, 50%, 10%);
   width: 100%;
   height: 100dvh;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background-color: hsl(140, 50%, 10%);
+
   overflow: hidden;
   cursor: default;
 }
 
 .name {
-  position: relative;
-  display: inline-block;
   color: transparent;
   -webkit-text-stroke-color: hsl(140, 100%, 70%);
   -webkit-text-stroke-width: 2px;
 
-  filter: drop-shadow(0 0 2px hsl(140, 100%, 70%));
-  font-size: calc(98dvw / var(--cols));
+  font-family: Limelight, sans-serif;
+  font-size: calc(90dvw / var(--cols));
   line-height: 1;
-
-  font-family: Limelight, "Cutive Mono", sans-serif;
 
   text-transform: uppercase;
   writing-mode: vertical-lr;
   text-orientation: mixed;
+
+  filter: drop-shadow(0 0 2px hsl(140, 100%, 70%));
 }
 
 .name:nth-of-type(even) {
