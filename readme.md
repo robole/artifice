@@ -403,9 +403,9 @@ This is a loading animation for a VS Code extension I wrote called [Snippets Ran
 
 It is meant to whimsical and eccentric. I wanted make something silly and annoying, and then dial it back enough so it is merely fun!
 
-![screenshot of snippets ranger loader. It is a pink hero on a rocket horse with a rotating stripey background](/snippets-ranger-loader/img/screenshot.png)
+![screenshot of snippets ranger loader. It is a pink hero on a rocket horse with a rotating stripey background](/snippets-ranger-loader/img/screenshot.jpeg)
 
-You can check out the [codepen](https://codepen.io/robjoeol/full/gOqeXZw).
+You can check out the [demo](http://localhost:8080/demos/T6R3v_UM/preview/).
 
 See ["snippets-ranger-loader" folder](snippets-ranger-loader/) for code.
 

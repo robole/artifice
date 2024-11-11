@@ -1,56 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+@font-face {
+  font-family: "Grandstander";
+  src: url("./Grandstander-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
 
 :root {
-  --color1: hsl(280, 100%, 50%);
-  --color2: hsl(280, 100%, 20%);
+  --color1: #aa00ff;
+  --color2: #440066;
+}
+
+html {
+  height: 100dvh;
+  width: 100%;
+
+  display: grid;
+  place-items: center;
 }
 
 body {
+  margin: 0;
+  padding: 4px;
+
+  display: grid;
+  place-items: center;
+  grid-template-rows: repeat(2, min-content);
+
   background-color: hsl(280, 100%, 90%);
-  font-family: "Mochiy Pop One", serif;
 }
 
-.animation {
-  position: relative;
-  max-width: 400px;
-  margin: 0 auto;
+.peephole {
+  width: 100%;
+  max-height: 600px;
   aspect-ratio: 1/1;
 
   border-radius: 50%;
+
+  background-image: url(img/bg.webp);
+  background-size: 200%;
+  background-position: 200% 50%;
+
+  animation: bg-scroll 3s infinite;
+  animation-timing-function: linear;
 
   overflow: hidden;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(0, 0, 0, 0.1),
     0 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
-.bg {
-  position: absolute;
-  width: 200%;
-  height: 200%;
-  left: -100%;
-
-  background-image: repeating-linear-gradient(
-    90deg,
-    var(--color1),
-    var(--color1) 5%,
-    var(--color2) 5%,
-    var(--color2) 10%
-  );
-
-  animation: 2s linear infinite running move;
-}
-
-@keyframes move {
+@keyframes bg-scroll {
   to {
-    transform: translate(50%, 0%);
+    background-position: 0% 50%;
   }
 }
 
 svg {
-  position: absolute;
   display: block;
   width: 100%;
-  top: 0;
+
   filter: drop-shadow(0 0 6px yellow)
     drop-shadow(0 8px 12px hsl(270, 100%, 71%))
     drop-shadow(-8px 0 12px hsl(330, 100%, 71%));
@@ -165,7 +172,7 @@ svg {
 
 p {
   --color1: hsl(290, 100%, 34%);
-  --color2: hsl(290, 100%, 18%);
+  --color2: hsl(295, 100%, 34%);
 
   -webkit-background-clip: text;
   background-image: repeating-linear-gradient(
@@ -173,10 +180,13 @@ p {
     var(--color1),
     var(--color1) 20%,
     var(--color2) 20%,
-    var(--color2) 45%
+    var(--color2) 50%
   );
   background-position: center;
+
+  font-family: "Grandstander", serif;
   font-size: 2rem;
+  font-weight: 600;
 
   color: transparent;
   filter: drop-shadow(0 -2px 1px hsl(280deg 100% 0% / 0.75));
