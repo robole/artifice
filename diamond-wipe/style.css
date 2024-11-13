@@ -1,15 +1,21 @@
 @font-face {
   font-family: "VCR OSD Mono";
   src: url("fonts/VCR_OSD_MONO.woff2");
+  font-display: swap;
 }
 
 body {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
+
   display: grid;
   place-items: center;
+
   background-color: rgb(255, 153, 247);
-  font-family: "VCR OSD Mono";
+
+  font-family: "VCR OSD Mono", serif;
+
+  overflow: hidden;
 }
 
 svg {

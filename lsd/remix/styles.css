@@ -7,15 +7,26 @@
   box-sizing: border-box;
 }
 
-.canvas {
+body {
+  height: 100vh;
+
   display: grid;
+  place-items: center;
+}
+
+.canvas {
   width: var(--width);
-  grid-template-columns: repeat(13, 1fr);
   padding: var(--unit);
+
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
   gap: var(--unit);
-  margin: 20px auto;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.15),
-    0 0 12px rgba(0, 0, 0, 0.1);
+
+  background-image: url("./canvas-sm.jpg");
+  background-size: cover;
+  filter: brightness(1.25);
+
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 .circle {
@@ -605,27 +616,6 @@
   animation: blacken 6s infinite;
 }
 
-h1 {
-  font-family: "Eczar", serif;
-  font-size: 1.25rem;
-  margin: 0;
-  letter-spacing: 0.1rem;
-}
-
-p {
-  font-family: "Gentium Basic", serif;
-  margin: 0;
-}
-
-.label {
-  display: grid;
-  justify-items: center;
-  grid-template-rows: repeat(2, 2rem);
-  height: 100px;
-  margin: 0 auto;
-  padding: 10px;
-}
-
 @keyframes blend {
   to {
     filter: blur(20px);
@@ -645,21 +635,9 @@ p {
   }
 }
 
-@media only screen and (min-width: 600px) {
-  :root {
-    --width: 500px;
-  }
-}
-
 @media only screen and (min-width: 800px) {
   :root {
     --width: 600px;
-  }
-}
-
-@media only screen and (min-width: 1000px) {
-  :root {
-    --width: 800px;
   }
 }
 

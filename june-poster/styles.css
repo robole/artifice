@@ -1,16 +1,26 @@
-@import url(http://fonts.googleapis.com/css?family=Rubik+Mono+One);
+@font-face {
+  font-family: "Rubik Mono One";
+  src: url("./RubikMonoOne-Regular.ttf");
+}
 
 * {
   box-sizing: border-box;
 }
 
+body {
+  height: 100dvh;
+  margin: 0;
+
+  display: grid;
+  place-items: center;
+}
+
 svg {
   display: block;
-  width: clamp(10rem, 60dvh, 60rem);
-  margin: 3em auto;
+  height: 50%;
+  width: auto;
 
-  box-shadow: 1px 1px 2px hsla(60, 22%, 90%, 0.5),
-    0 0 8px hsla(60, 22%, 90%, 0.5), 0 4px 2px hsla(60, 22%, 90%, 0.15);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
 #smoke {

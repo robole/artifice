@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Pompiere&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+
+  display: grid;
+  place-items: center;
+
+  font-family: "Roboto", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  background-color: darkseagreen;
+}
 
 .framed {
   border-image-source: url("img/frame.png");
@@ -25,38 +39,23 @@ blockquote {
   margin: 0;
 }
 
-img {
-  height: 1.5em;
-  aspect-ratio: 1 /1;
-}
-
 @keyframes pointing {
   to {
     transform: translateY(3px);
   }
 }
 
-.framed div {
-  font-size: 0.45em;
-  font-family: "Roboto", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  justify-self: end;
-  padding-inline-end: 0.75rem;
-
-  animation: 0.5s linear 0s infinite alternate pointing;
+div {
+  height: min-content;
 }
 
-body {
-  background-color: biege;
-  background-image: url(img/background.jpg);
-  background-size: cover;
+.framed div {
+  justify-self: end;
+  align-self: end;
 
-  display: grid;
-  max-width: 1000px;
-  place-items: center;
+  padding-inline-end: 0.75rem;
 
-  font-family: "Pompiere", cursive;
-  font-size: 1.75rem;
+  font-size: 0.45em;
 
-  margin: 1rem auto;
+  animation: 0.5s linear 0s infinite alternate pointing;
 }
